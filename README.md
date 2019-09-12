@@ -4,11 +4,24 @@ This repository is a SVG images resource based on SVG icons [JQuery Mobile 1.4.5
 ## Added Icons from WikiCommons
 The following icons are selected from the following [SVG-Icons in Wiki Commons](https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&profile=default&search=FontAwesome.com&advancedSearch-current=%7B%7D&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1). For FontAwesome Icon survey see [FontAwesome 4.7.0](https://fontawesome.com/v4.7.0/icons/) for finding the appropriate icon file name.
 
+
+### Load, Save, Settings
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Folder_open_alt_font_awesome.svg"> | [`fa-folder-open.svg`](https://commons.wikimedia.org/wiki/File:Folder_open_alt_font_awesome.svg)  | `img/icons-svg`  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg"> | [`fa-save-file.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+
+### Editor
+| Icon | File  | Folder  |  Source File | Licence  | Add Date |
+|---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Edit_font_awesome.svg"> | [`fa-edit.svg`](https://commons.wikimedia.org/wiki/File:Edit_font_awesome.svg)  | `img/icons-svg`  | [`Edit_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/4/4c/Edit_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg"> | [`fa-font.svg`](https://commons.wikimedia.org/wiki/File:Font_font_awesome.svg)  | `img/icons-svg`  | [`Font_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg"> | [`fa-font.svg`](https://commons.wikimedia.org/wiki/File:Font_font_awesome.svg)  | `img/icons-svg`  | [`Font_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg"> | [`fa-spinner.svg`](https://commons.wikimedia.org/wiki/File:Spinner_font_awesome.svg)  | `img/icons-svg`  | [`Spinner_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+
+
+### Video/Audio Player
+| Icon | File  | Folder  |  Source File | Licence  | Add Date |
+|---|---|---|---|---|---|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg"> | [`fa-audio-play.svg`](https://commons.wikimedia.org/wiki/File:Play_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Font_Awesome_5_solid_square.svg"> | [`fa-audio-stop.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_square.svg)  | `img/icons-svg`  | [`Font_Awesome_5_solid_square.svg`](https://upload.wikimedia.org/wikipedia/commons/b/b9/Font_Awesome_5_solid_square.svg) | CC BY-SA 3.0 | 2019/09/12  |

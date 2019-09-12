@@ -51,12 +51,15 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg"> | [`fa-audio-play.svg`](https://commons.wikimedia.org/wiki/File:Pause_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Font_Awesome_5_solid_eject.svg"> | [`fa-audio-eject.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_eject.svg)  | `img/icons-svg`  | [`Font_Awesome_5_solid_eject.svg`](https://upload.wikimedia.org/wikipedia/commons/1/14/Font_Awesome_5_solid_eject.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_font_awesome.svg"> | [`fa-audio-record.svg`](https://commons.wikimedia.org/wiki/File:Circle_font_awesome.svg)  | `img/icons-svg`  | [`Circle_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg"> | [`fa-audio-backward.svg`](https://commons.wikimedia.org/wiki/File:Backward_font_awesome.svg)  | `img/icons-svg`  | [`Backward_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg"> | [`fa-audio-backward.svg`](https://commons.wikimedia.org/wiki/File:Backward_font_awesome.svg)  | `img/icons-svg`  | [`Backward_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Forward_font_awesome.svg"> | [`fa-audio-forward.svg`](https://commons.wikimedia.org/wiki/File:Forward_font_awesome.svg)  | `img/icons-svg`  | [`Forward_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/7/7f/Forward_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
-
 
 
 ### Devices
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg"> | [`fa-tablet.svg`](https://commons.wikimedia.org/wiki/File:Tablet_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+
+
+## Add License Info File
+If you use the repository add this README.md file to the [WebApp](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache), so that users of your webbased application can identify the origine of the SVG icon.

@@ -5,13 +5,16 @@ This repository is a SVG images resource based on SVG icons [JQuery Mobile 1.4.5
 The following icons are selected from the following [SVG-Icons in Wiki Commons](https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&profile=default&search=FontAwesome.com&advancedSearch-current=%7B%7D&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1). For FontAwesome Icon survey see [FontAwesome 4.7.0](https://fontawesome.com/v4.7.0/icons/) for finding the appropriate icon file name.
 
 
-### Load, Save, Trash, Settings
+### Load, Save, Print, Trash, Settings
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Folder_open_alt_font_awesome.svg"> | [`fa-folder-open.svg`](https://commons.wikimedia.org/wiki/File:Folder_open_alt_font_awesome.svg)  | `img/icons-svg`  |  [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/3a/Folder_open_alt_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg"> | [`fa-save-file.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg"> | [`fa-trash.svg`](https://commons.wikimedia.org/wiki/File:Trash_font_awesome.svg)  | `img/icons-svg`  | [`Trash_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg"> | [`fa-print.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg)  | `img/icons-svg`  | [`Print_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="./img/icons-svg/gear-black.svg"> | [`gear-black.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`gear-black.svg`](https://github.com/niebert/icons4menu/blob/master/img/icons-svg/gear-black.svg) | [CC0](http://creativecommons.org/publicdomain/zero/1.0/) | 2019/09/12  |
+
+
 
 
 ### Navigation
@@ -28,7 +31,15 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg"> | [`fa-font.svg`](https://commons.wikimedia.org/wiki/File:Font_font_awesome.svg)  | `img/icons-svg`  | [`Font_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg"> | [`fa-list.svg`](https://commons.wikimedia.org/wiki/File:List_font_awesome.svg)  | `img/icons-svg`  | [`List_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg"> | [`fa-enumeration.svg`](https://commons.wikimedia.org/wiki/File:Ol_font_awesome.svg)  | `img/icons-svg`  | [`Ol_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg"> | [`fa-paste.svg`](https://commons.wikimedia.org/wiki/File:Paste_font_awesome.svg)  | `img/icons-svg`  | [`Paste_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+
+
+### Action and Processes
+| Icon | File  | Folder  |  Source File | Licence  | Add Date |
+|---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg"> | [`fa-spinner.svg`](https://commons.wikimedia.org/wiki/File:Spinner_font_awesome.svg)  | `img/icons-svg`  | [`Spinner_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg"> | [`fa-barcode.svg`](https://commons.wikimedia.org/wiki/File:Barcode_font_awesome.svg)  | `img/icons-svg`  | [`Barcode_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+
 
 
 

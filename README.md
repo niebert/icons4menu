@@ -20,8 +20,11 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg"> | [`fa-spinner.svg`](https://commons.wikimedia.org/wiki/File:Spinner_font_awesome.svg)  | `img/icons-svg`  | [`Spinner_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 
 
-### Video/Audio Player
+### Audio Player
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg"> | [`fa-audio-play.svg`](https://commons.wikimedia.org/wiki/File:Play_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Font_Awesome_5_solid_square.svg"> | [`fa-audio-stop.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_square.svg)  | `img/icons-svg`  | [`Font_Awesome_5_solid_square.svg`](https://upload.wikimedia.org/wikipedia/commons/b/b9/Font_Awesome_5_solid_square.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg"> | [`fa-audio-play.svg`](https://commons.wikimedia.org/wiki/File:Pause_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Font_Awesome_5_solid_eject.svg"> | [`fa-audio-eject.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_eject.svg)  | `img/icons-svg`  | [`Font_Awesome_5_solid_eject.svg`](https://upload.wikimedia.org/wikipedia/commons/1/14/Font_Awesome_5_solid_eject.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_font_awesome.svg"> | [`fa-audio-record.svg`](https://commons.wikimedia.org/wiki/File:Circle_font_awesome.svg)  | `img/icons-svg`  | [`Circle_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |

@@ -31,7 +31,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg"> | [`fa-font.svg`](https://commons.wikimedia.org/wiki/File:Font_font_awesome.svg)  | `img/icons-svg`  | [`Font_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg"> | [`fa-list.svg`](https://commons.wikimedia.org/wiki/File:List_font_awesome.svg)  | `img/icons-svg`  | [`List_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg"> | [`fa-enumeration.svg`](https://commons.wikimedia.org/wiki/File:Ol_font_awesome.svg)  | `img/icons-svg`  | [`Ol_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg"> | [`fa-paste.svg`](https://commons.wikimedia.org/wiki/File:Paste_font_awesome.svg)  | `img/icons-svg`  | [`Paste_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img width="20px" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg"> | [`fa-paste.svg`](https://commons.wikimedia.org/wiki/File:Paste_font_awesome.svg)  | `img/icons-svg`  | [`Paste_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 
 
 ### Action and Processes

@@ -26,8 +26,10 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Edit_font_awesome.svg"> | [`fa-edit.svg`](https://commons.wikimedia.org/wiki/File:Edit_font_awesome.svg)  | `img/icons-svg`  | [`Edit_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/4/4c/Edit_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg"> | [`fa-font.svg`](https://commons.wikimedia.org/wiki/File:Font_font_awesome.svg)  | `img/icons-svg`  | [`Font_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg"> | [`fa-font.svg`](https://commons.wikimedia.org/wiki/File:Font_font_awesome.svg)  | `img/icons-svg`  | [`Font_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg"> | [`fa-list.svg`](https://commons.wikimedia.org/wiki/File:List_font_awesome.svg)  | `img/icons-svg`  | [`List_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg"> | [`fa-enumeration.svg`](https://commons.wikimedia.org/wiki/File:Ol_font_awesome.svg)  | `img/icons-svg`  | [`Ol_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg"> | [`fa-spinner.svg`](https://commons.wikimedia.org/wiki/File:Spinner_font_awesome.svg)  | `img/icons-svg`  | [`Spinner_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+
 
 
 ### Audio Player

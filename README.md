@@ -12,7 +12,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg"> | [`fa-save-file.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg"> | [`fa-trash.svg`](https://commons.wikimedia.org/wiki/File:Trash_font_awesome.svg)  | `img/icons-svg`  | [`Trash_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg"> | [`fa-print.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg)  | `img/icons-svg`  | [`Print_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
-| <img width="42" src="./img/icons-svg/gear-black.svg"> | [`gear-black.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`gear-black.svg`](https://github.com/niebert/icons4menu/blob/master/img/icons-svg/gear-black.svg) | [CC0](http://creativecommons.org/publicdomain/zero/1.0/) | 2019/09/12  |
+| <img width="42" src="./img/icons-svg/gear-black.svg"> | [`gear-black.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`gear-black.svg`](https://github.com/niebert/icons4menu/blob/master/img/icons-svg/gear-black.svg) | [CC0](http://creativecommons.org/publicdomain/zero/1.0/) - JQuery | 2019/09/12  |
 
 
 
@@ -31,7 +31,9 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg"> | [`fa-font.svg`](https://commons.wikimedia.org/wiki/File:Font_font_awesome.svg)  | `img/icons-svg`  | [`Font_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/0/0b/Font_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg"> | [`fa-list.svg`](https://commons.wikimedia.org/wiki/File:List_font_awesome.svg)  | `img/icons-svg`  | [`List_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg"> | [`fa-enumeration.svg`](https://commons.wikimedia.org/wiki/File:Ol_font_awesome.svg)  | `img/icons-svg`  | [`Ol_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Copy_font_awesome.svg"> | [`fa-copy.svg`](https://commons.wikimedia.org/wiki/File:Copy_font_awesome.svg)  | `img/icons-svg`  | [`Copy_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/0/04/Copy_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg"> | [`fa-paste.svg`](https://commons.wikimedia.org/wiki/File:Paste_font_awesome.svg)  | `img/icons-svg`  | [`Paste_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+
 
 
 ### Action and Processes

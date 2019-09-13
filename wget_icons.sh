@@ -1,5 +1,7 @@
 echo "WGET Script to download Icons4Menu"
 echo "----------------------------------"
+echo "Source: https://niebert.github.io/icons4menu/wget_icons.sh"
+
 mkdir img -p
 wget https://niebert.github.io/icons4menu/README.html -O img/README_Icons4Menu.html
 wget https://niebert.github.io/icons4menu/LICENSE_Jquery_Mobile.txt -O img/LICENSE_Jquery_Mobile.txt

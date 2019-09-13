@@ -19,7 +19,8 @@ echo "#!/bin/bash" > $WGETFILE
 echo "echo \"WGET Script to download ${MODULE}\"" > $WGETFILE
 echo "echo \"----------------------------------\"" >> $WGETFILE
 echo "mkdir ${SUBDIR} -p" >> $WGETFILE
-echo "wget ${DOMAIN}/README.md -O ${ROOT}${SUBDIR}/README_${MODULE}.md" >> $WGETFILE
+echo "wget ${DOMAIN}README.html -O ${SUBDIR}/README_${MODULE}.html" >> $WGETFILE
+echo "wget ${DOMAIN}LICENSE_Jquery_Mobile.txt -O ${SUBDIR}/LICENSE_Jquery_Mobile.txt" >> $WGETFILE
 
 ### OUTPUT ###
 echo "<HTML>\n\t<HEAD>\n\t\t<TITLE>Icons4Menu</TITLE>" > $OUTPUT

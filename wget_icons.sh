@@ -1,8 +1,9 @@
 echo "WGET Script to download Icons4Menu"
 echo "----------------------------------"
 mkdir img -p
-wget https://niebert.github.io/icons4menu//README.md -O ./img/README_Icons4Menu.md
-mkdir /icons-png -p
+wget https://niebert.github.io/icons4menu/README.html -O img/README_Icons4Menu.html
+wget https://niebert.github.io/icons4menu/LICENSE_Jquery_Mobile.txt -O img/LICENSE_Jquery_Mobile.txt
+mkdir img/icons-png -p
 wget https://niebert.github.io/icons4menu/img/icons-png/action-black.png -O img/icons-png/action-black.png
 wget https://niebert.github.io/icons4menu/img/icons-png/action-white.png -O img/icons-png/action-white.png
 wget https://niebert.github.io/icons4menu/img/icons-png/alert-black.png -O img/icons-png/alert-black.png
@@ -103,7 +104,7 @@ wget https://niebert.github.io/icons4menu/img/icons-png/user-black.png -O img/ic
 wget https://niebert.github.io/icons4menu/img/icons-png/user-white.png -O img/icons-png/user-white.png
 wget https://niebert.github.io/icons4menu/img/icons-png/video-black.png -O img/icons-png/video-black.png
 wget https://niebert.github.io/icons4menu/img/icons-png/video-white.png -O img/icons-png/video-white.png
-mkdir /icons-svg -p
+mkdir img/icons-svg -p
 wget https://niebert.github.io/icons4menu/img/icons-svg/action-black.svg -O img/icons-svg/action-black.svg
 wget https://niebert.github.io/icons4menu/img/icons-svg/action-white.svg -O img/icons-svg/action-white.svg
 wget https://niebert.github.io/icons4menu/img/icons-svg/alert-black.svg -O img/icons-svg/alert-black.svg

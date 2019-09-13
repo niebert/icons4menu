@@ -13,10 +13,17 @@
 <body>
 <h1 id="icons4menu">Icons4Menu</h1>
 <p>This repository is a SVG images resource based on SVG icons <a href="https://jquerymobile.com/download/">JQuery Mobile 1.4.5</a> and extended with SVG icons from Wiki Commons. The icons are primary collected for application in menus with e.g. Hamburger Menus like <a href="https://niebert.github.io/hamburger_menu_app/">hamburger_menu_app</a> as an <a href="https://en.wikiversity.org/wiki/AppLSAC">AppLSAC</a>.</p>
+<h2 id="preview-all-icons4menu">Preview All Icons4Menu</h2>
+<p>The listed icons below do not contain the <a href="https://jquerymobile.com/download/">JQuery Mobile 1.4.5 Icons</a>. To preview all icons for navigation menus see</p>
+<ul>
+<li><a href="https://niebert.github.io/icons4menu">Preview Icons4Menu</a></li>
+<li><a href="https://niebert.github.io/hamburger_menu_app">Usage in Hamburger Menu</a> - <a href="https://www.github.com/niebert/icons4menu">GitHub-Repo</a></li>
+<li><a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache">Learn about AppLSAC</a></li>
+</ul>
 <h2 id="added-icons-from-wikicommons">Added Icons from WikiCommons</h2>
 <p>The following icons are selected from the following <a href="https://commons.wikimedia.org/w/index.php?title=Special:Search&amp;limit=500&amp;offset=0&amp;profile=default&amp;search=FontAwesome.com&amp;advancedSearch-current=%7B%7D&amp;ns0=1&amp;ns6=1&amp;ns12=1&amp;ns14=1&amp;ns100=1&amp;ns106=1">SVG-Icons in Wiki Commons</a>. For FontAwesome Icon survey see <a href="https://fontawesome.com/v4.7.0/icons/">FontAwesome 4.7.0</a> for finding the appropriate icon file name.</p>
 <h3 id="load-save-print-trash-settings">Load, Save, Print, Trash, Settings</h3>
-<table style="width:33%;">
+<table border="2" style="width:33%;">
 <colgroup>
 <col style="width: 5%" />
 <col style="width: 5%" />
@@ -314,7 +321,14 @@
 </tbody>
 </table>
 <h2 id="scan-icons">Scan Icons</h2>
-<p>The shell script <code>scan_icons.sh</code> scans all icons in the subdirectory <code>img/</code> and creates and HTML file <code>index.html</code> and a <code>wget</code> download script, that can be modified for downloading a subset of the images. This <code>README.md</code> will also be downloaded and stored in <code>img/README_Icons4Menu.md</code>. Please do not remove this file because it provides a reference to the origin of the files and the corresponding licenses.</p>
+<h3 id="scan-shell-script-for-images">Scan Shell Script for images</h3>
+<p>The shell script <code>scan_icons.sh</code> scans all icons in the subdirectory <code>img/</code> and creates and HTML file <code>img/index.html</code> and a <code>wget</code> download script, that can be modified for downloading a subset of the images.</p>
+<h3 id="shell-script-wget_icons.sh">Shell Script <code>wget_icons.sh</code></h3>
+<p>The shell script <code>wget_icons.sh</code> can be used to download a subset of images. In the provided default version it downloads all icons in this repository.</p>
+<ul>
+<li>This <code>README.md</code> will also be downloaded and stored in <code>img/README_Icons4Menu.html</code>. Please do not remove this file because it provides a reference to the origin of the files and the corresponding licenses.</li>
+<li>The JQuery Mobile License is stored in <code>img/LICENSE_Jquery_Mobile.txt</code>. For JQuery Mobile license see file <code>LICENSE_Jquery_Mobile.txt</code> in the repository <code>Icons4Menu</code>.</li>
+</ul>
 <h2 id="add-license-info-file">Add License Info File</h2>
 <p>If you use the repository add this README.md file to the <a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache">WebApp</a>, so that users of your webbased application can identify the origine of the SVG icon.</p>
 </body>

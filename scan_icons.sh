@@ -18,6 +18,8 @@ SED_CMD="gsed"
 echo "#!/bin/bash" > $WGETFILE
 echo "echo \"WGET Script to download ${MODULE}\"" > $WGETFILE
 echo "echo \"----------------------------------\"" >> $WGETFILE
+echo "echo \"Source: https://niebert.github.io/icons4menu/wget_icons.sh\""
+
 echo "mkdir ${SUBDIR} -p" >> $WGETFILE
 echo "wget ${DOMAIN}README.html -O ${SUBDIR}/README_${MODULE}.html" >> $WGETFILE
 echo "wget ${DOMAIN}LICENSE_Jquery_Mobile.txt -O ${SUBDIR}/LICENSE_Jquery_Mobile.txt" >> $WGETFILE

@@ -18,7 +18,7 @@ SED_CMD="gsed"
 echo "#!/bin/bash" > $WGETFILE
 echo "echo \"WGET Script to download ${MODULE}\"" > $WGETFILE
 echo "echo \"----------------------------------\"" >> $WGETFILE
-echo "echo \"Source: https://niebert.github.io/icons4menu/wget_icons.sh\""
+echo "echo \"Source: https://niebert.github.io/icons4menu/wget_icons.sh\"" >> $WGETFILE
 
 echo "mkdir ${SUBDIR} -p" >> $WGETFILE
 echo "wget ${DOMAIN}README.html -O ${SUBDIR}/README_${MODULE}.html" >> $WGETFILE
@@ -35,7 +35,7 @@ echo "<H2>Scan SVG Files for Navigation Menu</H2>" >> $OUTPUT
 echo "<H3>Last Update: ${NOW}</H3>" >> $OUTPUT
 echo "This <a href=\"${DOMAIN}\${WGETFILE}\" target=\"_blank\">shell script</a> of the <a href=\"${REPO}\" target=\"_blank\">repository ${MODULE}</a> collects all SVG icons files and generates an index.html for all scanned files." >> $OUTPUT
 echo "The Icons can be downloaded with a <a href=\"${DOMAIN}\${WGETFILE}\" target=\"_blank\">wget shell script for Linux and MacOSX</a>." >> $OUTPUT
-echo "The <a href=\"${DOMAIN}\${WGETFILE}\" target=\"_blank\">script</a> can be downloaded and modified to select just a specific subset of the icons." >> $OUTPUT
+echo "The <a href=\"${DOMAIN}/${WGETFILE}\" target=\"_blank\">script</a> can be downloaded and modified to select just a specific subset of the icons." >> $OUTPUT
 #echo "Click on the file name of the image to load a single icon in your browser." >> $OUTPUT
 echo "<HR>" >> $OUTPUT
 i=0

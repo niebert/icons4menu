@@ -1,6 +1,13 @@
 # Icons4Menu
 This repository is a SVG images resource based on SVG icons [JQuery Mobile 1.4.5](https://jquerymobile.com/download/) and extended with SVG icons from Wiki Commons. The icons are primary collected for application in menus with e.g. Hamburger Menus like [hamburger_menu_app](https://niebert.github.io/hamburger_menu_app/) as an [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC).
 
+## Preview All Icons4Menu
+The listed icons below do not contain the [JQuery Mobile 1.4.5 Icons](https://jquerymobile.com/download/). To preview all icons for navigation menus see
+
+* [Preview Icons4Menu](https://niebert.github.io/icons4menu)
+* [Usage in Hamburger Menu](https://niebert.github.io/hamburger_menu_app) - [GitHub-Repo](https://www.github.com/niebert/icons4menu)
+* [Learn about AppLSAC](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache)
+
 ## Added Icons from WikiCommons
 The following icons are selected from the following [SVG-Icons in Wiki Commons](https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&profile=default&search=FontAwesome.com&advancedSearch-current=%7B%7D&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1). For FontAwesome Icon survey see [FontAwesome 4.7.0](https://fontawesome.com/v4.7.0/icons/) for finding the appropriate icon file name.
 
@@ -61,6 +68,17 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg"> | [`fa-tablet.svg`](https://commons.wikimedia.org/wiki/File:Tablet_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+
+## Scan Icons
+
+### Scan Shell Script for images
+The shell script `scan_icons.sh` scans all icons in the subdirectory `img/` and creates and HTML file `img/index.html` and a `wget` download script, that can be modified for downloading a subset of the images.
+
+### Shell Script `wget_icons.sh`
+The shell script `wget_icons.sh` can be used to download a subset of images. In the provided default version it downloads all icons in this repository.
+
+* This `README.md` will also be  downloaded and stored in `img/README_Icons4Menu.html`. Please do not remove this file because it provides a reference to the origin of the files and the corresponding licenses.
+* The JQuery Mobile License is stored in `img/LICENSE_Jquery_Mobile.txt`. For JQuery Mobile license see file `LICENSE_Jquery_Mobile.txt` in the repository `Icons4Menu`.
 
 
 ## Add License Info File

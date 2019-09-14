@@ -8,11 +8,18 @@ REPO="https://github.com/niebert/icons4menu"
 WIKIVERSITY="https://en.wikiversity.org/wiki/AppLSAC"
 OUTPUT="${ROOT}index.html"
 WGETFILE="wget_icons.sh"
-NOW=$(date +"%d.%m.%Y")
+JSONFILE="json4icons.json"
+SEP="\""
+NOW=$(date +"%Y/%m/%d")
 ### sed command - sed differs on OSX
 ### if you want to use this script on OSX install GNU sed with "brew install gsed"
 ### OSX
 SED_CMD="gsed"
+### JSONFILE ###
+echo "{" > $JSONFILE
+echo "  ${SEP}repository${SEP}: ${SEP}https://www.github.io/niebert/icons4menu${SEP}, " >> $JSONFILE
+echo "  ${SEP}date${SEP}:       ${SEP}$NOW${SEP}," >> $JSONFILE
+echo "  ${SEP}icons${SEP}: [" >> $JSONFILE
 
 ### WGETFILE ###
 echo "#!/bin/bash" > $WGETFILE
@@ -20,9 +27,11 @@ echo "echo \"WGET Script to download ${MODULE}\"" > $WGETFILE
 echo "echo \"----------------------------------\"" >> $WGETFILE
 echo "echo \"Source: https://niebert.github.io/icons4menu/wget_icons.sh\"" >> $WGETFILE
 
-echo "mkdir ${SUBDIR} -p" >> $WGETFILE
+echo "mkdir ${SUBDIR} " >> $WGETFILE
 echo "wget ${DOMAIN}README.html -O ${SUBDIR}/README_${MODULE}.html" >> $WGETFILE
 echo "wget ${DOMAIN}LICENSE_Jquery_Mobile.txt -O ${SUBDIR}/LICENSE_Jquery_Mobile.txt" >> $WGETFILE
+echo "wget ${DOMAIN}${JSONFILE} -O ${SUBDIR}/${JSONFILE}" >> $WGETFILE
+echo "wget ${DOMAIN}update_wget_icons.sh -O ${SUBDIR}/update_wget_icons.sh" >> $WGETFILE
 
 ### OUTPUT ###
 echo "<HTML>\n\t<HEAD>\n\t\t<TITLE>Icons4Menu</TITLE>" > $OUTPUT
@@ -39,6 +48,7 @@ echo "The <a href=\"${DOMAIN}/${WGETFILE}\" target=\"_blank\">script</a> can be 
 #echo "Click on the file name of the image to load a single icon in your browser." >> $OUTPUT
 echo "<HR>" >> $OUTPUT
 i=0
+COMMA=""
 for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
   path=`basename "$filepath"`
   if [ "$path" = ".git" ]
@@ -49,7 +59,7 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
     echo "DIR: $path"
 
     ### WGETFILE ###
-    echo "mkdir ${SUBDIR}/${path} -p" >> $WGETFILE
+    echo "mkdir ${SUBDIR}/${path} " >> $WGETFILE
 
     ### OUTPUT ###
     # echo "  <LI><b>PATH: <a href='$DOMAIN/$path' target='_blank'>$path</a></b></LI>" >> $OUTPUT
@@ -79,6 +89,14 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
         ### CONSOLE ###
         echo "- FILE: $file"
 
+        ### JSONFILE ###
+        echo "$COMMA" >> $JSONFILE
+        echo "    {" >> $JSONFILE
+        echo "       ${SEP}name${SEP}: ${SEP}${file}${SEP}," >> $JSONFILE
+        echo "       ${SEP}path${SEP}: ${SEP}$SUBDIR/$path${SEP}," >> $JSONFILE
+        echo "       ${SEP}used${SEP}: false" >> $JSONFILE
+        echo "    }" >> $JSONFILE
+        COMMA="   ,"
         ### WGETFILE ###
         echo "wget ${DOMAIN}$SUBDIR/$path/$file -O $SUBDIR/$path/$file" >> $WGETFILE
 
@@ -89,13 +107,23 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
   			echo "    <TD>$path</TD>" >> $OUTPUT
   		fi
   	done
-  	echo "  </TABLE>" >> $OUTPUT
+    ### Set Comma to "," for seperating the attribution in the JSON "JSONFILE"
+    COMMA=","
+    ### OUTPUT ###
+    echo "  </TABLE>" >> $OUTPUT
   	echo "  <HR>" >> $OUTPUT
+    ### JSONFILE
+    echo "  ]" >> $JSONFILE
+
   fi
 done
-#echo "</UL>" >> $OUTPUT
+### OUTPUT ###
 echo "</BODY>" >> $OUTPUT
 echo "</HTML>" >> $OUTPUT
+
+### JSONFILE ###
+echo "}" >> $JSONFILE
+
 pandoc -s -f markdown -t html5 README.md -o README.html
 # title=`cat $i | $SED_CMD -n 's/<title>\(.*\)<\/title>/\1/Ip' | $SED_CMD -e 's/^[ \t]*//'`
         	## GNU: cat docs/index.html | sed -n 's/<title>\(.*\)<\/title>/\1/Ip'`

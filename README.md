@@ -69,6 +69,32 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg"> | [`fa-tablet.svg`](https://commons.wikimedia.org/wiki/File:Tablet_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 
+
+## Style Sheets CSS for Icons
+The spinner icon is static. You might expect the spinner icon `fa-spinner.svg` to rotate. This can be accomplish with CSS class definition for a class `icon-spin`:
+* Add in your CSS file the following styles for the class `icon-spin`:
+```css
+.icon-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+```
+* The you can make the icons rotate by adding the `icon-spin` classname to the icon:
+```html
+<img class="icon-spin" src="img/icons-svg/fa-spinner.svg" alt="" width="20" height="20">
+```
+
+
+
 ## Scan Icons
 
 ### Scan Shell Script for images
@@ -93,4 +119,15 @@ The second command downloads the icons. You can help to minimize the GitHub serv
 If you want to check out an [example repository on GitHub](), that uses the [Icons4Menu icons](https://niebert.github.io/hamburger_menu_app) in an AppLSAC analyze the subdirectory `img/` in [`hamburger_menu_app`](https://www.github.com/niebert/hamburger_menu_app).
 
 ## Add License Info File
-If you use the repository add this README.md file to the [WebApp](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache), so that users of your webbased application can identify the origine of the SVG icon.
+If you use the repository add this README.md file to the [WebApp](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache), so that users of your webbased application can identify the origine of the SVG icon. The repository incorporated SVG icons with two licenses:
+* Creative Commons `CC Zero` - https://creativecommons.org/publicdomain/zero/1.0/deed.en
+* Creative Commons `CC BY-SA 3.0`  - see https://creativecommons.org/licenses/by-sa/3.0/
+If we consider the `CC BY-SA 3.0` license provides the freedom to:
+* **Share** — copy and redistribute the material in any medium or format
+* **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+These two freedoms are also provided for the license `CC Zero`. Furthermore for all `CC BY-SA 3.0` licensed icons an `attribution` and a `share alike` requirement is defined (see https://creativecommons.org/licenses/by-sa/3.0/):
+
+* **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+* **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+The JQuery Mobile 1.4.5 icons of this repository do not require the attribution,  but it is recommended to provide attribution also for the [CC Zero](https://creativecommons.org/publicdomain/zero/1.0/deed.en) licensed icons. To distinguish  `CC Zero` the icons that need a `file attribution` for `CC BY-SA 3.0` have the prefix in the filename `fa-`.

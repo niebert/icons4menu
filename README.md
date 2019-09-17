@@ -119,9 +119,11 @@ The second command downloads the icons. You can help to minimize the GitHub serv
 If you want to check out an [example repository on GitHub](), that uses the [Icons4Menu icons](https://niebert.github.io/hamburger_menu_app) in an AppLSAC analyze the subdirectory `img/` in [`hamburger_menu_app`](https://www.github.com/niebert/hamburger_menu_app).
 
 ## Add License Info File
-If you use the repository add this README.md file to the [WebApp](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache), so that users of your webbased application can identify the origine of the SVG icon. The repository incorporated SVG icons with two licenses:
+If you use the repository add this README.md file to the [WebApp](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache), so that users of web-based applications can identify the origin of the SVG and PNG icons. The repository incorporated SVG and PNG icons with two licenses:
 * Creative Commons `CC Zero` - https://creativecommons.org/publicdomain/zero/1.0/deed.en
-* Creative Commons `CC BY-SA 3.0`  - see https://creativecommons.org/licenses/by-sa/3.0/
+* Creative Commons `CC BY-SA 3.0`  - see https://creativecommons.org/licenses/by-sa/3.0/  with the `fa-` as file attribution prefix.
+
+### Attribution for Files - File Prefix
 If we consider the `CC BY-SA 3.0` license provides the freedom to:
 * **Share** — copy and redistribute the material in any medium or format
 * **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
@@ -130,4 +132,13 @@ These two freedoms are also provided for the license `CC Zero`. Furthermore for 
 * **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 * **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 
-The JQuery Mobile 1.4.5 icons of this repository do not require the attribution,  but it is recommended to provide attribution also for the [CC Zero](https://creativecommons.org/publicdomain/zero/1.0/deed.en) licensed icons. To distinguish  `CC Zero` the icons that need a `file attribution` for `CC BY-SA 3.0` have the prefix in the filename `fa-`.
+The JQuery Mobile 1.4.5 PNG and SVG icons in this repository (i.e. icons without `fa-` prefix) do not require the "attribution",  but it is recommended to provide attribution also to JQuery Mobile 1.4.5 with the [CC Zero](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license for icons without the `fa-` prefix. Especially for adding more icons in forks of the repository `icons4menu` the prefix `fa-` should also be used to distinguish  `CC Zero` licensed icons without `fa-` prefix from `CC BY-SA 3.0` licensed icon that need a `file attribution` by adding the prefix `fa-` in the filename. 
+
+### More than 2 Licenses in Forks of `icons4menu` with license prefix
+If you have more than 2 licenses in your fork of `icons4menu` you could add a license prefix for all icons, e.g.:
+
+* `cc0-recycle.svg` for [`CC Zero`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) licensed icons,
+* `cc3bysa-recycle.svg` for [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) licensed icons,
+* `cc4by-recycle.svg` for [`CC BY 4.0`]( https://creativecommons.org/licenses/by/4.0/) licensed icons
+
+This allows users to identify the license of the file directly from the filename.

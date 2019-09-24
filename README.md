@@ -1,12 +1,33 @@
 # Icons4Menu
 This repository is a SVG images resource based on SVG icons [JQuery Mobile 1.4.5](https://jquerymobile.com/download/) and extended with SVG icons from Wiki Commons. The icons are primary collected for application in menus with e.g. Hamburger Menus like [hamburger_menu_app](https://niebert.github.io/hamburger_menu_app/) as an [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC).
 
+## Download of Icons with a Script
+The icons can be downloaded with a script:
+* [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh)
+* The download of icons for your WebApp (resp. [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC)) can be started from the shell command line with
+```
+   sh ./wget_icons.sh
+```
+* the script call of [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh) downloads the SVG icons of this repository and it is equivalent to the script call:
+```
+   sh ./wget_icons.sh svg
+```
+* if you want to download the PNG icons of the repository (JQuery Mobile 1.4.5 - CC0) you can call the script with the parameter `png`:
+```
+   sh ./wget_icons.sh png
+```
+
+## JSON File Icons4Menu
+The repository contains also a [JSON file](https://niebert.github.io/icons4menu/json4icons.json) with all icons of the repository. The JSON file [`json4icons.json`](https://niebert.github.io/icons4menu/json4icons.json) can be used to identify the used icons with NodeJS and delete the unused icons from your `img/` folder of your WebApp to save disk space and reduce the size of your WebApp.
+
+Even if you remove icons from your WebApp in the folder `img/` you should keep the license file `LICENSE_Jquery_Mobile.txt`, `README.md` and `README_Icons4Menu.html` in that repository for licensing information about the icons.
+
 ## Preview All Icons4Menu
 The listed icons below do not contain the [JQuery Mobile 1.4.5 Icons](https://jquerymobile.com/download/). To preview all icons for navigation menus see
 
 * [Preview Icons4Menu](https://niebert.github.io/icons4menu)
 * [Usage in Hamburger Menu](https://niebert.github.io/hamburger_menu_app) - [GitHub-Repo](https://www.github.com/niebert/icons4menu)
-* [Learn about AppLSAC](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache/) - This repository was developed for a Wikiversity learning resource.
+* [Learn about AppLSAC](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache/) - This repository was developed for a Wikiversity learning resource. The
 
 ## Added Icons from WikiCommons
 The following icons are selected from the following [SVG-Icons in Wiki Commons](https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&profile=default&search=FontAwesome.com&advancedSearch-current=%7B%7D&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1). For FontAwesome Icon survey see [FontAwesome 4.7.0](https://fontawesome.com/v4.7.0/icons/) for finding the appropriate icon file name.
@@ -57,7 +78,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg"> | [`fa-audio-play.svg`](https://commons.wikimedia.org/wiki/File:Play_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Font_Awesome_5_solid_square.svg"> | [`fa-audio-stop.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_square.svg)  | `img/icons-svg`  | [`Font_Awesome_5_solid_square.svg`](https://upload.wikimedia.org/wikipedia/commons/b/b9/Font_Awesome_5_solid_square.svg) | CC BY-SA 3.0 | 2019/09/12  |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg"> | [`fa-audio-play.svg`](https://commons.wikimedia.org/wiki/File:Pause_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg"> | [`fa-audio-pause.svg`](https://commons.wikimedia.org/wiki/File:Pause_font_awesome.svg)  | `img/icons-svg`  | [`Pause_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Font_Awesome_5_solid_eject.svg"> | [`fa-audio-eject.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_eject.svg)  | `img/icons-svg`  | [`Font_Awesome_5_solid_eject.svg`](https://upload.wikimedia.org/wikipedia/commons/1/14/Font_Awesome_5_solid_eject.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_font_awesome.svg"> | [`fa-audio-record.svg`](https://commons.wikimedia.org/wiki/File:Circle_font_awesome.svg)  | `img/icons-svg`  | [`Circle_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg"> | [`fa-audio-backward.svg`](https://commons.wikimedia.org/wiki/File:Backward_font_awesome.svg)  | `img/icons-svg`  | [`Backward_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |

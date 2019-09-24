@@ -22,11 +22,23 @@ echo "  ${SEP}date${SEP}:       ${SEP}$NOW${SEP}," >> $JSONFILE
 echo "  ${SEP}icons${SEP}: [" >> $JSONFILE
 
 ### WGETFILE ###
-echo "#!/bin/bash" > $WGETFILE
-echo "echo \"WGET Script to download ${MODULE}\"" > $WGETFILE
+echo "#!/bin/sh" > $WGETFILE
+echo "echo \"WGET Script to download ${MODULE}\"" >> $WGETFILE
 echo "echo \"----------------------------------\"" >> $WGETFILE
 echo "echo \"Source: https://niebert.github.io/icons4menu/wget_icons.sh\"" >> $WGETFILE
-
+echo " "  >> $WGETFILE
+echo "DOWNLOAD_FOLDER=\"icons-svg\""  >> $WGETFILE
+echo " " >> $WGETFILE
+echo "if [ \"\$1\" = \"svg\" ]; then" >> $WGETFILE
+echo "  echo \"Download SVG\"" >> $WGETFILE
+echo "  DOWNLOAD_FOLDER=\"icons-svg\"" >> $WGETFILE
+echo "fi" >> $WGETFILE
+echo " " >> $WGETFILE
+echo "if [ \"\$1\" = \"png\" ]; then" >> $WGETFILE
+echo "  echo \"Download PNG Icons\"" >> $WGETFILE
+echo "  DOWNLOAD_FOLDER=\"icons-png\"" >> $WGETFILE
+echo "fi" >> $WGETFILE
+echo " " >> $WGETFILE
 echo "mkdir ${SUBDIR} " >> $WGETFILE
 echo "wget ${DOMAIN}README.html -O ${SUBDIR}/README_${MODULE}.html" >> $WGETFILE
 echo "wget ${DOMAIN}LICENSE_Jquery_Mobile.txt -O ${SUBDIR}/LICENSE_Jquery_Mobile.txt" >> $WGETFILE
@@ -59,7 +71,12 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
     echo "DIR: $path"
 
     ### WGETFILE ###
-    echo "mkdir ${SUBDIR}/${path} " >> $WGETFILE
+    echo " " >> $WGETFILE
+    echo "if [ \"\$DOWNLOAD_FOLDER\" = \"$path\" ]; then" >> $WGETFILE
+    echo "    echo \"Download $path\"" >> $WGETFILE
+    echo "    mkdir ${SUBDIR}/${path} " >> $WGETFILE
+    echo " " >> $WGETFILE
+
 
     ### OUTPUT ###
     # echo "  <LI><b>PATH: <a href='$DOMAIN/$path' target='_blank'>$path</a></b></LI>" >> $OUTPUT
@@ -98,7 +115,7 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
         echo "    }" >> $JSONFILE
         COMMA="   ,"
         ### WGETFILE ###
-        echo "wget ${DOMAIN}$SUBDIR/$path/$file -O $SUBDIR/$path/$file" >> $WGETFILE
+        echo "    wget ${DOMAIN}$SUBDIR/$path/$file -O $SUBDIR/$path/$file" >> $WGETFILE
 
         ### OUTPUT ###
         echo "    <tr>" >> $OUTPUT
@@ -109,6 +126,9 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
   	done
     ### Set Comma to "," for seperating the attribution in the JSON "JSONFILE"
     COMMA=","
+    ### WGET #####
+    echo "fi"  >> $WGETFILE
+
     ### OUTPUT ###
     echo "  </TABLE>" >> $OUTPUT
   	echo "  <HR>" >> $OUTPUT
@@ -123,7 +143,7 @@ echo "</HTML>" >> $OUTPUT
 
 ### JSONFILE ###
 echo "}" >> $JSONFILE
-
+echo "CALL PanDoc for README.md and generate README.html"
 pandoc -s -f markdown -t html5 README.md -o README.html
 # title=`cat $i | $SED_CMD -n 's/<title>\(.*\)<\/title>/\1/Ip' | $SED_CMD -e 's/^[ \t]*//'`
         	## GNU: cat docs/index.html | sed -n 's/<title>\(.*\)<\/title>/\1/Ip'`

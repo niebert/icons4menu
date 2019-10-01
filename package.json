@@ -1,0 +1,25 @@
+{
+  "name": "icons4menu",
+  "version": "1.0.0",
+  "description": "SVG and PNG Icons for Menus and Buttons that can be used in AppLSAC, Electron application or in general in WebApps. ",
+  "main": "build.js",
+  "scripts": {
+    "test": "jshint build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niebert/icons4menu.git"
+  },
+  "keywords": [
+    "Icons",
+    "Menu",
+    "AppLSAC",
+    "WebApps"
+  ],
+  "author": "JQuery Mobile Font Awesome",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niebert/icons4menu/issues"
+  },
+  "homepage": "https://github.com/niebert/icons4menu#readme"
+}

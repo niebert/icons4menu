@@ -41,6 +41,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg"> | [`fa-trash.svg`](https://commons.wikimedia.org/wiki/File:Trash_font_awesome.svg)  | `img/icons-svg`  | [`Trash_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg"> | [`fa-print.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg)  | `img/icons-svg`  | [`Print_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img width="42" src="./img/icons-svg/gear-black.svg"> | [`gear-black.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`gear-black.svg`](https://github.com/niebert/icons4menu/blob/master/img/icons-svg/gear-black.svg) | [CC0](http://creativecommons.org/publicdomain/zero/1.0/) - JQuery | 2019/09/12  |
+| <img width="42" src="https://upload.wikimedia.org/wikipedia/commons/9/92/Cog_font_awesome.svg"> | [`fa-settings.svg`](https://commons.wikimedia.org/wiki/File:Cog_font_awesome.svg)  | `img/icons-svg`  | [`Cog_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/9/92/Cog_font_awesome.svg) |  CC BY-SA 3.0 | 2019/10/01  |
 
 
 

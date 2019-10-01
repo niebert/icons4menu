@@ -1216,6 +1216,18 @@
     }
    ,
     {
+       "name": "fa-file-archive-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-file-archive-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-file-archive.svg",
        "path": "img/icons-svg",
        "used": false
@@ -1361,6 +1373,12 @@
    ,
     {
        "name": "fa-print.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-settings.svg",
        "path": "img/icons-svg",
        "used": false
     }

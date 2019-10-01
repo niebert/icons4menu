@@ -233,6 +233,8 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-envelope-black.svg -O img/icons-svg/fa-envelope-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-envelope-white.svg -O img/icons-svg/fa-envelope-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-envelope.svg -O img/icons-svg/fa-envelope.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-archive-black.svg -O img/icons-svg/fa-file-archive-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-archive-white.svg -O img/icons-svg/fa-file-archive-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-archive.svg -O img/icons-svg/fa-file-archive.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-save-black.svg -O img/icons-svg/fa-file-save-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-save-white.svg -O img/icons-svg/fa-file-save-white.svg
@@ -258,6 +260,7 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print-black.svg -O img/icons-svg/fa-print-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print-white.svg -O img/icons-svg/fa-print-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print.svg -O img/icons-svg/fa-print.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings.svg -O img/icons-svg/fa-settings.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner-black.svg -O img/icons-svg/fa-spinner-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner-white.svg -O img/icons-svg/fa-spinner-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner.svg -O img/icons-svg/fa-spinner.svg

@@ -131,7 +131,8 @@ function init_data2json() {
   }
 }
 
-
+//==== START SCANNING IMAGES for ICON4MENU ============
+init_data2json();
 // -------------- Convert and Encode Files --------------------------
 for (var i = 0; i < json4icons.icons.length; i++) {
   //console.log("Icon: json4icons.icons[i].path='" + json4icons.icons[i].path + "'");

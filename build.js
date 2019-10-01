@@ -75,7 +75,7 @@ function save_icon4color(pFilename,pInsert,pData) {
 function correct_size(pData) {
   if (pData) {
     pData = replaceString(pData,'width="100%"','width="14px"');
-    pData = replaceString(pData,'height="100%"','height="14px');
+    pData = replaceString(pData,'height="100%"','height="14px"');
   } else {
     pData = "undefined image";
   }
@@ -89,7 +89,7 @@ function save_color_icons(pFilename,pi,pName,pData) {
     data = replaceString(pData,'style="fill:currentColor"','style="fill:#FFF"');
     data = correct_size(data);
     save_icon4color(pFilename,"-white",data);
-    
+
     data = replaceString(pData,'style="fill:currentColor"','style="fill:#000"');
     data = correct_size(data);
     save_icon4color(pFilename,"-black",data);
@@ -119,8 +119,15 @@ function save_data2json(pFilename,pi,pName) {
 
 
 function init_data2json() {
+  var vName = "";
   for (var i = 0; i < json4icons.icons.length; i++) {
     json4icons.icons[i].src="data_url";
+    vName = json4icons.icons[i].name;
+    if (vName.indexOf("fa-") == 0) {
+      json4icons.icons[i].license = "CC BY-SA 3.0";
+    } else {
+      json4icons.icons[i].license = "CC0";
+    }
   }
 }
 
@@ -144,7 +151,7 @@ for (var i = 0; i < json4icons.icons.length; i++) {
 
 function save_icons4json() {
   var json_string = JSON.stringify(json4icons,null,4);
-  fs.writeFile('./img/json4icons_build.js', json_string, (err) => {
+  fs.writeFile('./img/json4icons.js', json_string, (err) => {
       // throws an error, you could also catch it here
       if (err) throw err;
 

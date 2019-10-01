@@ -8,7 +8,7 @@ REPO="https://github.com/niebert/icons4menu"
 WIKIVERSITY="https://en.wikiversity.org/wiki/AppLSAC"
 OUTPUT="${ROOT}index.html"
 WGETFILE="wget_icons.sh"
-JSONFILE="json4icons.json"
+JSONFILE="${ROOT}json4icons.json"
 SEP="\""
 NOW=$(date +"%Y/%m/%d")
 ### sed command - sed differs on OSX
@@ -42,7 +42,7 @@ echo " " >> $WGETFILE
 echo "mkdir ${SUBDIR} " >> $WGETFILE
 echo "wget ${DOMAIN}README.html -O ${SUBDIR}/README_${MODULE}.html" >> $WGETFILE
 echo "wget ${DOMAIN}LICENSE_Jquery_Mobile.txt -O ${SUBDIR}/LICENSE_Jquery_Mobile.txt" >> $WGETFILE
-echo "wget ${DOMAIN}${JSONFILE} -O ${SUBDIR}/${JSONFILE}" >> $WGETFILE
+echo "wget ${DOMAIN}${SUBDIR}/${JSONFILE} -O ${SUBDIR}/${JSONFILE}" >> $WGETFILE
 echo "wget ${DOMAIN}update_wget_icons.sh -O ${SUBDIR}/update_wget_icons.sh" >> $WGETFILE
 
 ### OUTPUT ###
@@ -132,9 +132,6 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
     ### OUTPUT ###
     echo "  </TABLE>" >> $OUTPUT
   	echo "  <HR>" >> $OUTPUT
-    ### JSONFILE
-    echo "  ]" >> $JSONFILE
-
   fi
 done
 ### OUTPUT ###
@@ -142,6 +139,7 @@ echo "</BODY>" >> $OUTPUT
 echo "</HTML>" >> $OUTPUT
 
 ### JSONFILE ###
+echo "  ]" >> $JSONFILE
 echo "}" >> $JSONFILE
 echo "CALL PanDoc for README.md and generate README.html"
 pandoc -s -f markdown -t html5 README.md -o README.html

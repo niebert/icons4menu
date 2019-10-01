@@ -67,8 +67,33 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 ### Action and Processes
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Envelope_font_awesome.svg"> | [`fa-envelope.svg`](https://commons.wikimedia.org/wiki/File:Envelope_font_awesome.svg)  | `img/icons-svg`  | [`Envelope_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/6/6b/Envelope_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg"> | [`fa-spinner.svg`](https://commons.wikimedia.org/wiki/File:Spinner_font_awesome.svg)  | `img/icons-svg`  | [`Spinner_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg"> | [`fa-barcode.svg`](https://commons.wikimedia.org/wiki/File:Barcode_font_awesome.svg)  | `img/icons-svg`  | [`Barcode_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Undo_font_awesome.svg"> | [`fa-undo.svg`](https://commons.wikimedia.org/wiki/File:Undo_font_awesome.svg)  | `img/icons-svg`  | [`Undo_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
+
+
+
+
+### Products and Objects
+| Icon | File  | Folder  |  Source File | Licence  | Add Date |
+|---|---|---|---|---|---|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg"> | [`fa-book.svg`](https://commons.wikimedia.org/wiki/File:Book_font_awesome.svg)  | `img/icons-svg`  | [`Book_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Picture_font_awesome.svg"> | [`fa-picture.svg`](https://commons.wikimedia.org/wiki/File:Book_font_awesome.svg)  | `img/icons-svg`  | [`Picture_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/8/84/Picture_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
+
+
+### File Types
+| Icon | File  | Folder  |  Source File | Licence  | Add Date |
+|---|---|---|---|---|---|
+| ZIP <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg"> | [`fa-file-archive.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_regular_file-archive.sv)  | `img/icons-svg`  | [`Font_Awesome_5_regular_file-archive.svg`](https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg) | CC BY-SA 3.0 | 2019/10/01  |
+
+
+
+### Vehicle
+| Icon | File  | Folder  |  Source File | Licence  | Add Date |
+|---|---|---|---|---|---|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg"> | [`fa-truck.svg`](https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg)  | `img/icons-svg`  | [`Truck_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Truck_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Plane_font_awesome.svg"> | [`fa-truck.svg`](https://commons.wikimedia.org/wiki/File:Plane_font_awesome.svg)  | `img/icons-svg`  | [`Plane_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/6/64/Plane_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
 
 
 
@@ -88,7 +113,11 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 ### Devices
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Camera_font_awesome.svg"> | [`fa-camera.svg`](https://commons.wikimedia.org/wiki/File:Camera_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d1/Camera_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg"> | [`fa-tablet.svg`](https://commons.wikimedia.org/wiki/File:Tablet_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+
+
+
 
 
 ## Style Sheets CSS for Icons

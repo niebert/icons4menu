@@ -1,6 +1,6 @@
 {
   "repository": "https://www.github.io/niebert/icons4menu", 
-  "date":       "2019/09/18",
+  "date":       "2019/10/01",
   "icons": [
 
     {
@@ -602,7 +602,6 @@
        "path": "img/icons-png",
        "used": false
     }
-  ]
 ,
     {
        "name": "action-black.svg",
@@ -929,7 +928,67 @@
     }
    ,
     {
+       "name": "fa-audio-backward-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-backward-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-audio-backward.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-backward_black-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-backward_black-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-backward_black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-backward_white-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-backward_white-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-backward_white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-eject-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-eject-white.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -941,7 +1000,31 @@
     }
    ,
     {
+       "name": "fa-audio-forward-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-forward-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-audio-forward.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-pause-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-pause-white.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -953,7 +1036,31 @@
     }
    ,
     {
+       "name": "fa-audio-play-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-play-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-audio-play.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-record-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-record-white.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -965,7 +1072,31 @@
     }
    ,
     {
+       "name": "fa-audio-stop-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-audio-stop-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-audio-stop.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-barcode-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-barcode-white.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -977,7 +1108,67 @@
     }
    ,
     {
+       "name": "fa-book-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-book-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-book.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-camera-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-camera-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-camera.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-copy-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-copy-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-copy.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-edit-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-edit-white.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -989,7 +1180,49 @@
     }
    ,
     {
+       "name": "fa-enumeration-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-enumeration-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-enumeration.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-envelope-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-envelope-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-envelope.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-file-archive.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-file-save-black.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -1007,6 +1240,12 @@
     }
    ,
     {
+       "name": "fa-folder-open-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-folder-open-white.svg",
        "path": "img/icons-svg",
        "used": false
@@ -1019,7 +1258,31 @@
     }
    ,
     {
+       "name": "fa-font-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-font-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-font.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-hamburger-icon-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-hamburger-icon-white.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -1031,7 +1294,31 @@
     }
    ,
     {
+       "name": "fa-list-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-list-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-list.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-paste-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-paste-white.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -1043,7 +1330,49 @@
     }
    ,
     {
+       "name": "fa-picture-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-picture-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-picture.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-print-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-print-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-print.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-spinner-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-spinner-white.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -1055,7 +1384,25 @@
     }
    ,
     {
+       "name": "fa-tablet-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-tablet-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
        "name": "fa-tablet.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-trash-black.svg",
        "path": "img/icons-svg",
        "used": false
     }
@@ -1068,6 +1415,42 @@
    ,
     {
        "name": "fa-trash.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-truck-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-truck-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-truck.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-undo-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-undo-white.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-undo.svg",
        "path": "img/icons-svg",
        "used": false
     }

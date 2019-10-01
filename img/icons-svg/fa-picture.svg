@@ -7,15 +7,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 -256 1950 1950"
-   id="svg3001"
+   viewBox="0 -256 1930 1930"
+   id="svg3037"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
    width="100%"
    height="100%"
-   sodipodi:docname="folder_open_alt_font_awesome.svg">
+   sodipodi:docname="picture_font_awesome.svg">
   <metadata
-     id="metadata3011">
+     id="metadata3047">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,7 +26,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs3009" />
+     id="defs3045" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,22 +38,22 @@
      inkscape:pageshadow="2"
      inkscape:window-width="640"
      inkscape:window-height="480"
-     id="namedview3007"
+     id="namedview3043"
      showgrid="false"
-     inkscape:zoom="0.13169643"
-     inkscape:cx="954.5"
-     inkscape:cy="896"
+     inkscape:zoom="0.52678571"
+     inkscape:cx="219.56505"
+     inkscape:cy="972.56113"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg3001" />
+     inkscape:current-layer="svg3037" />
   <g
-     transform="matrix(1,0,0,-1,30.372881,1443.4237)"
-     id="g3003">
+     transform="matrix(1,0,0,-1,7.59322,1362.678)"
+     id="g3039">
     <path
-       d="m 1781,605 q 0,35 -53,35 H 640 Q 600,640 554.5,618.5 509,597 483,566 L 189,203 q -18,-24 -18,-40 0,-35 53,-35 h 1088 q 40,0 86,22 46,22 71,53 l 294,363 q 18,22 18,39 z M 640,768 h 768 v 160 q 0,40 -28,68 -28,28 -68,28 H 736 q -40,0 -68,28 -28,28 -28,68 v 64 q 0,40 -28,68 -28,28 -68,28 H 224 q -40,0 -68,-28 -28,-28 -28,-68 V 331 l 256,315 q 44,53 116,87.5 72,34.5 140,34.5 z M 1909,605 q 0,-62 -46,-120 L 1568,122 Q 1525,69 1452,34.5 1379,0 1312,0 H 224 Q 132,0 66,66 0,132 0,224 v 960 q 0,92 66,158 66,66 158,66 h 320 q 92,0 158,-66 66,-66 66,-158 v -32 h 544 q 92,0 158,-66 66,-66 66,-158 V 768 h 192 q 54,0 99,-24.5 45,-24.5 67,-70.5 15,-32 15,-68 z"
-       id="path3005"
+       d="m 640,960 q 0,-80 -56,-136 -56,-56 -136,-56 -80,0 -136,56 -56,56 -56,136 0,80 56,136 56,56 136,56 80,0 136,-56 56,-56 56,-136 z M 1664,576 V 128 H 256 v 192 l 320,320 160,-160 512,512 z m 96,704 H 160 q -13,0 -22.5,-9.5 Q 128,1261 128,1248 V 32 Q 128,19 137.5,9.5 147,0 160,0 h 1600 q 13,0 22.5,9.5 9.5,9.5 9.5,22.5 v 1216 q 0,13 -9.5,22.5 -9.5,9.5 -22.5,9.5 z m 160,-32 V 32 q 0,-66 -47,-113 -47,-47 -113,-47 H 160 Q 94,-128 47,-81 0,-34 0,32 v 1216 q 0,66 47,113 47,47 113,47 h 1600 q 66,0 113,-47 47,-47 47,-113 z"
+       id="path3041"
        inkscape:connector-curvature="0"
-       style="fill:#FFF" />
+       style="fill:currentColor" />
   </g>
 </svg>

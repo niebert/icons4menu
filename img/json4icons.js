@@ -1,4 +1,4 @@
-{
+vDataJSON.json4icons = {
     "repository": "https://www.github.io/niebert/icons4menu",
     "date": "2019/10/01",
     "icons": [
@@ -2012,4 +2012,4 @@
             "license": "CC0"
         }
     ]
-}
+};

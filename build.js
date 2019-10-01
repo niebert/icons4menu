@@ -152,6 +152,14 @@ for (var i = 0; i < json4icons.icons.length; i++) {
 
 function save_icons4json() {
   var json_string = JSON.stringify(json4icons,null,4);
+  fs.writeFile('./img/json4icons.json', json_string, (err) => {
+      // throws an error, you could also catch it here
+      if (err) throw err;
+
+      // success case, the file was saved
+      console.log('JSON for json4icons saved with Base64 encoded icons!');
+  });
+  json_string = "vDataJSON.json4icons = " + json_string + ";";
   fs.writeFile('./img/json4icons.js', json_string, (err) => {
       // throws an error, you could also catch it here
       if (err) throw err;

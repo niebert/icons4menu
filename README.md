@@ -17,6 +17,25 @@ The icons can be downloaded with a script:
    sh ./wget_icons.sh png
 ```
 
+## Update the `wget_icons.sh` Script
+Any time new icons are added to the repository `icons4menu` the script `wget_icons.sh` is updated as well, because the new icons are added to the list of `wget` download commands in the script. There is an easy way to update the `wget_icons.sh` script to the latest version by downloading the script   [`update_wget_icons.sh`](https://niebert.github.io/icons4menu/update_wget_icons.sh). If you want to use the update script, navigate to the folder in which you want to have the `icons4menu` folder `img/` and then download the script with:
+```
+  wget https://niebert.github.io/icons4menu/update_wget_icons.sh
+```
+Please check the content of the script before executing, so that you are sure that the script does what you expect the script to (i.e. updating the script `wget_icons.sh`). Then check the content of `wget_icons.sh`. Performs the script the expected down or do you want to reduce the number of downloaded icons before executing the script `wget_icons.sh`. If you are sure that the script download all the icons you need, perform the download operation by calling:
+```
+  sh ./wget_icons.sh
+```
+
+## JSON file `json4icons.json` and `json4icons.js`
+The JSON file `json4icons.json` contains a list of all icons with
+* `name`: filename,
+* `path`: the path to the icon,
+* `license`: the license information for the icon,
+* `src`: is the base64 encoded data of the image as Data URL that can used in images in the DOM. The source us either the `XML` source text of the `SVG` image or the binary data as base64 encoded data of the image.
+
+The file `json4icons.js` is a library that populates a hash object `vDataJSON` defined with `var vDataJSON = {};` in the main HTML file that embeds the `icons4menu`.
+
 ## JSON File Icons4Menu
 The repository contains also a [JSON file](https://niebert.github.io/icons4menu/json4icons.json) with all icons of the repository. The JSON file [`json4icons.json`](https://niebert.github.io/icons4menu/json4icons.json) can be used to identify the used icons with NodeJS and delete the unused icons from your `img/` folder of your WebApp to save disk space and reduce the size of your WebApp.
 
@@ -40,9 +59,8 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg"> | [`fa-save-file.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg"> | [`fa-trash.svg`](https://commons.wikimedia.org/wiki/File:Trash_font_awesome.svg)  | `img/icons-svg`  | [`Trash_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg"> | [`fa-print.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg)  | `img/icons-svg`  | [`Print_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
-| <img width="42" src="./img/icons-svg/gear-black.svg"> | [`gear-black.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`gear-black.svg`](https://github.com/niebert/icons4menu/blob/master/img/icons-svg/gear-black.svg) | [CC0](http://creativecommons.org/publicdomain/zero/1.0/) - JQuery | 2019/09/12  |
+| <img width="42" src="./img/icons-svg/gear-black.svg"> | [`gear.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`gear-black.svg`](https://github.com/niebert/icons4menu/blob/master/img/icons-svg/gear-black.svg) | [CC0](http://creativecommons.org/publicdomain/zero/1.0/) - JQuery | 2019/09/12  |
 | <img width="42" src="https://upload.wikimedia.org/wikipedia/commons/9/92/Cog_font_awesome.svg"> | [`fa-settings.svg`](https://commons.wikimedia.org/wiki/File:Cog_font_awesome.svg)  | `img/icons-svg`  | [`Cog_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/9/92/Cog_font_awesome.svg) |  CC BY-SA 3.0 | 2019/10/01  |
-
 
 
 

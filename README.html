@@ -59,6 +59,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><p>if you want to download the PNG icons of the repository (JQuery Mobile 1.4.5 - CC0) you can call the script with the parameter <code>png</code>:</p>
 <pre><code>   sh ./wget_icons.sh png</code></pre></li>
 </ul>
+<h2 id="update-the-wget_icons.sh-script">Update the <code>wget_icons.sh</code> Script</h2>
+<p>Any time new icons are added to the repository <code>icons4menu</code> the script <code>wget_icons.sh</code> is updated as well, because the new icons are added to the list of <code>wget</code> download commands in the script. There is an easy way to update the <code>wget_icons.sh</code> script to the latest version by downloading the script <a href="https://niebert.github.io/icons4menu/update_wget_icons.sh"><code>update_wget_icons.sh</code></a>. If you want to use the update script, navigate to the folder in which you want to have the <code>icons4menu</code> folder <code>img/</code> and then download the script with:</p>
+<pre><code>  wget https://niebert.github.io/icons4menu/update_wget_icons.sh</code></pre>
+<p>Please check the content of the script before executing, so that you are sure that the script does what you expect the script to (i.e. updating the script <code>wget_icons.sh</code>). Then check the content of <code>wget_icons.sh</code>. Performs the script the expected down or do you want to reduce the number of downloaded icons before executing the script <code>wget_icons.sh</code>. If you are sure that the script download all the icons you need, perform the download operation by calling:</p>
+<pre><code>  sh ./wget_icons.sh</code></pre>
+<h2 id="json-file-json4icons.json-and-json4icons.js">JSON file <code>json4icons.json</code> and <code>json4icons.js</code></h2>
+<p>The JSON file <code>json4icons.json</code> contains a list of all icons with * <code>name</code>: filename, * <code>path</code>: the path to the icon, * <code>license</code>: the license information for the icon, * <code>src</code>: is the base64 encoded data of the image as Data URL that can used in images in the DOM. The source us either the <code>XML</code> source text of the <code>SVG</code> image or the binary data as base64 encoded data of the image.</p>
+<p>The file <code>json4icons.js</code> is a library that populates a hash object <code>vDataJSON</code> defined with <code>var vDataJSON = {};</code> in the main HTML file that embeds the <code>icons4menu</code>.</p>
 <h2 id="json-file-icons4menu">JSON File Icons4Menu</h2>
 <p>The repository contains also a <a href="https://niebert.github.io/icons4menu/json4icons.json">JSON file</a> with all icons of the repository. The JSON file <a href="https://niebert.github.io/icons4menu/json4icons.json"><code>json4icons.json</code></a> can be used to identify the used icons with NodeJS and delete the unused icons from your <code>img/</code> folder of your WebApp to save disk space and reduce the size of your WebApp.</p>
 <p>Even if you remove icons from your WebApp in the folder <code>img/</code> you should keep the license file <code>LICENSE_Jquery_Mobile.txt</code>, <code>README.md</code> and <code>README_Icons4Menu.html</code> in that repository for licensing information about the icons.</p>
@@ -126,7 +134,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </tr>
 <tr class="odd">
 <td><img width="42" src="./img/icons-svg/gear-black.svg"></td>
-<td><a href="https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg"><code>gear-black.svg</code></a></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg"><code>gear.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://github.com/niebert/icons4menu/blob/master/img/icons-svg/gear-black.svg"><code>gear-black.svg</code></a></td>
 <td><a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a> - JQuery</td>

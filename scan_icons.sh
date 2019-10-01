@@ -143,6 +143,7 @@ echo "  ]" >> $JSONFILE
 echo "}" >> $JSONFILE
 echo "CALL PanDoc for README.md and generate README.html"
 pandoc -s -f markdown -t html5 README.md -o README.html
+node ./build.js
 # title=`cat $i | $SED_CMD -n 's/<title>\(.*\)<\/title>/\1/Ip' | $SED_CMD -e 's/^[ \t]*//'`
         	## GNU: cat docs/index.html | sed -n 's/<title>\(.*\)<\/title>/\1/Ip'`
         	## OSX: cat docs/index.html | gsed -n 's/<title>\(.*\)<\/title>/\1/Ip'`

@@ -188,12 +188,6 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward-black.svg -O img/icons-svg/fa-audio-backward-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward-white.svg -O img/icons-svg/fa-audio-backward-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward.svg -O img/icons-svg/fa-audio-backward.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward_black-black.svg -O img/icons-svg/fa-audio-backward_black-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward_black-white.svg -O img/icons-svg/fa-audio-backward_black-white.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward_black.svg -O img/icons-svg/fa-audio-backward_black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward_white-black.svg -O img/icons-svg/fa-audio-backward_white-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward_white-white.svg -O img/icons-svg/fa-audio-backward_white-white.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward_white.svg -O img/icons-svg/fa-audio-backward_white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-eject-black.svg -O img/icons-svg/fa-audio-eject-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-eject-white.svg -O img/icons-svg/fa-audio-eject-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-eject.svg -O img/icons-svg/fa-audio-eject.svg
@@ -260,6 +254,8 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print-black.svg -O img/icons-svg/fa-print-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print-white.svg -O img/icons-svg/fa-print-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print.svg -O img/icons-svg/fa-print.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings-black.svg -O img/icons-svg/fa-settings-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings-white.svg -O img/icons-svg/fa-settings-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings.svg -O img/icons-svg/fa-settings.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner-black.svg -O img/icons-svg/fa-spinner-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner-white.svg -O img/icons-svg/fa-spinner-white.svg

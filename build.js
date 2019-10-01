@@ -72,13 +72,26 @@ function save_icon4color(pFilename,pInsert,pData) {
   }
 }
 
+function correct_size(pData) {
+  if (pData) {
+    pData = replaceString(pData,'width="100%"','width="14px"');
+    pData = replaceString(pData,'height="100%"','height="14px');
+  } else {
+    pData = "undefined image";
+  }
+  return pData;
+}
+
 function save_color_icons(pFilename,pi,pName,pData) {
   var data = pData;
   if (pName.indexOf("fa-") == 0) {
     // search 'style="fill:currentColor"' and replace with
     data = replaceString(pData,'style="fill:currentColor"','style="fill:#FFF"');
+    data = correct_size(data);
     save_icon4color(pFilename,"-white",data);
+    
     data = replaceString(pData,'style="fill:currentColor"','style="fill:#000"');
+    data = correct_size(data);
     save_icon4color(pFilename,"-black",data);
   }
 }

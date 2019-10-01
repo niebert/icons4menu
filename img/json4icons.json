@@ -946,42 +946,6 @@
     }
    ,
     {
-       "name": "fa-audio-backward_black-black.svg",
-       "path": "img/icons-svg",
-       "used": false
-    }
-   ,
-    {
-       "name": "fa-audio-backward_black-white.svg",
-       "path": "img/icons-svg",
-       "used": false
-    }
-   ,
-    {
-       "name": "fa-audio-backward_black.svg",
-       "path": "img/icons-svg",
-       "used": false
-    }
-   ,
-    {
-       "name": "fa-audio-backward_white-black.svg",
-       "path": "img/icons-svg",
-       "used": false
-    }
-   ,
-    {
-       "name": "fa-audio-backward_white-white.svg",
-       "path": "img/icons-svg",
-       "used": false
-    }
-   ,
-    {
-       "name": "fa-audio-backward_white.svg",
-       "path": "img/icons-svg",
-       "used": false
-    }
-   ,
-    {
        "name": "fa-audio-eject-black.svg",
        "path": "img/icons-svg",
        "used": false
@@ -1373,6 +1337,18 @@
    ,
     {
        "name": "fa-print.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-settings-black.svg",
+       "path": "img/icons-svg",
+       "used": false
+    }
+   ,
+    {
+       "name": "fa-settings-white.svg",
        "path": "img/icons-svg",
        "used": false
     }

@@ -108,7 +108,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 ### File Types
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
-| ZIP <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg"> | [`fa-file-archive.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_regular_file-archive.sv)  | `img/icons-svg`  | [`Font_Awesome_5_regular_file-archive.svg`](https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg) | CC BY-SA 3.0 | 2019/10/01  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg"> |[`fa-file-archive.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_regular_file-archive.svg) - ZIP | `img/icons-svg`  | [`Font_Awesome_5_regular_file-archive.svg`](https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg) | CC BY-SA 3.0 | 2019/10/01  |
 
 
 

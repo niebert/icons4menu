@@ -59,6 +59,9 @@ function save_icon4color(pFilename,pInsert,pData) {
   } else if (pFilename.indexOf("-black.") > 0) {
     // BLACK: exclude files that are already styled with a specfic color
     console.warn("File '" + pFilename + "' is already an Icon with a defined color! File ignored");
+  } else if (pFilename.indexOf("-red.") > 0) {
+    // WHITE: exclude files that are already styled with a specfic color
+    console.warn("File '" + pFilename + "' is already an Icon with a defined color! File ignored");
   } else {
     var vFilename4Color = [pFilename.slice(0, position), pInsert, pFilename.slice(position)].join('');
     console.log("Save Icon with color postfix 'pInsert' to '" + vFilename4Color + "'");

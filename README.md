@@ -52,7 +52,7 @@ The listed icons below do not contain the [JQuery Mobile 1.4.5 Icons](https://jq
 The following icons are selected from the following [SVG-Icons in Wiki Commons](https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&profile=default&search=FontAwesome.com&advancedSearch-current=%7B%7D&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1). For FontAwesome Icon survey see [FontAwesome 4.7.0](https://fontawesome.com/v4.7.0/icons/) for finding the appropriate icon file name.
 
 
-### Load, Save, Print, Trash, Settings
+### Load, Save, Print, Cancel, Trash, Settings
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Folder_open_alt_font_awesome.svg"> | [`fa-folder-open.svg`](https://commons.wikimedia.org/wiki/File:Folder_open_alt_font_awesome.svg)  | `img/icons-svg`  |  [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/3a/Folder_open_alt_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
@@ -86,9 +86,13 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 ### Action and Processes
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Remove_font_awesome.svg"> | [`fa-cancel.svg`](https://commons.wikimedia.org/wiki/File:Remove_font_awesome.svg)  | `img/icons-svg`  | [`Remove_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/de/Remove_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Window_Close.svgg"> | [`fa-cancel-red.svg`](https://commons.wikimedia.org/wiki/File:Undo_font_awesome.svg)  | `img/icons-svg`  | [`fa-cancel-red.svg`](https://upload.wikimedia.org/wikipedia/commons/7/76/Window_Close.svg) | CC BY-SA 3.0 | 2019/10/02  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Envelope_font_awesome.svg"> | [`fa-envelope.svg`](https://commons.wikimedia.org/wiki/File:Envelope_font_awesome.svg)  | `img/icons-svg`  | [`Envelope_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/6/6b/Envelope_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg"> | [`fa-spinner.svg`](https://commons.wikimedia.org/wiki/File:Spinner_font_awesome.svg)  | `img/icons-svg`  | [`Spinner_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg"> | [`fa-barcode.svg`](https://commons.wikimedia.org/wiki/File:Barcode_font_awesome.svg)  | `img/icons-svg`  | [`Barcode_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Signin_font_awesome.svg"> | [`fa-signin.svg`](https://commons.wikimedia.org/wiki/File:Undo_font_awesome.svg)  | `img/icons-svg`  | [`Signin_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/c/c5/Signin_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/02  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Signout_font_awesome.svg"> | [`fa-signout.svg`](https://commons.wikimedia.org/wiki/File:Signout_font_awesome.svg)  | `img/icons-svg`  | [`Signout_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/db/Signout_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/02  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Undo_font_awesome.svg"> | [`fa-undo.svg`](https://commons.wikimedia.org/wiki/File:Undo_font_awesome.svg)  | `img/icons-svg`  | [`Undo_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
 
 
@@ -134,6 +138,8 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Camera_font_awesome.svg"> | [`fa-camera.svg`](https://commons.wikimedia.org/wiki/File:Camera_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d1/Camera_font_awesome.svg) | CC BY-SA 3.0 | 2019/10/01  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg"> | [`fa-tablet.svg`](https://commons.wikimedia.org/wiki/File:Tablet_font_awesome.svg)  | `img/icons-svg`  | [`Play_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Font_Awesome_5_brands_simplybuilt.svg"> | [`fa-vr-headset.svg`](https://commons.wikimedia.org/wiki/Font_Awesome_5_brands_simplybuilt.svg)  | `img/icons-svg`  | [`Font_Awesome_5_brands_simplybuilt.svg`](https://upload.wikimedia.org/wikipedia/commons/2/2f/Font_Awesome_5_brands_simplybuilt.svg) | CC BY-SA 3.0 | 2019/10/02  |
+
 
 
 

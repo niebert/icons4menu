@@ -215,6 +215,10 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-camera-black.svg -O img/icons-svg/fa-camera-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-camera-white.svg -O img/icons-svg/fa-camera-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-camera.svg -O img/icons-svg/fa-camera.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel-black.svg -O img/icons-svg/fa-cancel-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel-red.svg -O img/icons-svg/fa-cancel-red.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel-white.svg -O img/icons-svg/fa-cancel-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel.svg -O img/icons-svg/fa-cancel.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-copy-black.svg -O img/icons-svg/fa-copy-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-copy-white.svg -O img/icons-svg/fa-copy-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-copy.svg -O img/icons-svg/fa-copy.svg
@@ -257,6 +261,12 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings-black.svg -O img/icons-svg/fa-settings-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings-white.svg -O img/icons-svg/fa-settings-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings.svg -O img/icons-svg/fa-settings.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signin-black.svg -O img/icons-svg/fa-signin-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signin-white.svg -O img/icons-svg/fa-signin-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signin.svg -O img/icons-svg/fa-signin.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signout-black.svg -O img/icons-svg/fa-signout-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signout-white.svg -O img/icons-svg/fa-signout-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signout.svg -O img/icons-svg/fa-signout.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner-black.svg -O img/icons-svg/fa-spinner-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner-white.svg -O img/icons-svg/fa-spinner-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner.svg -O img/icons-svg/fa-spinner.svg
@@ -272,6 +282,9 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-undo-black.svg -O img/icons-svg/fa-undo-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-undo-white.svg -O img/icons-svg/fa-undo-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-undo.svg -O img/icons-svg/fa-undo.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset-black.svg -O img/icons-svg/fa-vr-headset-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset-white.svg -O img/icons-svg/fa-vr-headset-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset.svg -O img/icons-svg/fa-vr-headset.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/forbidden-black.svg -O img/icons-svg/forbidden-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/forbidden-white.svg -O img/icons-svg/forbidden-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/forward-black.svg -O img/icons-svg/forward-black.svg

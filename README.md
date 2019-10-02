@@ -56,7 +56,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Folder_open_alt_font_awesome.svg"> | [`fa-folder-open.svg`](https://commons.wikimedia.org/wiki/File:Folder_open_alt_font_awesome.svg)  | `img/icons-svg`  |  [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/3/3a/Folder_open_alt_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg"> | [`fa-save-file.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
+| <img src="img/icons-png/carat-r-black.png"> | [`fa-save-file.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg"> | [`fa-trash.svg`](https://commons.wikimedia.org/wiki/File:Trash_font_awesome.svg)  | `img/icons-svg`  | [`Trash_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg"> | [`fa-print.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg)  | `img/icons-svg`  | [`Print_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 | <img width="42" src="./img/icons-svg/gear-black.svg"> | [`gear.svg`](https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg)  | `img/icons-svg`  | [`gear-black.svg`](https://github.com/niebert/icons4menu/blob/master/img/icons-svg/gear-black.svg) | [CC0](http://creativecommons.org/publicdomain/zero/1.0/) - JQuery | 2019/09/12  |
@@ -67,6 +67,8 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 ### Navigation
 | Icon | File  | Folder  |  Source File | Licence  | Add Date |
 |---|---|---|---|---|---|
+| <img src="https://niebert.github.io/icons4menu/img/icons-png/carat-r-black.png" width="20px"> | [`carat-r-black.svg`](https://niebert.github.io/icons4menu/img/icons-svg/carat-r-black.svg)  | `img/icons-svg`  |  [`carat-r-black.svg`](https://niebert.github.io/icons4menu/img/icons-svg/carat-r-black.svg) | CC0 JQuery| 2019/09/12  |
+| <img src="https://niebert.github.io/icons4menu/img/icons-png/carat-l-black.png" width="20px"> | [`carat-l-black.svg`](https://niebert.github.io/icons4menu/img/icons-svg/carat-l-black.svg)  | `img/icons-svg`  |  [`carat-l-black.svg`](https://niebert.github.io/icons4menu/img/icons-svg/carat-r-black.svg) | CC0 JQuery| 2019/09/12  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Reorder_font_awesome.svg"> | [`fa-hamburger-icon.svg`](https://commons.wikimedia.org/wiki/File:Reorder_font_awesome.svg)  | `img/icons-svg`  |  [`Folder_open_alt_font_awesome.svg`](https://upload.wikimedia.org/wikipedia/commons/0/04/Reorder_font_awesome.svg) | CC BY-SA 3.0 | 2019/09/12  |
 
 

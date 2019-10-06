@@ -121,6 +121,153 @@ function save_data2json(pFilename,pi,pName) {
 }
 
 
+function init_icon_group() {
+  var vName = "";
+  for (var i = 0; i < json4icons.icons.length; i++) {
+    json4icons.icons[i].group="other";
+    vName = json4icons.icons[i].name;
+    if (vName.indexOf("fa-file-archive") == 0) {
+     //---- FILE TYPES ----
+     json4icons.icons[i].group = "filetype";
+   } else if (vName.indexOf("home") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("fa-folder") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("fa-save") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("shop") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("home") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("info") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("fa-settings") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("fa-trash") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("grid") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("fa-print") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("fa-hamburger") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("fa-cancel") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("fa-undo") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("fa-cancel") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("plus") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("minus") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("star") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("refresh") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("fa-spinner") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("forbidden") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("tag") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "action";
+    } else if (vName.indexOf("arrow-") == 0) {
+      //---- ARROWS ----
+      json4icons.icons[i].group = "arrow";
+    } else if (vName.indexOf("location") == 0) {
+      //---- NAVIGATION ----
+      json4icons.icons[i].group = "navigation";
+    } else if (vName.indexOf("carat-") == 0) {
+      //---- NAVIGATION ----
+      json4icons.icons[i].group = "navigation";
+    } else if (vName.indexOf("navigation-") == 0) {
+      //---- NAVIGATION ----
+      json4icons.icons[i].group = "navigation";
+    } else if (vName.indexOf("location") == 0) {
+      //---- NAVIGATION ----
+      json4icons.icons[i].group = "navigation";
+    } else if (vName.indexOf("audio-") == 0) {
+      //---- MEDIA ----
+      json4icons.icons[i].group = "media";
+    } else if (vName.indexOf("video-") == 0) {
+      json4icons.icons[i].group = "media";
+    } else if (vName.indexOf("fa-audio-") == 0) {
+      json4icons.icons[i].group = "audio";
+    } else if (vName.indexOf("user") == 0) {
+      //---- LOGIN/SIGN IN/OUT ----
+      json4icons.icons[i].group = "login";
+    } else if (vName.indexOf("fa-sign") == 0) {
+      //---- LOGIN/SIGN IN/OUT ----
+      json4icons.icons[i].group = "login";
+    } else if (vName.indexOf("power") == 0) {
+      //---- LOGIN/SIGN IN/OUT ----
+      json4icons.icons[i].group = "login";
+    } else if (vName.indexOf("fa-enumeration") == 0) {
+      //---- EDITOR ----
+      json4icons.icons[i].group = "editor";
+    } else if (vName.indexOf("fa-list") == 0) {
+      json4icons.icons[i].group = "editor";
+    } else if (vName.indexOf("fa-copy") == 0) {
+      json4icons.icons[i].group = "editor";
+    } else if (vName.indexOf("fa-paste") == 0) {
+      json4icons.icons[i].group = "editor";
+    } else if (vName.indexOf("fa-font") == 0) {
+      json4icons.icons[i].group = "editor";
+    } else if (vName.indexOf("search") == 0) {
+      json4icons.icons[i].group = "editor";
+    } else if (vName.indexOf("heart") == 0) {
+      //---- MEDICAL ----
+      json4icons.icons[i].group = "medical";
+    } else if (vName.indexOf("fa-vr-") == 0) {
+      //---- DEVICE ----
+      json4icons.icons[i].group = "device";
+    } else if (vName.indexOf("fa-tablet") == 0) {
+      //---- DEVICE ----
+      json4icons.icons[i].group = "device";
+    } else if (vName.indexOf("phone") == 0) {
+      //---- DEVICE ----
+      json4icons.icons[i].group = "device";
+    } else if (vName.indexOf("camera") == 0) {
+      //---- DEVICE ----
+      json4icons.icons[i].group = "device";
+    } else if (vName.indexOf("fa-tablet") == 0) {
+      //---- DEVICE ----
+      json4icons.icons[i].group = "device";
+    } else if (vName.indexOf("fa-book") == 0) {
+      //---- PRODUCT/OBJECTS ----
+      json4icons.icons[i].group = "product";
+    } else if (vName.indexOf("fa-picture") == 0) {
+      //---- PRODUCT/OBJECTS ----
+      json4icons.icons[i].group = "product";
+    } else if (vName.indexOf("fa-truck") == 0) {
+      //---- VEHICLE ----
+      json4icons.icons[i].group = "vehicle";
+    }
+  }
+}
+
+
 function init_data2json() {
   var vName = "";
   for (var i = 0; i < json4icons.icons.length; i++) {
@@ -130,8 +277,14 @@ function init_data2json() {
       json4icons.icons[i].license = "CC BY-SA 3.0";
     } else {
       json4icons.icons[i].license = "CC0";
-    }
+    };
+    /*
+    json4icons.icons[i].id4src = "/5/5d/";
+    json4icons.icons[i].name4src = "Font_Awesome____.svg";
+    json4icons.icons[i].adddate = "2019"
+    */
   }
+  init_icon_group();
 }
 
 //==== START SCANNING IMAGES for ICON4MENU ============
@@ -160,7 +313,7 @@ function save_icons4json() {
       if (err) throw err;
 
       // success case, the file was saved
-      console.log('JSON for json4icons saved with Base64 encoded icons!');
+      console.log('JSON file json4icons.json saved with Base64 encoded icons!');
   });
   json_string = "vDataJSON.json4icons = " + json_string + ";";
   fs.writeFile('./img/json4icons.js', json_string, (err) => {
@@ -168,7 +321,7 @@ function save_icons4json() {
       if (err) throw err;
 
       // success case, the file was saved
-      console.log('JSON for json2icons saved with Base64 encoded icons!');
+      console.log('Javascript Library for Icons json2icons.js saved with Base64 encoded icons!');
   });
 }
 

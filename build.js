@@ -129,9 +129,12 @@ function init_icon_group() {
     if (vName.indexOf("fa-file-archive") == 0) {
      //---- FILE TYPES ----
      json4icons.icons[i].group = "filetype";
-   } else if (vName.indexOf("home") == 0) {
+    } else if (vName.indexOf("home") == 0) {
       //---- MAIN ----
       json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("action") == 0) {
+       //---- MAIN ----
+       json4icons.icons[i].group = "main";
     } else if (vName.indexOf("fa-folder") == 0) {
       //---- MAIN ----
       json4icons.icons[i].group = "main";

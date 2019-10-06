@@ -8,7 +8,7 @@ vDataJSON.json4icons = {
             "used": false,
             "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAH1JREFUOMtjYCAOzAJiNgYywH8gPgbEkuRoBOFnQGyJLgjDDVBxNSBeDsQf0OR/AnEaAw5NdkD8BYuhWDXCAC8QvwDiH0BcB8TihJwKA/lA/BmIrQkFDrrG3UAcjhY4M5GiowGXxrl4QrcBWS26RiMiogWrRga6aSQFk68RAP5OVqWXKdm9AAAAAElFTkSuQmCC",
             "license": "CC0",
-            "group": "other"
+            "group": "main"
         },
         {
             "name": "action-white.png",
@@ -16,7 +16,7 @@ vDataJSON.json4icons = {
             "used": false,
             "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAIVJREFUOMtjYCAC/P//fxYQszGQCv5DwDEgliRHIwg8A2JLdEEYaICKqwHxciD+gCb/E4jTGHBosgPiL/+xA1SNSM7iBeIXQPwDiOuAWByvU5E05gPxZyC2xhs4WDTuBuJwtMCZCYsOmHewaZyLJ3Qb4GqxaDQiFC1YNRITn9TRSAqgSCMAGL+QeSGFbu0AAAAASUVORK5CYII=",
             "license": "CC0",
-            "group": "other"
+            "group": "main"
         },
         {
             "name": "alert-black.png",
@@ -808,7 +808,7 @@ vDataJSON.json4icons = {
             "used": false,
             "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t width=\"14px\" height=\"14px\" viewBox=\"0 0 14 14\" style=\"enable-background:new 0 0 14 14;\" xml:space=\"preserve\">\n<path d=\"M9,5v3l5-4L9,0v3c0,0-5,0-5,7C6,5,9,5,9,5z M11,12H2V5h1l2-2H0v11h13V7l-2,2V12z\"/>\n</svg>\n",
             "license": "CC0",
-            "group": "other"
+            "group": "main"
         },
         {
             "name": "action-white.svg",
@@ -816,7 +816,7 @@ vDataJSON.json4icons = {
             "used": false,
             "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t width=\"14px\" height=\"14px\" viewBox=\"0 0 14 14\" style=\"enable-background:new 0 0 14 14;\" xml:space=\"preserve\">\n<path style=\"fill:#FFFFFF;\" d=\"M9,5v3l5-4L9,0v3c0,0-5,0-5,7C6,5,9,5,9,5z M11,12H2V5h1l2-2H0v11h13V7l-2,2V12z\"/>\n</svg>\n",
             "license": "CC0",
-            "group": "other"
+            "group": "main"
         },
         {
             "name": "alert-black.svg",

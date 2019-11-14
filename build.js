@@ -215,6 +215,8 @@ function init_icon_group() {
       json4icons.icons[i].group = "media";
     } else if (vName.indexOf("video-") == 0) {
       json4icons.icons[i].group = "media";
+    } else if (vName.indexOf("fa-line-chart") == 0) {
+      json4icons.icons[i].group = "media";
     } else if (vName.indexOf("fa-audio-") == 0) {
       json4icons.icons[i].group = "audio";
     } else if (vName.indexOf("user") == 0) {

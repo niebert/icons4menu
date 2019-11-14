@@ -1,6 +1,6 @@
 vDataJSON.json4icons = {
     "repository": "https://www.github.io/niebert/icons4menu",
-    "date": "2019/10/06",
+    "date": "2019/11/14",
     "icons": [
         {
             "name": "action-black.png",
@@ -1454,7 +1454,7 @@ vDataJSON.json4icons = {
             "name": "fa-camera-black.svg",
             "path": "img/icons-svg",
             "used": false,
-            "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -256 1950 1950\"><path d=\"m975.19 549.05q119 0 203.5 84.5t84.5 203.5-84.5 203.5-203.5 84.5-203.5-84.5-84.5-203.5 84.5-203.5 203.5-84.5m704-416q106 0 181 75t75 181v896q0 106-75 181t-181 75h-1408q-106 0-181-75t-75-181v-896q0-106 75-181t181-75h224l51-136q19-49 69.5-84.5t103.5-35.5h512q53 0 103.5 35.5t69.5 84.5l51 136h224m-704 1152q185 0 316.5-131.5t131.5-316.5-131.5-316.5-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5\"/></svg>",
+            "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   viewBox=\"0 -256 1950 1950\"\n   id=\"svg3025\"\n   version=\"1.1\"\n   inkscape:version=\"0.48.3.1 r9886\"\n   width=\"14px\"\n   height=\"14px\"\n   sodipodi:docname=\"camera_font_awesome.svg\" >\n   <path d=\"m975.19 549.05q119 0 203.5 84.5t84.5 203.5-84.5 203.5-203.5 84.5-203.5-84.5-84.5-203.5 84.5-203.5 203.5-84.5m704-416q106 0 181 75t75 181v896q0 106-75 181t-181 75h-1408q-106 0-181-75t-75-181v-896q0-106 75-181t181-75h224l51-136q19-49 69.5-84.5t103.5-35.5h512q53 0 103.5 35.5t69.5 84.5l51 136h224m-704 1152q185 0 316.5-131.5t131.5-316.5-131.5-316.5-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5\" />\n</svg>\n",
             "license": "CC BY-SA 3.0",
             "group": "other"
         },
@@ -1462,7 +1462,7 @@ vDataJSON.json4icons = {
             "name": "fa-camera-white.svg",
             "path": "img/icons-svg",
             "used": false,
-            "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -256 1950 1950\"><path d=\"m975.19 549.05q119 0 203.5 84.5t84.5 203.5-84.5 203.5-203.5 84.5-203.5-84.5-84.5-203.5 84.5-203.5 203.5-84.5m704-416q106 0 181 75t75 181v896q0 106-75 181t-181 75h-1408q-106 0-181-75t-75-181v-896q0-106 75-181t181-75h224l51-136q19-49 69.5-84.5t103.5-35.5h512q53 0 103.5 35.5t69.5 84.5l51 136h224m-704 1152q185 0 316.5-131.5t131.5-316.5-131.5-316.5-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5\"/></svg>",
+            "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   viewBox=\"0 -256 1950 1950\"\n   id=\"svg3025\"\n   version=\"1.1\"\n   inkscape:version=\"0.48.3.1 r9886\"\n   width=\"14px\"\n   height=\"14px\"\n   sodipodi:docname=\"camera_font_awesome.svg\" >\n   <path d=\"m975.19 549.05q119 0 203.5 84.5t84.5 203.5-84.5 203.5-203.5 84.5-203.5-84.5-84.5-203.5 84.5-203.5 203.5-84.5m704-416q106 0 181 75t75 181v896q0 106-75 181t-181 75h-1408q-106 0-181-75t-75-181v-896q0-106 75-181t181-75h224l51-136q19-49 69.5-84.5t103.5-35.5h512q53 0 103.5 35.5t69.5 84.5l51 136h224m-704 1152q185 0 316.5-131.5t131.5-316.5-131.5-316.5-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5\" />\n</svg>\n",
             "license": "CC BY-SA 3.0",
             "group": "other"
         },
@@ -1470,7 +1470,7 @@ vDataJSON.json4icons = {
             "name": "fa-camera.svg",
             "path": "img/icons-svg",
             "used": false,
-            "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -256 1950 1950\"><path d=\"m975.19 549.05q119 0 203.5 84.5t84.5 203.5-84.5 203.5-203.5 84.5-203.5-84.5-84.5-203.5 84.5-203.5 203.5-84.5m704-416q106 0 181 75t75 181v896q0 106-75 181t-181 75h-1408q-106 0-181-75t-75-181v-896q0-106 75-181t181-75h224l51-136q19-49 69.5-84.5t103.5-35.5h512q53 0 103.5 35.5t69.5 84.5l51 136h224m-704 1152q185 0 316.5-131.5t131.5-316.5-131.5-316.5-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5\"/></svg>",
+            "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   viewBox=\"0 -256 1950 1950\"\n   id=\"svg3025\"\n   version=\"1.1\"\n   inkscape:version=\"0.48.3.1 r9886\"\n   width=\"100%\"\n   height=\"100%\"\n   sodipodi:docname=\"camera_font_awesome.svg\" >\n   <path d=\"m975.19 549.05q119 0 203.5 84.5t84.5 203.5-84.5 203.5-203.5 84.5-203.5-84.5-84.5-203.5 84.5-203.5 203.5-84.5m704-416q106 0 181 75t75 181v896q0 106-75 181t-181 75h-1408q-106 0-181-75t-75-181v-896q0-106 75-181t181-75h224l51-136q19-49 69.5-84.5t103.5-35.5h512q53 0 103.5 35.5t69.5 84.5l51 136h224m-704 1152q185 0 316.5-131.5t131.5-316.5-131.5-316.5-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5\" />\n</svg>\n",
             "license": "CC BY-SA 3.0",
             "group": "other"
         },
@@ -1721,6 +1721,30 @@ vDataJSON.json4icons = {
             "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   viewBox=\"0 -256 1792 1792\"\n   id=\"svg3025\"\n   version=\"1.1\"\n   inkscape:version=\"0.48.3.1 r9886\"\n   width=\"100%\"\n   height=\"100%\"\n   sodipodi:docname=\"reorder_font_awesome.svg\">\n  <metadata\n     id=\"metadata3035\">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" />\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n  <defs\n     id=\"defs3033\" />\n  <sodipodi:namedview\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n     borderopacity=\"1\"\n     objecttolerance=\"10\"\n     gridtolerance=\"10\"\n     guidetolerance=\"10\"\n     inkscape:pageopacity=\"0\"\n     inkscape:pageshadow=\"2\"\n     inkscape:window-width=\"640\"\n     inkscape:window-height=\"480\"\n     id=\"namedview3031\"\n     showgrid=\"false\"\n     inkscape:zoom=\"0.13169643\"\n     inkscape:cx=\"896\"\n     inkscape:cy=\"896\"\n     inkscape:window-x=\"0\"\n     inkscape:window-y=\"25\"\n     inkscape:window-maximized=\"0\"\n     inkscape:current-layer=\"svg3025\" />\n  <g\n     transform=\"matrix(1,0,0,-1,136.67797,1300.6102)\"\n     id=\"g3027\">\n    <path\n       d=\"M 1536,192 V 64 Q 1536,38 1517,19 1498,0 1472,0 H 64 Q 38,0 19,19 0,38 0,64 v 128 q 0,26 19,45 19,19 45,19 h 1408 q 26,0 45,-19 19,-19 19,-45 z m 0,512 V 576 q 0,-26 -19,-45 -19,-19 -45,-19 H 64 Q 38,512 19,531 0,550 0,576 v 128 q 0,26 19,45 19,19 45,19 h 1408 q 26,0 45,-19 19,-19 19,-45 z m 0,512 v -128 q 0,-26 -19,-45 -19,-19 -45,-19 H 64 q -26,0 -45,19 -19,19 -19,45 v 128 q 0,26 19,45 19,19 45,19 h 1408 q 26,0 45,-19 19,-19 19,-45 z\"\n       id=\"path3029\"\n       inkscape:connector-curvature=\"0\"\n       style=\"fill:currentColor\" />\n  </g>\n</svg>\n",
             "license": "CC BY-SA 3.0",
             "group": "main"
+        },
+        {
+            "name": "fa-line-chart-black.svg",
+            "path": "img/icons-svg",
+            "used": false,
+            "src": "data:image/svg+xml;utf8,<svg aria-hidden=\"true\" data-prefix=\"fas\" data-icon=\"chart-line\" class=\"svg-inline--fa fa-chart-line fa-w-16\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"currentColor\" d=\"M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z\"></path></svg>",
+            "license": "CC BY-SA 3.0",
+            "group": "media"
+        },
+        {
+            "name": "fa-line-chart-white.svg",
+            "path": "img/icons-svg",
+            "used": false,
+            "src": "data:image/svg+xml;utf8,<svg aria-hidden=\"true\" data-prefix=\"fas\" data-icon=\"chart-line\" class=\"svg-inline--fa fa-chart-line fa-w-16\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"currentColor\" d=\"M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z\"></path></svg>",
+            "license": "CC BY-SA 3.0",
+            "group": "media"
+        },
+        {
+            "name": "fa-line-chart.svg",
+            "path": "img/icons-svg",
+            "used": false,
+            "src": "data:image/svg+xml;utf8,<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   viewBox=\"0 0 512 512\"\n   id=\"svg2\"\n   version=\"1.1\"\n   inkscape:version=\"0.48.3.1 r9886\"\n   width=\"100%\"\n   height=\"100%\"\n   sodipodi:docname=\"fa-line-chart.svg\">\n  <metadata\n     id=\"metadata12\">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" />\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n  <defs\n     id=\"defs10\" />\n  <sodipodi:namedview\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n     borderopacity=\"1\"\n     objecttolerance=\"10\"\n     gridtolerance=\"10\"\n     guidetolerance=\"10\"\n     inkscape:pageopacity=\"0\"\n     inkscape:pageshadow=\"2\"\n     inkscape:window-width=\"640\"\n     inkscape:window-height=\"480\"\n     id=\"namedview8\"\n     showgrid=\"false\"\n     inkscape:zoom=\"0.13169643\"\n     inkscape:cx=\"896\"\n     inkscape:cy=\"896\"\n     inkscape:window-x=\"0\"\n     inkscape:window-y=\"25\"\n     inkscape:window-maximized=\"0\"\n     inkscape:current-layer=\"svg2\" />\n  <g\n     transform=\"matrix(1,0,0,-1,30.372881,1373.7966)\"\n     id=\"g4\">\n\n<path fill=\"currentColor\"\n  d=\"M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z\"></path>\n</svg>\n",
+            "license": "CC BY-SA 3.0",
+            "group": "media"
         },
         {
             "name": "fa-list-black.svg",

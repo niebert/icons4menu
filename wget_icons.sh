@@ -246,6 +246,9 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-hamburger-icon-black.svg -O img/icons-svg/fa-hamburger-icon-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-hamburger-icon-white.svg -O img/icons-svg/fa-hamburger-icon-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-hamburger-icon.svg -O img/icons-svg/fa-hamburger-icon.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-line-chart-black.svg -O img/icons-svg/fa-line-chart-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-line-chart-white.svg -O img/icons-svg/fa-line-chart-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-line-chart.svg -O img/icons-svg/fa-line-chart.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-list-black.svg -O img/icons-svg/fa-list-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-list-white.svg -O img/icons-svg/fa-list-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-list.svg -O img/icons-svg/fa-list.svg

@@ -90,10 +90,13 @@ function save_color_icons(pFilename,pi,pName,pData) {
   if (pName.indexOf("fa-") == 0) {
     // search 'style="fill:currentColor"' and replace with
     data = replaceString(pData,'style="fill:currentColor"','style="fill:#FFF"');
+    data = replaceString(pData,'fill="currentColor"','fill="#FFF"');
+    // fill="currentColor"
     data = correct_size(data);
     save_icon4color(pFilename,"-white",data);
 
     data = replaceString(pData,'style="fill:currentColor"','style="fill:#000"');
+    data = replaceString(pData,'fill="currentColor"','fill="#000"');
     data = correct_size(data);
     save_icon4color(pFilename,"-black",data);
   }

@@ -13,6 +13,7 @@
    inkscape:version="0.48.3.1 r9886"
    width="14px"
    height="14px"
+   wikicommons="https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg"
    sodipodi:docname="tablet_font_awesome.svg">
   <metadata
      id="metadata4337">
@@ -54,6 +55,6 @@
        d="m 640,128 q 0,26 -19,45 -19,19 -45,19 -26,0 -45,-19 -19,-19 -19,-45 0,-26 19,-45 19,-19 45,-19 26,0 45,19 19,19 19,45 z m 384,160 v 960 q 0,13 -9.5,22.5 -9.5,9.5 -22.5,9.5 H 160 q -13,0 -22.5,-9.5 Q 128,1261 128,1248 V 288 q 0,-13 9.5,-22.5 Q 147,256 160,256 h 832 q 13,0 22.5,9.5 9.5,9.5 9.5,22.5 z m 128,960 V 160 Q 1152,94 1105,47 1058,0 992,0 H 160 Q 94,0 47,47 0,94 0,160 v 1088 q 0,66 47,113 47,47 113,47 h 832 q 66,0 113,-47 47,-47 47,-113 z"
        id="path4331"
        inkscape:connector-curvature="0"
-       style="fill:currentColor" />
+       style="fill:#000" />
   </g>
 </svg>

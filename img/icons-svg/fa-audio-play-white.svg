@@ -13,6 +13,7 @@
    inkscape:version="0.48.3.1 r9886"
    width="14px"
    height="14px"
+   wikicommons="https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg"
    sodipodi:docname="play_font_awesome.svg">
   <metadata
      id="metadata3011">
@@ -54,6 +55,6 @@
        d="M 1384,609 56,-129 Q 33,-142 16.5,-132 0,-122 0,-96 v 1472 q 0,26 16.5,36 16.5,10 39.5,-3 L 1384,671 q 23,-13 23,-31 0,-18 -23,-31 z"
        id="path3005"
        inkscape:connector-curvature="0"
-       style="fill:currentColor" />
+       style="fill:#FFF" />
   </g>
 </svg>

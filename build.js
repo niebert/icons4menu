@@ -51,6 +51,22 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+function get_wikicommons_url(data) {
+  var url = "https://jquerymobile.com/download/";
+  if (data) {
+    var pos = data.indexOf("wikicommons");
+    if (pos > 0) {
+      data = data.substr(pos + 1);
+      var arr = data.split('"');
+      if (arr.length > 2) {
+        url = arr[1];
+        console.log("WikiCommons URL: '" + url + "'");
+      }
+    }
+  }
+  return url;
+}
+
 function save_icon4color(pFilename,pInsert,pData) {
   var position = pFilename.lastIndexOf(".");
   if (pFilename.indexOf("-white.") > 0) {
@@ -88,17 +104,22 @@ function correct_size(pData) {
 function save_color_icons(pFilename,pi,pName,pData) {
   var data = pData;
   if (pName.indexOf("fa-") == 0) {
-    // search 'style="fill:currentColor"' and replace with
-    data = replaceString(pData,'style="fill:currentColor"','style="fill:#FFF"');
-    data = replaceString(pData,'fill="currentColor"','fill="#FFF"');
-    // fill="currentColor"
-    data = correct_size(data);
-    save_icon4color(pFilename,"-white",data);
+    if ((pName.indexOf("-white.svg") > 0) || (pName.indexOf("-black.svg") > 0)) {
+      // no write files
+    } else {
+      // search 'style="fill:currentColor"' and replace with
+      data = replaceString(data,'style="fill:currentColor"','style="fill:#FFF"');
+      data = replaceString(data,'fill="currentColor"','fill="#FFF"');
+      // fill="currentColor"
+      data = correct_size(data);
+      save_icon4color(pFilename,"-white",data);
 
-    data = replaceString(pData,'style="fill:currentColor"','style="fill:#000"');
-    data = replaceString(pData,'fill="currentColor"','fill="#000"');
-    data = correct_size(data);
-    save_icon4color(pFilename,"-black",data);
+      data = pData;
+      data = replaceString(data,'style="fill:currentColor"','style="fill:#000"');
+      data = replaceString(data,'fill="currentColor"','fill="#000"');
+      data = correct_size(data);
+      save_icon4color(pFilename,"-black",data);
+    }
   }
 }
 
@@ -109,6 +130,7 @@ function save_data2json(pFilename,pi,pName) {
       var data = fs.readFileSync(pFilename, 'utf8');
       console.log("Read Icon File SYNC: '" + pFilename + "'");
       json4icons.icons[i].src = "data:image/svg+xml;utf8," + data; // SVG is a XML string so store as string
+      json4icons.icons[i].wikicommons = get_wikicommons_url(data);
       save_color_icons(pFilename,pi,pName,data);
 
     break;
@@ -116,6 +138,7 @@ function save_data2json(pFilename,pi,pName) {
       var data = fs.readFileSync(pFilename);
       console.log("PNG-File '" + pFilename + "' stored base64 encoded");
       json4icons.icons[i].src = "data:image/png;base64," + data.toString('base64');
+      json4icons.icons[i].wikicommons = get_wikicommons_url(null);
     break;
     default:
       console.error("Unsupported Filetype '" + ext + "' of Icon: '" + pFilename + "'");
@@ -201,6 +224,9 @@ function init_icon_group() {
     } else if (vName.indexOf("arrow-") == 0) {
       //---- ARROWS ----
       json4icons.icons[i].group = "arrow";
+    } else if (vName.indexOf("alert-") == 0) {
+      //---- ACTIONS ----
+      json4icons.icons[i].group = "action";
     } else if (vName.indexOf("location") == 0) {
       //---- NAVIGATION ----
       json4icons.icons[i].group = "navigation";
@@ -220,7 +246,11 @@ function init_icon_group() {
       json4icons.icons[i].group = "media";
     } else if (vName.indexOf("fa-line-chart") == 0) {
       json4icons.icons[i].group = "media";
+    } else if (vName.indexOf("fa-chart-pie") == 0) {
+      json4icons.icons[i].group = "media";
     } else if (vName.indexOf("fa-audio-") == 0) {
+      json4icons.icons[i].group = "audio";
+    } else if (vName.indexOf("audio-") == 0) {
       json4icons.icons[i].group = "audio";
     } else if (vName.indexOf("user") == 0) {
       //---- LOGIN/SIGN IN/OUT ----
@@ -256,7 +286,10 @@ function init_icon_group() {
     } else if (vName.indexOf("phone") == 0) {
       //---- DEVICE ----
       json4icons.icons[i].group = "device";
-    } else if (vName.indexOf("camera") == 0) {
+    } else if (vName.indexOf("phone") == 0) {
+      //---- DEVICE ----
+      json4icons.icons[i].group = "device";
+    } else if (vName.indexOf("fa-camera") == 0) {
       //---- DEVICE ----
       json4icons.icons[i].group = "device";
     } else if (vName.indexOf("fa-tablet") == 0) {

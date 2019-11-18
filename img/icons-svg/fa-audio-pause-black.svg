@@ -13,6 +13,7 @@
    inkscape:version="0.48.3.1 r9886"
    width="14px"
    height="14px"
+   wikicommons="https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg"
    sodipodi:docname="pause_font_awesome.svg">
   <metadata
      id="metadata2999">
@@ -54,6 +55,6 @@
        d="M 1536,1344 V -64 q 0,-26 -19,-45 -19,-19 -45,-19 H 960 q -26,0 -45,19 -19,19 -19,45 v 1408 q 0,26 19,45 19,19 45,19 h 512 q 26,0 45,-19 19,-19 19,-45 z m -896,0 V -64 q 0,-26 -19,-45 -19,-19 -45,-19 H 64 q -26,0 -45,19 -19,19 -19,45 v 1408 q 0,26 19,45 19,19 45,19 h 512 q 26,0 45,-19 19,-19 19,-45 z"
        id="path2993"
        inkscape:connector-curvature="0"
-       style="fill:currentColor" />
+       style="fill:#000" />
   </g>
 </svg>

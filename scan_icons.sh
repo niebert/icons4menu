@@ -9,6 +9,7 @@ WIKIVERSITY="https://en.wikiversity.org/wiki/AppLSAC"
 OUTPUT="${ROOT}index.html"
 WGETFILE="wget_icons.sh"
 JSONFILE="${ROOT}json4icons.json"
+READMEFILE="README.md"
 SEP="\""
 NOW=$(date +"%Y/%m/%d")
 ### sed command - sed differs on OSX
@@ -142,8 +143,19 @@ echo "</HTML>" >> $OUTPUT
 echo "  ]" >> $JSONFILE
 echo "}" >> $JSONFILE
 echo "CALL PanDoc for README.md and generate README.html"
-pandoc -s -f markdown -t html5 README.md -o README.html
 node ./build.js
+node ./build_readme.js
+
+echo "-------------------"
+echo "Create README.md"
+echo "-------------------"
+cat ./src/readme/README_header.md > $READMEFILE
+cat ./src/readme/table4icons.md  >> $READMEFILE
+cat ./src/readme/README_tail.md  >> $READMEFILE
+
+echo "Create README.html"
+echo "-------------------"
+pandoc -s -f markdown -t html5 README.md -o README.html
 # title=`cat $i | $SED_CMD -n 's/<title>\(.*\)<\/title>/\1/Ip' | $SED_CMD -e 's/^[ \t]*//'`
         	## GNU: cat docs/index.html | sed -n 's/<title>\(.*\)<\/title>/\1/Ip'`
         	## OSX: cat docs/index.html | gsed -n 's/<title>\(.*\)<\/title>/\1/Ip'`

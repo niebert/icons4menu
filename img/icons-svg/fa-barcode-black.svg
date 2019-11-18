@@ -13,6 +13,7 @@
    inkscape:version="0.48.3.1 r9886"
    width="14px"
    height="14px"
+   wikicommons="https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg"
    sodipodi:docname="barcode_font_awesome.svg">
   <metadata
      id="metadata3023">
@@ -54,6 +55,6 @@
        d="M 672,1408 V -128 h -64 v 1536 h 64 z m 736,0 V -128 h -64 v 1536 h 64 z m 160,0 V -128 h -64 v 1536 h 64 z m -992,0 V -128 h -64 v 1536 h 64 z m 704,0 V -128 h -256 v 1536 h 256 z m -384,0 V -128 H 768 v 1536 h 128 z m -448,0 V -128 H 320 v 1536 h 128 z m 1344,0 V -128 h -128 v 1536 h 128 z m -1536,0 V -128 H 0 v 1536 h 256 z"
        id="path3017"
        inkscape:connector-curvature="0"
-       style="fill:currentColor" />
+       style="fill:#000" />
   </g>
 </svg>

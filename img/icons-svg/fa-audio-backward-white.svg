@@ -13,6 +13,7 @@
    inkscape:version="0.48.3.1 r9886"
    width="14px"
    height="14px"
+   wikicommons="https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg"
    sodipodi:docname="backward_font_awesome.svg">
   <metadata
      id="metadata12">
@@ -54,6 +55,6 @@
        d="m 1619,1395 q 19,19 32,13 13,-6 13,-32 V -96 q 0,-26 -13,-32 -13,-6 -32,13 L 909,595 q -8,9 -13,19 V -96 q 0,-26 -13,-32 -13,-6 -32,13 L 141,595 q -19,19 -19,45 0,26 19,45 l 710,710 q 19,19 32,13 13,-6 13,-32 V 666 q 5,11 13,19 z"
        id="path6"
        inkscape:connector-curvature="0"
-       style="fill:currentColor" />
+       style="fill:#FFF" />
   </g>
 </svg>

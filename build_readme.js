@@ -83,7 +83,7 @@ function get_table_group_header(group) {
   var out = "\n\n"
   out += "### " + get_header4group(group) +"\n";
   out += "| Icon | File  | Folder  |  Source File | Licence  | Group |\n";
-  out += "|---|---|---|---|---|---|`";
+  out += "|---|---|---|---|---|---|";
   return out;
 }
 

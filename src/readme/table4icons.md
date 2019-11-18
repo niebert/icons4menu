@@ -2,7 +2,7 @@
 
 ### Load, Save, Print, Cancel, Trash, Settings
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`action-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-action-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `main`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`action-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-action-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `main`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`grid-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-grid-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `main`  | 
@@ -42,7 +42,7 @@
 
 ### Action and Processes
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`alert-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-alert-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `action`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`alert-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-alert-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `action`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`forbidden-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-forbidden-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `action`  | 
@@ -85,7 +85,7 @@
 
 ### Arrow
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`arrow-d-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-arrow-d-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `arrow`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`arrow-d-l-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-arrow-d-l-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `arrow`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`arrow-d-l-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-arrow-d-l-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `arrow`  | 
@@ -122,7 +122,7 @@
 
 ### Media
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`audio-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-audio-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `media`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`audio-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-audio-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `media`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`video-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-video-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `media`  | 
@@ -141,7 +141,7 @@
 
 ### Other
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`back-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-back-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `other`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`back-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-back-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `other`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`bars-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-bars-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `other`  | 
@@ -235,7 +235,7 @@
 
 ### Navigation
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`carat-d-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-carat-d-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `navigation`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`carat-d-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-carat-d-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `navigation`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`carat-l-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-carat-l-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `navigation`  | 
@@ -264,7 +264,7 @@
 
 ### Medical
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`heart-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-heart-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `medical`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`heart-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-heart-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `medical`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`heart-black.svg`](https://jquerymobile.com/download/)  | `img/icons-svg`  | [`JQ-heart-black.svg`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `medical`  | 
@@ -273,7 +273,7 @@
 
 ### Device
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`phone-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-phone-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `device`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`phone-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-phone-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `device`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Camera_font_awesome.svg" width="20">  | [`fa-camera-black.svg`](https://upload.wikimedia.org/wikipedia/commons/d/d1/Camera_font_awesome.svg)  | `img/icons-svg`  | [`Camera_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Camera_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `device`  | 
@@ -291,7 +291,7 @@
 
 ### Login
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`power-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-power-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `login`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`power-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-power-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `login`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`user-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-user-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `login`  | 
@@ -310,7 +310,7 @@
 
 ### Editor
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://jquerymobile.com/download/" width="20">  | [`search-black.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-search-black.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `editor`  | 
 | <img src="https://jquerymobile.com/download/" width="20">  | [`search-white.png`](https://jquerymobile.com/download/)  | `img/icons-png`  | [`JQ-search-white.png`](https://jquerymobile.com/download/) | [`CC0`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | `editor`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Copy_font_awesome.svg" width="20">  | [`fa-copy-black.svg`](https://upload.wikimedia.org/wikipedia/commons/0/04/Copy_font_awesome.svg)  | `img/icons-svg`  | [`Copy_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Copy_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `editor`  | 
@@ -334,7 +334,7 @@
 
 ### Audio Player
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg" width="20">  | [`fa-audio-backward-black.svg`](https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg)  | `img/icons-svg`  | [`Backward_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Backward_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `audio`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg" width="20">  | [`fa-audio-backward-white.svg`](https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg)  | `img/icons-svg`  | [`Backward_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Backward_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `audio`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg" width="20">  | [`fa-audio-backward.svg`](https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg)  | `img/icons-svg`  | [`Backward_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Backward_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `audio`  | 
@@ -360,7 +360,7 @@
 
 ### Products and Objects
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg" width="20">  | [`fa-book-black.svg`](https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)  | `img/icons-svg`  | [`Book_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Book_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `product`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg" width="20">  | [`fa-book-white.svg`](https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)  | `img/icons-svg`  | [`Book_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Book_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `product`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg" width="20">  | [`fa-book.svg`](https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg)  | `img/icons-svg`  | [`Book_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Book_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `product`  | 
@@ -371,7 +371,7 @@
 
 ### Filetype
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg" width="20">  | [`fa-file-archive-black.svg`](https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg)  | `img/icons-svg`  | [`Font_Awesome_5_regular_file-archive.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_regular_file-archive.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `filetype`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg" width="20">  | [`fa-file-archive-white.svg`](https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg)  | `img/icons-svg`  | [`Font_Awesome_5_regular_file-archive.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_regular_file-archive.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `filetype`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg" width="20">  | [`fa-file-archive.svg`](https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg)  | `img/icons-svg`  | [`Font_Awesome_5_regular_file-archive.svg`](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_regular_file-archive.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `filetype`  | 
@@ -379,7 +379,7 @@
 
 ### Vehicle
 | Icon | File  | Folder  |  Source File | Licence  | Group |
-|---|---|---|---|---|---|`
+|---|---|---|---|---|---|
 | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg" width="20">  | [`fa-truck-black.svg`](https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg)  | `img/icons-svg`  | [`Truck_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Truck_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `vehicle`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg" width="20">  | [`fa-truck-white.svg`](https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg)  | `img/icons-svg`  | [`Truck_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Truck_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `vehicle`  | 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg" width="20">  | [`fa-truck.svg`](https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg)  | `img/icons-svg`  | [`Truck_font_awesome.svg`](https://commons.wikimedia.org/wiki/File:Truck_font_awesome.svg) | [`CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/) | `vehicle`  | 

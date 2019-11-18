@@ -3,6 +3,7 @@
 const fs = require('fs');
 var json4icons = require('./img/json4icons.json');
 var vFilename = "";
+var web_icon_prefix = "https://niebert.github.io/icons4menu/";
 
 
 function get_extension(pFilename) {
@@ -79,20 +80,48 @@ function get_wikicommons_name(icon) {
   return name;
 }
 
+function MD_get_table_group_header(group) {
+  var out = "\n\n"
+  out += "### " + get_header4group(group) +"\n";
+  out += "| Icon | Folder  |  Source File | Licence  | Group |\n";
+  out += "|---|---|---|---|---|";
+  return out;
+}
+
 function get_table_group_header(group) {
   var out = "\n\n"
   out += "### " + get_header4group(group) +"\n";
-  out += "| Icon | File  | Folder  |  Source File | Licence  | Group |\n";
-  out += "|---|---|---|---|---|---|";
+  out +="<center>\n"
+  out +="<table border=1 bgcolor=\"#C0C0C0\">\n"
+  out +="<tr>\n"
+  out += "<th> Icon </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>\n";
+  out +="</tr>\n"
   return out;
 }
 
 function get_table_row4icon(icon) {
+  var out = "";
+  var wc_name = get_wikicommons_name(icon); // Wiki Commons Name
+  out +="<tr>\n"
+  out += "<td>  <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> \`" + icon.path + "\`  </td><td> [\`" + wc_name + "\`](" + get_wikicommons_page(icon) + ") </td><td> " + get_icon_license(icon) + " </td><td> \`" + get_icon_group(icon) + "\`  </td> ";
+  out +="</tr>\n"
+  return out;
+}
+
+function MD_get_table_row4icon(icon) {
   var out = "\n";
   var wc_name = get_wikicommons_name(icon); // Wiki Commons Name
-  out += "| <img src=\"" + icon.wikicommons +"\" width=\"20\">  ";
+  out += "| <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\">  ";
   out += "| [\`" + icon.name + "\`](" + icon.wikicommons +")  | \`" + icon.path + "\`  | [\`" + wc_name + "\`](" + get_wikicommons_page(icon) + ") | " + get_icon_license(icon) + " | \`" + get_icon_group(icon) + "\`  | ";
   return out;
+}
+
+function get_table_group_tail(group) {
+  return "\n</table></center>";
+}
+
+function MD_get_table_group_tail(group) {
+  return "\n";
 }
 
 function get_icon_group(icon) {
@@ -152,7 +181,7 @@ for (var group in readme) {
     for (var i = 0; i < readme[group].length; i++) {
       out += get_table_row4icon(readme[group][i]);
     }
-    out += "\n";
+    out += get_table_group_tail(group);
   }
 }
 // ----------------------------------------------------

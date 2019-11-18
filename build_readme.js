@@ -83,8 +83,8 @@ function get_wikicommons_name(icon) {
 function MD_get_table_group_header(group) {
   var out = "\n\n"
   out += "### " + get_header4group(group) +"\n";
-  out += "| Icon | Folder  |  Source File | Licence  | Group |\n";
-  out += "|---|---|---|---|---|";
+  out += "| Icon | File | Folder  |  Source File | Licence  | Group |\n";
+  out += "|---|---|---|---|---|---|";
   return out;
 }
 
@@ -94,7 +94,7 @@ function get_table_group_header(group) {
   out +="<center>\n"
   out +="<table border=1 bgcolor=\"#C0C0C0\">\n"
   out +="<tr>\n"
-  out += "<th> Icon </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>\n";
+  out += "<th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>\n";
   out +="</tr>\n"
   return out;
 }
@@ -103,7 +103,7 @@ function get_table_row4icon(icon) {
   var out = "";
   var wc_name = get_wikicommons_name(icon); // Wiki Commons Name
   out +="<tr>\n"
-  out += "<td>  <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> \`" + icon.path + "\`  </td><td> < href='" + get_wikicommons_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> \`" + get_icon_group(icon) + "\`  </td> ";
+  out += "<td>  <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> <a href='" + icon.wikicommons + "' target='_blank'>" + icon.name + "</a> </td><td> \`" + icon.path + "\`  </td><td> <a href='" + get_wikicommons_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> \`" + get_icon_group(icon) + "\`  </td> ";
   out +="</tr>\n"
   return out;
 }
@@ -112,7 +112,7 @@ function MD_get_table_row4icon(icon) {
   var out = "\n";
   var wc_name = get_wikicommons_name(icon); // Wiki Commons Name
   out += "| <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\">  ";
-  out += "| [\`" + icon.name + "\`](" + icon.wikicommons +")  | \`" + icon.path + "\`  | [\`" + wc_name + "\`](" + get_wikicommons_page(icon) + ") | " + get_icon_license(icon) + " | \`" + get_icon_group(icon) + "\`  | ";
+  out += "| [\`" + icon.name + "\`](" + icon.wikicommons +")  | \`" + icon.name + "\` | \`" + icon.path + "\`  | [\`" + wc_name + "\`](" + get_wikicommons_page(icon) + ") | " + get_icon_license(icon) + " | \`" + get_icon_group(icon) + "\`  | ";
   return out;
 }
 

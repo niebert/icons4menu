@@ -103,7 +103,7 @@ function get_table_row4icon(icon) {
   var out = "";
   var wc_name = get_wikicommons_name(icon); // Wiki Commons Name
   out +="<tr>\n"
-  out += "<td>  <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> \`" + icon.path + "\`  </td><td> [\`" + wc_name + "\`](" + get_wikicommons_page(icon) + ") </td><td> " + get_icon_license(icon) + " </td><td> \`" + get_icon_group(icon) + "\`  </td> ";
+  out += "<td>  <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> \`" + icon.path + "\`  </td><td> < href='" + get_wikicommons_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> \`" + get_icon_group(icon) + "\`  </td> ";
   out +="</tr>\n"
   return out;
 }
@@ -132,7 +132,7 @@ function get_icon_group(icon) {
   return group;
 }
 
-function get_icon_license(icon) {
+function MD_get_icon_license(icon) {
   var url = "undefined licence";
   switch (icon.license) {
     case "CC0":
@@ -148,6 +148,24 @@ function get_icon_license(icon) {
       url = "https://creativecommons.org/licenses";
   }
   return "[\`" + icon.license + "\`](" + url + ")";
+}
+
+function get_icon_license(icon) {
+  var url = "undefined licence";
+  switch (icon.license) {
+    case "CC0":
+      url = "https://creativecommons.org/publicdomain/zero/1.0/deed.en";
+    break;
+    case "CC BY-SA 3.0":
+      url = "https://creativecommons.org/licenses/by-sa/3.0/";
+    break;
+    case "CC BY 4.0":
+      url = "https://creativecommons.org/licenses/by/4.0/";
+    break;
+    default:
+      url = "https://creativecommons.org/licenses";
+  }
+  return "<a href='" + url + "' target='_blank'>" + icon.license + "</a>";
 }
 
 function get_wikicommons_page(icon) {

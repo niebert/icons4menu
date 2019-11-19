@@ -1,6 +1,6 @@
 vDataJSON.json4icons = {
     "repository": "https://www.github.io/niebert/icons4menu",
-    "date": "2019/11/18",
+    "date": "2019/11/19",
     "icons": [
         {
             "name": "action-black.png",

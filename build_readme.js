@@ -103,7 +103,7 @@ function get_table_row4icon(icon) {
   var out = "";
   var wc_name = get_wikicommons_name(icon); // Wiki Commons Name
   out +="<tr>\n"
-  out += "<td>  <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> <a href='" + icon.wikicommons + "' target='_blank'>" + icon.name + "</a> </td><td> \`" + icon.path + "\`  </td><td> <a href='" + get_wikicommons_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> \`" + get_icon_group(icon) + "\`  </td> ";
+  out += "<td>  <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> <a href='" + icon.wikicommons + "' target='_blank'><code>" + icon.name + "</code></a> </td><td> <code>" + icon.path + "</code>  </td><td> <a href='" + get_wikicommons_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> <code>" + get_icon_group(icon) + "</code>  </td> ";
   out +="</tr>\n"
   return out;
 }

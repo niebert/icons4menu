@@ -27,11 +27,11 @@ if [ $# -eq 0 ]
     #### Bugfix of Package
     if  [ $PATCHTYPE == "B" ]
       then
-        patchtype="$msg"
+        patchtype="$BString"
     fi
     if  [ $PATCHTYPE == "b" ]
       then
-        patchtype="$msg"
+        patchtype="$BString"
     fi
     #### Bugfix of Package
     if  [ $PATCHTYPE == "R" ]

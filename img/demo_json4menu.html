@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo JSON 4 Menu</title>
+    <script type="text/javascript">
+      var vDataJSON = {
+        "json4icons": null
+      };
+    </script>
+    <script type="text/javascript" src="json4icons.js"></script>
+    <script type="text/javascript" src="iconhandler.js">
+
+    </script>
+  </head>
+  <body>
+    The following icon will be set by the Javascript function <tt>set_icon2img('myicon','eye-black','png');</tt>
+    <img id="myicon" width="40" height="40" src="" />
+
+    The next icon source is set by the onload event with Javascript.
+    <img class="icons4menu" id="newicon" width="40" height="40" iconformat="svg" iconname="fa-tablet-black"  src="" />
+    <img class="icons4menu" id="newicon2" width="120" height="120" iconformat="svg" iconname="user-black"  src="" />
+
+    <script type="text/javascript">
+      // set a specific img with an icon
+      set_icon2img('myicon','eye-black','svg');
+      // set icons with class="icons4menu"
+      //set_icon2img('newicon','fa-tablet','svg');
+      set_icon2img4class()
+    </script>
+  </body>
+</html>

@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/niebert/icons4menu/issues"
   },
-  "homepage": "https://github.com/niebert/icons4menu#readme"
+  "homepage": "https://github.com/niebert/icons4menu#readme",
+  "devDependencies": {
+    "js-base64": "^2.5.1"
+  }
 }

@@ -1,5 +1,5 @@
 'use strict';
-
+var Base64 = require('js-base64').Base64;
 const fs = require('fs');
 var json4icons = require('./img/json4icons.json');
 var vFilename = "";
@@ -129,7 +129,10 @@ function save_data2json(pFilename,pi,pName) {
     case "svg":
       var data = fs.readFileSync(pFilename, 'utf8');
       console.log("Read Icon File SYNC: '" + pFilename + "'");
-      json4icons.icons[i].src = "data:image/svg+xml;utf8," + data; // SVG is a XML string so store as string
+      //json4icons.icons[i].src = "data:image/svg+xml;utf8," + data; // SVG is a XML string so store as string
+      //json4icons.icons[i].src = "data:image/svg+xml;base64," + data.toString('base64'); // SVG is a XML string so store as string
+      json4icons.icons[i].src = "data:image/svg+xml;base64," + Base64.encode(data);
+      json4icons.icons[i].raw = data;
       json4icons.icons[i].wikicommons = get_wikicommons_url(data);
       save_color_icons(pFilename,pi,pName,data);
 

@@ -27,14 +27,32 @@ Please check the content of the script before executing, so that you are sure th
   sh ./wget_icons.sh
 ```
 
+
 ## JSON file `json4icons.json` and `json4icons.js`
 The JSON file `json4icons.json` contains a list of all icons with
 * `name`: filename,
 * `path`: the path to the icon,
 * `license`: the license information for the icon,
+* `raw`: available only for SVG (Scalable Vector Graphics) images. `raw` contains the raw string content was added to the JSON. This was added for transparent encoding of the SVG and those developers that prefer to use the raw string format in XML for the image can use that. In a browser you can convert   
 * `src`: is the base64 encoded data of the image as Data URL that can used in images in the DOM. The source us either the `XML` source text of the `SVG` image or the binary data as base64 encoded data of the image.
 
 The file `json4icons.js` is a library that populates a hash object `vDataJSON` defined with `var vDataJSON = {};` in the main HTML file that embeds the `icons4menu`.
+* `used` is boolean that can be set by an application to reduce the number of icons in the JSON data to the used icons. Set all used icons to `true` and remove all the unused icons from the JSON to reduce the size of the JSON especially for WebApps (see also [AppLSAC on Wikiversity](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache) ).
+
+### Example Icon Record in `json4icons.js`
+```json
+{
+    "name": "arrow-r-black.svg",
+    "path": "img/icons-svg",
+    "used": false,
+    "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0....",
+    "license": "CC0",
+    "group": "arrow",
+    "raw": "<?xml version=\"1.0\"...",
+    "wikicommons": "https://jquerymobile.com/download/"
+}
+```
+The content in `src` and `raw` are shortend so that the record fits into this README page.
 
 ## JSON File Icons4Menu
 The repository contains also a [JSON file](https://niebert.github.io/icons4menu/json4icons.json) with all icons of the repository. The JSON file [`json4icons.json`](https://niebert.github.io/icons4menu/json4icons.json) can be used to identify the used icons with NodeJS and delete the unused icons from your `img/` folder of your WebApp to save disk space and reduce the size of your WebApp.

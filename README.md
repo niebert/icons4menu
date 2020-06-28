@@ -1,5 +1,11 @@
 # Icons4Menu
-This repository is a SVG images resource based on SVG icons [JQuery Mobile 1.4.5](https://jquerymobile.com/download/) and extended with SVG icons from Wiki Commons. The icons are primary collected for application in menus with e.g. Hamburger Menus like [hamburger_menu_app](https://niebert.github.io/hamburger_menu_app/) as an [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC).
+This repository is a SVG images resource based on SVG icons [JQuery Mobile 1.4.5](https://jquerymobile.com/download/) and extended with SVG icons from [Wiki Commons](https://commons.wikimedia.org/). The icons are primary collected for menus in webbased application or for icons in buttons.
+
+## Usage of Icons4Menu - WebApps
+Icons4Menu are generated for the Wikiversity Learning Resource about [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC).
+* **`hamburger_menu_app`** Icons in Hamburger Menus like [hamburger_menu_app](https://niebert.github.io/hamburger_menu_app/)
+* **`jsoneditor_app`** Icons in JSON Editor WebApp in buttons - see [jsoneditor_app](https://niebert.github.io/jsoneditor_app/)
+
 
 ## Download of Icons with a Script
 The icons can be downloaded with a script:
@@ -502,6 +508,8 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 <td>  <img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-language-white.svg" width="20"> </td><td> <a href='https://upload.wikimedia.org/wikipedia/commons/3/32/Language_font_awesome_v5.svg' target='_blank'><code>fa-language-white.svg</code></a> </td><td> <code>img/icons-svg</code>  </td><td> <a href='https://commons.wikimedia.org/wiki/File:Language_font_awesome_v5.svg' target='_blank'>Language_font_awesome_v5.svg</a> </td><td> <a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a> </td><td> <code>other</code>  </td> </tr>
 <tr>
 <td>  <img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-language.svg" width="20"> </td><td> <a href='https://upload.wikimedia.org/wikipedia/commons/3/32/Language_font_awesome_v5.svg' target='_blank'><code>fa-language.svg</code></a> </td><td> <code>img/icons-svg</code>  </td><td> <a href='https://commons.wikimedia.org/wiki/File:Language_font_awesome_v5.svg' target='_blank'>Language_font_awesome_v5.svg</a> </td><td> <a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a> </td><td> <code>other</code>  </td> </tr>
+<tr>
+<td>  <img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-qrcode.svg" width="20"> </td><td> <a href='https://upload.wikimedia.org/wikipedia/commons/b/bb/Qrcode_font_awesome.svg' target='_blank'><code>fa-qrcode.svg</code></a> </td><td> <code>img/icons-svg</code>  </td><td> <a href='https://commons.wikimedia.org/wiki/File:Qrcode_font_awesome.svg' target='_blank'>Qrcode_font_awesome.svg</a> </td><td> <a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a> </td><td> <code>other</code>  </td> </tr>
 <tr>
 <td>  <img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-sort-black.svg" width="20"> </td><td> <a href='https://upload.wikimedia.org/wikipedia/commons/0/07/Sort_font_awesome.svg' target='_blank'><code>fa-sort-black.svg</code></a> </td><td> <code>img/icons-svg</code>  </td><td> <a href='https://commons.wikimedia.org/wiki/File:Sort_font_awesome.svg' target='_blank'>Sort_font_awesome.svg</a> </td><td> <a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a> </td><td> <code>other</code>  </td> </tr>
 <tr>

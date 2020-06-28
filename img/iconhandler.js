@@ -45,7 +45,8 @@ function correct_size_100_percent(pData) {
 }
 
 
-function handle_src(picon,piconcolor) {
+
+function handle_src_SVG(picon,piconcolor) {
   console.log("CALL: handle_src('" + picon.name + "')");
   var src = "";
   var a = "";
@@ -89,10 +90,73 @@ function handle_src(picon,piconcolor) {
     //src = src.replace(/[\s]+/g," ");
     //src = src.replace(/standalone="no"/g,"");
     //src = src.replace(/"/g,"'");
-  };
+  }
   console.log("SVG: "+a);
   return src;
 }
+
+function handle_src(picon,pext,piconcolor) {
+  console.log("CALL: handle_src_type('" + picon.name + "')");
+  var src = "";
+  var a = "";
+	var ext = pext.toUpperCase() || "png";
+  if (picon) {
+		switch (ext) {
+			case "SVG":
+				if (picon.hasOwnProperty("src")) {
+					console.log("CALL: handle_src() - picon.src is defined ");
+					src = picon.src;
+					a   = picon.src;
+					// prefix: data:image/svg+xml;
+					// format: base64,
+					var h = get_data_url_header(src);
+					var s = remove_data_url_header(src);
+					if (piconcolor) {
+						//a = btoa(s);
+						a = atob(s);
+						console.log("CALL: piconcolor defined piconcolor='" + piconcolor + "'");
+						if (picon.name.indexOf("-black.svg") > 0) {
+							console.log("ICON: '" + picon.name + "' has black default color");
+							a = replaceString(a,'style="fill:#000"','style="fill:' + piconcolor + '"');
+							a = replaceString(a,'fill="#000"','fill="#FFF"');
+						} else if (picon.name.indexOf("-white.svg") > 0) {
+							console.log("ICON: '" + picon.name + "' has white default color");
+							a = replaceString(a,'style="fill:currentColor"','style="fill:' + piconcolor + '"');
+							a = replaceString(a,'fill="currentColor"','fill="#000"');
+						} else {
+							console.log("ICON: '" + picon.name + "' set with color '" + piconcolor + "'");
+							a = replaceString(a,'style="fill:currentColor"','style="fill:' + piconcolor + '"');
+							a = replaceString(a,'fill="currentColor"','fill="' + piconcolor + '"');
+						}
+						a = correct_size_100_percent(a);
+						console.log("SVG: '" + picon.name + "' " + a.substr(0,30)+"...");
+						src = h + "," + btoa(a);
+					} else {
+						console.log("ICON COLOR: color of icon is undefined");
+					};
+					console.log("SVG: "+a.substr(0,30)+"...")
+				} else {
+					console.warn("handle_src");
+				}
+			break;
+			default:
+				if (picon.hasOwnProperty("src")) {
+					src = picon.src;
+				} else {
+
+				}
+		}
+
+    //src = src.replace(/\n/g,"");
+    //src = src.replace(/\\n/g," ");
+    //src = src.replace(/\\n/g,"\n");
+    //src = src.replace(/[\s]+/g," ");
+    //src = src.replace(/standalone="no"/g,"");
+    //src = src.replace(/"/g,"'");
+  };
+  return src;
+}
+
 
 function get_data_url_header(psrc) {
   var header = "data:image/svg+xml;base64";
@@ -121,7 +185,7 @@ function remove_data_url_header(psrc) {
 
 function icon2node(pnode,pname,pext,piconcolor) {
   var iconcolor = piconcolor || "#ff0000";
-  console.log("CALL: icon2node(pnode,pname,pext)");
+  console.log("CALL: icon2node(pnode,'"+pname+"','"+pext+"')");
   if (pnode) {
     var i4m = vDataJSON.json4icons.icons || [];
     if (i4m) {
@@ -134,14 +198,14 @@ function icon2node(pnode,pname,pext,piconcolor) {
     var found = -1;
     for (var i = 0; i < i4m.length; i++) {
       //console.log("Icon Check: '" + i4m[i].name + "' compare with '" + name + "'" );
-      if (i4m[i].name == name) {
+      if (i4m[i].name === name) {
         found = i;
-        console.log("Found Image: '" + name + "' in Icons4Menu");
+        console.log("Found Image " + found + ": '" + name + "' in Icons4Menu");
       }
     }
     if (found >= 0) {
       console.log("Found the image-tag for '" + pname + "." + pext + "'");
-      pnode.setAttribute("src",handle_src(i4m[found],iconcolor));
+      pnode.setAttribute("src",handle_src(i4m[found],ext,iconcolor));
       console.log("src-attribute defined for '" + pname + "." + pext + "'")
     } else {
       console.error("ERROR: icon not found in Icons4Menu");

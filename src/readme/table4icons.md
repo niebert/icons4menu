@@ -2,7 +2,7 @@
 
 ### Load, Save, Print, Cancel, Trash, Settings
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -81,7 +81,7 @@
 
 ### Action and Processes
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -166,7 +166,7 @@
 
 ### Arrow
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -239,7 +239,7 @@
 
 ### Media
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -276,7 +276,7 @@
 
 ### Other
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -475,7 +475,7 @@
 
 ### Navigation
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -532,7 +532,7 @@
 
 ### Medical
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -549,7 +549,7 @@
 
 ### Device
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -584,7 +584,7 @@
 
 ### Login
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -621,7 +621,7 @@
 
 ### Editor
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -680,7 +680,7 @@
 
 ### Audio Player
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -731,7 +731,7 @@
 
 ### Products and Objects
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -758,7 +758,7 @@
 
 ### Filetype
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -773,7 +773,7 @@
 
 ### Vehicle
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>

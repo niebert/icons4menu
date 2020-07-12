@@ -77,7 +77,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Load, Save, Print, Cancel, Trash, Settings
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -156,7 +156,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Action and Processes
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -241,7 +241,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Arrow
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -314,7 +314,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Media
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -351,7 +351,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Other
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -550,7 +550,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Navigation
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -607,7 +607,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Medical
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -624,7 +624,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Device
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -659,7 +659,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Login
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -696,7 +696,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Editor
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -755,7 +755,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Audio Player
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -806,7 +806,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Products and Objects
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -833,7 +833,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Filetype
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>
@@ -848,7 +848,7 @@ The following icons are selected from the following [SVG-Icons in Wiki Commons](
 
 ### Vehicle
 <center>
-<table border=1>
+<table border=1 bgcolor="#C0C0C0">
 <tr>
 <th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>
 </tr>

@@ -92,7 +92,7 @@ function get_table_group_header(group) {
   var out = "\n\n"
   out += "### " + get_header4group(group) +"\n";
   out +="<center>\n"
-  out +="<table border=1>\n"
+  out +="<table border=1 bgcolor=\"#C0C0C0\">\n"
   out +="<tr>\n"
   out += "<th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>\n";
   out +="</tr>\n"

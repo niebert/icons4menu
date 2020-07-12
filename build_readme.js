@@ -92,7 +92,7 @@ function get_table_group_header(group) {
   var out = "\n\n"
   out += "### " + get_header4group(group) +"\n";
   out +="<center>\n"
-  out +="<table border=1 bgcolor=\"#C0C0C0\">\n"
+  out +="<table border=1>\n"
   out +="<tr>\n"
   out += "<th> Icon </th><th> File </th><th> Folder  </th><th>  Source File </th><th> Licence  </th><th> Group </th>\n";
   out +="</tr>\n"
@@ -103,7 +103,7 @@ function get_table_row4icon(icon) {
   var out = "";
   var wc_name = get_wikicommons_name(icon); // Wiki Commons Name
   out +="<tr>\n"
-  out += "<td style='background-color: #C0C0C0;'>  <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> <a href='" + icon.wikicommons + "' target='_blank'><code>" + icon.name + "</code></a> </td><td> <code>" + icon.path + "</code>  </td><td> <a href='" + get_wikicommons_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> <code>" + get_icon_group(icon) + "</code>  </td> ";
+  out += "<td>  <img style=\"background-color:#C0C0C0;\"  src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> <a href='" + icon.wikicommons + "' target='_blank'><code>" + icon.name + "</code></a> </td><td> <code>" + icon.path + "</code>  </td><td> <a href='" + get_wikicommons_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> <code>" + get_icon_group(icon) + "</code>  </td> ";
   out +="</tr>\n"
   return out;
 }

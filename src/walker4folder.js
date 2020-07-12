@@ -1,10 +1,11 @@
-
+console.log("START: walker4folder.js started");
 
 //requiring path and fs modules
 const path = require('path');
 const fs = require('fs');
 const ls = require("./loadsave.js");
 
+// walk_directory(directoryPath);
 
 //joining path of directory
 // var directoryPath = path.join(__dirname, '.');
@@ -17,17 +18,25 @@ var dirAppend = "";
 var dirs = [];
 var files = [];
 
+var handle_dir = function (file,pathItem,dirAppend) {
+  handle_dir_default(file,pathItem,dirAppend);
+}
+
+var handle_file = function (file,pathItem,dirAppend) {
+  handle_file_default(file,pathItem,dirAppend);
+}
+
 function isFile(pathItem) {
   var extension = path.extname(pathItem);
   console.log("File: '"+pathItem+"' with Extension: '"+extension+"'");
   return extension;
 }
 
-function handle_dir(file,pathItem,dirAppend) {
+function handle_dir_default(file,pathItem,dirAppend) {
   dirs.push(dirAppend+file);
 }
 
-function handle_file(file,pathItem,dirAppend) {
+function handle_file_default(file,pathItem,dirAppend) {
   files.push(dirAppend+file);
 }
 
@@ -124,17 +133,21 @@ function save_scanned() {
   console.log("DONE");
 }
 
-//walk_directory(directoryPath);
-//setTimeout(save_scanned,1000);
+
+function timeout_save_scanned() {
+  setTimeout(save_scanned,1000);
+}
+
+function walker4folder (pDirectoryPath,pHandler_File,pHandler_Dir) {
+  var vDirPath = pDirectoryPath || directoryPath;
+  handle_dir = pHandler_Dir || handle_dir_default;
+  handle_file = pHandler_File || handle_file_default;
+  walk_directory (vDirPath,"");
+}
 
 module.exports = {
-  "isFile" : isFile,
-  "save_scanned": save_scanned,
   "walk_directory": walk_directory,
-  "log_file_properties": log_file_properties,
-  "process_file": process_file,
-  "filter_dir": filter_dir,
-  "filter_file": filter_file,
-  "handle_file": handle_file,
-  "handle_dir": handle_dir
+  "walker4folder": walker4folder,
+  "save_scanned": timeout_save_scanned,
+  "ls": ls
 };

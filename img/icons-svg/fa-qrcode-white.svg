@@ -55,6 +55,6 @@
        d="M 384,384 V 256 H 256 v 128 h 128 z m 0,768 V 1024 H 256 v 128 h 128 z m 768,0 v -128 h -128 v 128 h 128 z M 128,129 H 512 V 512 H 128 V 129 z m 0,767 h 384 v 384 H 128 V 896 z m 768,0 h 384 v 384 H 896 V 896 z M 640,640 V 0 H 0 V 640 H 640 z M 1152,128 V 0 h -128 v 128 h 128 z m 256,0 V 0 h -128 v 128 h 128 z m 0,512 V 256 H 1024 V 384 H 896 V 0 H 768 v 640 h 384 V 512 h 128 v 128 h 128 z M 640,1408 V 768 H 0 v 640 h 640 z m 768,0 V 768 H 768 v 640 h 640 z"
        id="path2993"
        inkscape:connector-curvature="0"
-       style="fill:#FFF" />
+       style="fill:#EEE" />
   </g>
 </svg>

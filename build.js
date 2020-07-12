@@ -110,8 +110,8 @@ function save_color_icons(pFilename,pi,pName,pData) {
       // no write files
     } else {
       // search 'style="fill:currentColor"' and replace with
-      data = replaceString(data,'style="fill:currentColor"','style="fill:#FFF"');
-      data = replaceString(data,'fill="currentColor"','fill="#FFF"');
+      data = replaceString(data,'style="fill:currentColor"','style="fill:#EEE"');
+      data = replaceString(data,'fill="currentColor"','fill="#EEE"');
       // fill="currentColor"
       data = correct_size(data);
       save_icon4color(pFilename,"-white",data);

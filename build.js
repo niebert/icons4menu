@@ -1,6 +1,8 @@
 'use strict';
 var Base64 = require('js-base64').Base64;
 const fs = require('fs');
+//const shell = require('shelljs')
+//shell.exec('sh scan-icons.sh')
 var json4icons = require('./img/json4icons.json');
 var vFilename = "";
 

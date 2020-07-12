@@ -301,6 +301,9 @@ function init_icon_group() {
     } else if (vName.indexOf("fa-book") == 0) {
       //---- PRODUCT/OBJECTS ----
       json4icons.icons[i].group = "product";
+    } else if (vName.indexOf("fa-key") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "product";
     } else if (vName.indexOf("fa-picture") == 0) {
       //---- PRODUCT/OBJECTS ----
       json4icons.icons[i].group = "product";

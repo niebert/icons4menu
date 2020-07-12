@@ -277,6 +277,10 @@ function init_icon_group() {
       json4icons.icons[i].group = "editor";
     } else if (vName.indexOf("search") == 0) {
       json4icons.icons[i].group = "editor";
+    } else if (vName.indexOf("fa-plus-") == 0) {
+      json4icons.icons[i].group = "editor";
+    } else if (vName.indexOf("fa-minus-") == 0) {
+      json4icons.icons[i].group = "editor";
     } else if (vName.indexOf("heart") == 0) {
       //---- MEDICAL ----
       json4icons.icons[i].group = "medical";

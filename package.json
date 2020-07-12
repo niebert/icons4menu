@@ -4,8 +4,8 @@
   "description": "SVG and PNG Icons for Menus and Buttons that can be used in AppLSAC, Electron application or in general in WebApps. ",
   "main": "build.js",
   "scripts": {
-    "build": "node ./build.js;node ./build_readme.js",
-    "scan": "sh ./scan_icons.sh",
+    "build4node": "node ./build.js;node ./build_readme.js",
+    "build": "sh ./scan_icons.sh",
     "test": "jshint build.js"
   },
   "repository": {

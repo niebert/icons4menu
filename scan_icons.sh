@@ -28,7 +28,7 @@ echo "echo \"WGET Script to download ${MODULE}\"" >> $WGETFILE
 echo "echo \"----------------------------------\"" >> $WGETFILE
 echo "echo \"Source: https://niebert.github.io/icons4menu/wget_icons.sh\"" >> $WGETFILE
 echo "echo \"Check if current folder name is 'img' - then script started from folder 'img'.\"" >> $WGETFILE
-echo "currentfolder=${PWD##*/}" >> $WGETFILE
+echo "currentfolder=\${PWD##*/}" >> $WGETFILE
 echo "if [ \"\$currentfolder\" -eq \"img\" ]; then"  >> $WGETFILE
 echo "    echo \"Started in 'img' - change to parent directory\""   >> $WGETFILE
 echo "    cd .."  >> $WGETFILE
@@ -165,6 +165,10 @@ cat ./src/readme/README_tail.md  >> $READMEFILE
 echo "Create README.html"
 echo "-------------------"
 pandoc -s -f markdown -t html5 README.md -o README.html
+cp wget_icons.sh img
+echo "-----------------------"
+echo " npm run build -- DONE"
+echo "-----------------------"
 # title=`cat $i | $SED_CMD -n 's/<title>\(.*\)<\/title>/\1/Ip' | $SED_CMD -e 's/^[ \t]*//'`
         	## GNU: cat docs/index.html | sed -n 's/<title>\(.*\)<\/title>/\1/Ip'`
         	## OSX: cat docs/index.html | gsed -n 's/<title>\(.*\)<\/title>/\1/Ip'`

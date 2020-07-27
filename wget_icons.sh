@@ -2,7 +2,7 @@
 echo "WGET Script to download Icons4Menu"
 echo "----------------------------------"
 echo "Source: https://niebert.github.io/icons4menu/wget_icons.sh"
-echo"Check if current folder name is 'img' - then script started from folder 'img'.
+echo "Check if current folder name is 'img' - then script started from folder 'img'."
 currentfolder=icons4menu
 if [ "$currentfolder" -eq "img" ]; then
     echo "Started in 'img' - change to parent directory"

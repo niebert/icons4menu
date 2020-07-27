@@ -27,7 +27,7 @@ echo "#!/bin/sh" > $WGETFILE
 echo "echo \"WGET Script to download ${MODULE}\"" >> $WGETFILE
 echo "echo \"----------------------------------\"" >> $WGETFILE
 echo "echo \"Source: https://niebert.github.io/icons4menu/wget_icons.sh\"" >> $WGETFILE
-echo "echo\"Check if current folder name is 'img' - then script started from folder 'img'." >> $WGETFILE
+echo "echo \"Check if current folder name is 'img' - then script started from folder 'img'.\"" >> $WGETFILE
 echo "currentfolder=${PWD##*/}" >> $WGETFILE
 echo "if [ \"\$currentfolder\" -eq \"img\" ]; then"  >> $WGETFILE
 echo "    echo \"Started in 'img' - change to parent directory\""   >> $WGETFILE

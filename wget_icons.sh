@@ -2,6 +2,14 @@
 echo "WGET Script to download Icons4Menu"
 echo "----------------------------------"
 echo "Source: https://niebert.github.io/icons4menu/wget_icons.sh"
+echo"Check if current folder name is 'img' - then script started from folder 'img'.
+currentfolder=icons4menu
+if [ "$currentfolder" -eq "img" ]; then
+    echo "Started in 'img' - change to parent directory"
+    cd ..
+else
+    echo "Not started in directory 'img' - start script directly!"
+fi;
  
 DOWNLOAD_FOLDER="icons-svg"
  
@@ -133,8 +141,10 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
  
     wget https://niebert.github.io/icons4menu/img/icons-svg/action-black.svg -O img/icons-svg/action-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/action-white.svg -O img/icons-svg/action-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/action.svg -O img/icons-svg/action.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/alert-black.svg -O img/icons-svg/alert-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/alert-white.svg -O img/icons-svg/alert-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/alert.svg -O img/icons-svg/alert.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-black.svg -O img/icons-svg/arrow-d-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-l-black.svg -O img/icons-svg/arrow-d-l-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-l-white.svg -O img/icons-svg/arrow-d-l-white.svg

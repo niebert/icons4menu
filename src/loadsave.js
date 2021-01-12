@@ -1,5 +1,24 @@
 var fs = require('fs');
 
+// directory path
+
+// list all files in the directory
+function list_dir(dir) {
+    fs.readdir(dir, (err, files) => {
+        if (err) {
+            throw err;
+        }
+
+        // files object contains all files names
+        // log them on console
+        files.forEach(file => {
+            console.log("File: "+file);
+        });
+    });
+
+}
+
+
 function load_file (pFilename) {
   //var fs = require('fs');
   var vContent = fs.readFileSync(pFilename, 'utf8');
@@ -53,6 +72,7 @@ function save_json(pFilename, pJSON) {
 }
 
 module.exports = {
+  "list_dir":  list_dir,
   "load_file": load_file,
   "save_file": save_file,
   "load_json": load_json,

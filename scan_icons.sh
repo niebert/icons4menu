@@ -26,6 +26,10 @@ echo "  ${SEP}icons${SEP}: [" >> $JSONFILE
 echo "#!/bin/sh" > $WGETFILE
 echo "echo \"WGET Script to download ${MODULE}\"" >> $WGETFILE
 echo "echo \"----------------------------------\"" >> $WGETFILE
+echo "echo \"CALL Download all SVG Icons:   \$0 svg \"" >> $WGETFILE
+echo "echo \"CALL Download all PNG Icons:   \$0 png \"" >> $WGETFILE
+echo "echo \"CALL Download single SVG Icon: \$0 svg video-white.svg \"" >> $WGETFILE
+echo "echo \"CALL Download single PNG Icon: \$0 png video-white.png \"" >> $WGETFILE
 echo "echo \"Source: https://niebert.github.io/icons4menu/wget_icons.sh\"" >> $WGETFILE
 echo "echo \"Check if current folder name is 'img' - then script started from folder 'img'.\"" >> $WGETFILE
 echo "currentfolder=\${PWD##*/}" >> $WGETFILE
@@ -46,6 +50,15 @@ echo " " >> $WGETFILE
 echo "if [ \"\$1\" = \"png\" ]; then" >> $WGETFILE
 echo "  echo \"Download PNG Icons\"" >> $WGETFILE
 echo "  DOWNLOAD_FOLDER=\"icons-png\"" >> $WGETFILE
+echo "fi" >> $WGETFILE
+echo " " >> $WGETFILE
+echo "ICON_SELECT=\"all\""
+echo "if [ \$# -lt 2 ]" >> $WGETFILE
+echo "then" >> $WGETFILE
+echo "    ICON_SELECT=\"\$2\""
+echo "    echo \"Single Icon Download of Icon '\$ICON_SELECT' \"" >> $WGETFILE
+echo "    wget ${DOMAIN}$SUBDIR/icons-\$1/\$2 -O $SUBDIR/icons-\$1/\$2" >> $WGETFILE
+echo "    wget " >> $WGETFILE
 echo "fi" >> $WGETFILE
 echo " " >> $WGETFILE
 echo "mkdir ${SUBDIR} " >> $WGETFILE
@@ -160,6 +173,7 @@ echo "Create README.md"
 echo "-------------------"
 cat ./src/readme/README_header.md > $READMEFILE
 cat ./src/readme/table4icons.md  >> $READMEFILE
+cat ./src/readme/README_create_icons.md  >> $READMEFILE
 cat ./src/readme/README_tail.md  >> $READMEFILE
 
 echo "Create README.html"

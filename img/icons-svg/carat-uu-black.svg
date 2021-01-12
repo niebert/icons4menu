@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.2" width="14px" height="14px" viewBox="0 0 494 494" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+<svg version="1.2"
+  width="14px"
+  height="14px"
+  viewBox="0 0 494 494"
+  preserveAspectRatio="xMidYMid"
+  fill-rule="evenodd"
+  stroke-width="28.222"
+  stroke-linejoin="round"
+  icons4menu="https://niebert.github.io/img/icons-svg/carat-uu-black.svg"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:ooo="http://xml.openoffice.org/svg/export"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:presentation="http://sun.com/xmlns/staroffice/presentation"
+  xmlns:smil="http://www.w3.org/2001/SMIL20/"
+  xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0"
+  xml:space="preserve">
  <defs class="ClipPathGroup">
   <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
    <rect x="0" y="0" width="494" height="494"/>
@@ -59,13 +74,13 @@
       <g class="com.sun.star.drawing.PolyPolygonShape">
        <g id="id3">
         <rect class="BoundingBox" stroke="none" fill="none" x="10" y="27" width="478" height="271"/>
-        <path fill="rgb(0,0,0)" stroke="none" d="M 415,296 L 248,151 82,296 11,234 248,27 486,233 415,296 Z"/>
+        <path fill="#000" stroke="none" d="M 415,296 L 248,151 82,296 11,234 248,27 486,233 415,296 Z"/>
        </g>
       </g>
       <g class="com.sun.star.drawing.PolyPolygonShape">
        <g id="id4">
         <rect class="BoundingBox" stroke="none" fill="none" x="14" y="203" width="477" height="271"/>
-        <path fill="rgb(0,0,0)" stroke="none" d="M 418,472 L 252,327 85,472 14,410 251,203 489,410 418,472 Z"/>
+        <path fill="#000" stroke="none" d="M 418,472 L 252,327 85,472 14,410 251,203 489,410 418,472 Z"/>
        </g>
       </g>
      </g>

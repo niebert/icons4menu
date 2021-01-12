@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic Hamburger Navigation Menu Demo</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="site-nav" currentpage="home">
+            <h1 class="menu-logo">WebApp <span>Navigation</span></h1>
+
+            <div class="menu-toggle">
+              <div class="hamburger"></div>
+            </div>
+
+            <ul class="open desktop">
+                <li><a href="#!"  onclick="app.nav.page('home')"><img class="menu-icon" src="img/icons-svg/home-white.svg"><div class="nav-text site-nav--text">Home</div></a></li>
+                <li><a href="#!"  onclick="app.nav.page('news')"><img class="menu-icon" src="img/icons-svg/info-white.svg"><div class="nav-text site-nav--text">News</div></a></li>
+                <li><a href="#!"  onclick="app.nav.page('about')"><img class="menu-icon" src="img/icons-svg/info-white.svg"><div class="nav-text site-nav--text">About</div></a></li>
+                <li><a href="#!"  onclick="app.nav.page('download')"><img class="menu-icon" src="img/icons-svg/arrow-d-white.svg"><div class="nav-text site-nav--text">Download</div></a></li>
+                <li><a href="#!"  onclick="app.nav.evt.show_message('My message to you!')"><img class="menu-icon" src="img/icons-svg/gear-white.svg"><div class="nav-text site-nav--text">Script-Call</div></a></li>
+                <li><a href="use_icons.html" id="menu_link"><img class="menu-icon" src="img/icons-svg/action-white.svg"><div class="nav-text site-nav--text">Link</div></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="area" data-role="page-container" id="page-container" currentpage="home">
+    	<div class="pages-app" data-role="page" id="home">
+    		<h2>Home</h2>
+    		Please try to <b>change width</b> of the browser window to see what happens with the hamburger menu - with a narrow width the hamburger menu icon will appear on the right top.
+        The menu bar in the Desktop Mode does not show icons. Only in the mobile mode (small width of window on mobile devices) logos are visible in the menu items. You have options for the top menu bar shown below.
+        <ul>
+          <li>
+            <a href="menu_text_only.html"><b>Menu Bar in Desktop Mode:</b> Text only </a>
+          </li>
+          <li>
+            <a href="menu_icons_text.html"><b>Menu Bar in Desktop Mode:</b> Icons and Text </a>
+          </li>
+          <li>
+            <a href="menu_icons_only.html"><b>Menu Bar in Desktop Mode:</b> Icons only </a>
+          </li>
+        </ul>
+        Create you own WebApp with <a href="https://niehausbert.gitlab.io/jsoneditor4menu" target="_blank">JSONEditor4Menu</a>.
+        See also <a href="use_icons.html">general info about the integration of icons</a> in WebApps.
+    	</div>
+    	<div class="pages-app" data-role="page" id="news">
+    		<h2>News</h2>
+    		This is News page with page content.
+        With an Open Source JSON Editor originally developed by Jeremy Dorn a Navigation Menu Creator is developed. A first alpha-version is used to created this demo.
+        In the future you can create your own hamburger menu with <a href="https://niebert.github.io/hamburger-menu-creator" target="_blank">JSONEditor4Menu</a> which is an Offline <a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache" target="_blank">AppLSAC</a>.
+        <ul>
+          <li>
+            Link to the <a href="#!"  onclick="app.nav.page('contact')">contact page</a> in the text.
+          </li>
+          <li>
+            Link to the <a href="#!"  onclick="app.nav.page('about')">About page</a> in the text.
+          </li>
+          <li>
+            The Javascript code for the page navigation is defined in <kbd><a href="https://github.com/niebert/hamburger_menu_app/blob/master/js/menu.js" target="_blank">js/menu.js</a></kbd>
+          </li>
+        </ul>
+
+      </div>
+    	<div class="pages-app" data-role="page" id="about">
+    		<h2>About</h2>
+    		This Hamburger Menu was created with a first alpha version of <a href="https://niebert.github.io/hamburger-menu-creator" target="_blank">JSONEditor4Menu</a>.
+        The Hamburger Menu is an <a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache" target="_blank">AppLSAC</a> and this first prototype can be download this example as <a href="https://github.com/niebert/hamburger_menu_app/archive/master.zip" target="_blank">ZIP file</a> from <a href="https://github.com/niebert/hamburger_menu_app" target="_blank"><kbd>hamburger_menu_app</kbd> GitHub repository</a>.
+    	</div>
+    	<div class="pages-app" data-role="page" id="download">
+    		<h2>Download</h2>
+    		This is a Download page with resources used in this demo:
+        <ul>
+          <li>
+            the <a href="https://jquerymobile.com/download/">JQuery Mobile SVG-Icons</a> that are part of version 1.4.5.
+          </li>
+          <li>
+            exend used JQuery Mobile icons with more SVG icons e.g. <a href="https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&profile=default&search=FontAwesome.com&advancedSearch-current={}&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1" target="_blank">SVG Font Awesome Icons</a>, that are provided as single SVG icons e.g. licensed under Creative Commons Attribution 4.0 International  in Wiki Commons</a>.
+          </li>
+          <li>
+            see also <a href="https://www.github.com/niebert/icons4menu">Icons4Menu on GitHub</a>
+          </li>
+          <li>
+            you can also download this <a href="https://github.com/niebert/hamburger_menu_app/archive/master.zip" target="_blank"><kbd>hamburger_menu_app</kbd>  example</a>. Please make a reference to the source of the icons you use in your Hamburger Menu e.g. in acknowledgements or the README of your Open Source WebApp.
+          </li>
+        </ul>
+    	</div>
+    	<div class="pages-app" data-role="page" id="contact">
+    		<h2>Contact</h2>
+    		This is a demo contact page. The Hamburger Menu uses JQuery to hide and show the selected pages in the menu. The page navigation is defined in <kbd><a href="https://github.com/niebert/hamburger_menu_app/blob/master/js/menu.js" target="_blank">js/menu.js</a></kbd>.
+    	</div>
+    </div>
+<!--
+<script src="js/jquery-3.2.0.min.js"></script>
+-->
+<script src="js/jquery-3.2.0.js"></script>
+
+<script src="js/menu.js"></script>
+
+<script type="text/javascript">
+  //--- show the start page ----
+  app.nav.page("home");
+  //--- Assign Toggle Menu Function ----
+  $('.menu-toggle').click(app.nav.menu.toggle);
+</script>
+</body>
+</html>

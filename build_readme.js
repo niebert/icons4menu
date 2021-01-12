@@ -9,14 +9,17 @@ var web_icon_prefix = "https://niebert.github.io/icons4menu/";
 function get_extension(pFilename) {
   var ext = "";
   if (pFilename) {
-    ext = pFilename.substr(pFilename.lastIndexOf('.') + 1);
-    ext = ext.toLowerCase();
+    if (pFilename.lastIndexOf('.') > 0) {
+      ext = pFilename.substr(pFilename.lastIndexOf('.') + 1);
+      ext = ext.toLowerCase();
+    } else {
+      console.warn("Extension undefined in pFilename");
+    }
   } else {
     console.log("CALL: get_extension(pFilename) - pFilename undefined!");
   }
   return ext;
 }
-
 
 function replaceString(pString,pSearch,pReplace)
 // replaces in the string "pString" multiple substrings "pSearch" by "pReplace"
@@ -69,12 +72,14 @@ function get_header4group(group) {
   return header;
 }
 
-function get_wikicommons_name(icon) {
+function get_icon_source_name(icon) {
   var name = "JQ-"+icon.name;
   if (icon.name.indexOf("fa-") == 0) {
-    var pos = icon.wikicommons.lastIndexOf("/");
-    if (pos > 0) {
-      name = icon.wikicommons.substr(pos+1);
+    if (icon.icon_source) {
+      var pos = icon.icon_source.lastIndexOf("/");
+      if (pos > 0) {
+        name = icon.icon_source.substr(pos+1);
+      }
     }
   }
   return name;
@@ -101,18 +106,18 @@ function get_table_group_header(group) {
 
 function get_table_row4icon(icon) {
   var out = "";
-  var wc_name = get_wikicommons_name(icon); // Wiki Commons Name
+  var wc_name = get_icon_source_name(icon); // Wiki Commons Name
   out +="<tr>\n"
-  out += "<td>  <img style=\"background-color:#C0C0C0;\"  src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> <a href='" + icon.wikicommons + "' target='_blank'><code>" + icon.name + "</code></a> </td><td> <code>" + icon.path + "</code>  </td><td> <a href='" + get_wikicommons_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> <code>" + get_icon_group(icon) + "</code>  </td> ";
+  out += "<td>  <img style=\"background-color:#C0C0C0;\"  src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> <a href='" + icon.icon_source + "' target='_blank'><code>" + icon.name + "</code></a> </td><td> <code>" + icon.path + "</code>  </td><td> <a href='" + get_icon_source_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> <code>" + get_icon_group(icon) + "</code>  </td> ";
   out +="</tr>\n"
   return out;
 }
 
 function MD_get_table_row4icon(icon) {
   var out = "\n";
-  var wc_name = get_wikicommons_name(icon); // Wiki Commons Name
+  var wc_name = get_icon_source_name(icon); // Wiki Commons Name
   out += "| <img src=\"" + web_icon_prefix + icon.path + "/" + icon.name + "\" width=\"20\">  ";
-  out += "| [\`" + icon.name + "\`](" + icon.wikicommons +")  | \`" + icon.name + "\` | \`" + icon.path + "\`  | [\`" + wc_name + "\`](" + get_wikicommons_page(icon) + ") | " + get_icon_license(icon) + " | \`" + get_icon_group(icon) + "\`  | ";
+  out += "| [\`" + icon.name + "\`](" + icon.icon_source +")  | \`" + icon.name + "\` | \`" + icon.path + "\`  | [\`" + wc_name + "\`](" + get_icon_source_page(icon) + ") | " + get_icon_license(icon) + " | \`" + get_icon_group(icon) + "\`  | ";
   return out;
 }
 
@@ -168,10 +173,10 @@ function get_icon_license(icon) {
   return "<a href='" + url + "' target='_blank'>" + icon.license + "</a>";
 }
 
-function get_wikicommons_page(icon) {
-  var url = icon.wikicommons; // could also be a JQ Mobile URL
+function get_icon_source_page(icon) {
+  var url = icon.icon_source; // could also be a JQ Mobile URL
   if (icon.name.indexOf("fa-") == 0) {
-    url = "https://commons.wikimedia.org/wiki/File:" + get_wikicommons_name(icon);
+    url = "https://commons.wikimedia.org/wiki/File:" + get_icon_source_name(icon);
   };
   return url;
 }

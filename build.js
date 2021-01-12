@@ -10,8 +10,12 @@ var vFilename = "";
 function get_extension(pFilename) {
   var ext = "";
   if (pFilename) {
-    ext = pFilename.substr(pFilename.lastIndexOf('.') + 1);
-    ext = ext.toLowerCase();
+    if (pFilename.lastIndexOf('.') > 0) {
+      ext = pFilename.substr(pFilename.lastIndexOf('.') + 1);
+      ext = ext.toLowerCase();
+    } else {
+      console.warn("Extension undefined in pFilename");
+    }
   } else {
     console.log("CALL: get_extension(pFilename) - pFilename undefined!");
   }
@@ -53,43 +57,76 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function get_wikicommons_url(data) {
-  var url = "https://jquerymobile.com/download/";
-  if (data) {
-    var pos = data.indexOf("wikicommons");
+function extract_parameter(pID,data) {
+  var param = null;
+  if (pID) {
+    var pos = data.indexOf(pID);
     if (pos > 0) {
       data = data.substr(pos + 1);
       var arr = data.split('"');
       if (arr.length > 2) {
-        url = arr[1];
-        console.log("WikiCommons URL: '" + url + "'");
+        param = arr[1];
+        console.log("Parameter [" + pID + "]: '" + param + "'");
       }
     }
+  } else {
+    console.error("ERROR: extract_parameter(pID,data) - pID not defined");
+  }
+  return param;
+}
+
+function get_icon_source_url(data) {
+  var url = "https://jquerymobile.com/download/";
+  if (data) {
+    var param = extract_parameter("wikicommons",data);
+    if (param) {
+        url = param;
+        console.log("WikiCommons URL: '" + url + "'");
+    }
+
+    param = extract_parameter("icons4menu",data);
+    if (param) {
+        url = param;
+        console.log("Icons4Menu URL: '" + url + "'");
+    }
+  } else {
+    console.warn("get_icon_source_url(data) - data was not defined");
+  }
+  if (!url) {
+    url = "http://undefined.icon.url";
   }
   return url;
 }
 
 function save_icon4color(pFilename,pInsert,pData) {
   var position = pFilename.lastIndexOf(".");
-  if (pFilename.indexOf("-white.") > 0) {
-    // WHITE: exclude files that are already styled with a specfic color
-    console.warn("File '" + pFilename + "' is already an Icon with a defined color! File ignored");
-  } else if (pFilename.indexOf("-black.") > 0) {
-    // BLACK: exclude files that are already styled with a specfic color
-    console.warn("File '" + pFilename + "' is already an Icon with a defined color! File ignored");
-  } else if (pFilename.indexOf("-red.") > 0) {
-    // WHITE: exclude files that are already styled with a specfic color
-    console.warn("File '" + pFilename + "' is already an Icon with a defined color! File ignored");
-  } else {
-    var vFilename4Color = [pFilename.slice(0, position), pInsert, pFilename.slice(position)].join('');
-    console.log("Save Icon with color postfix 'pInsert' to '" + vFilename4Color + "'");
-    fs.writeFile(vFilename4Color, pData, (err) => {
-        // throws an error, you could also catch it here
-        if (err) throw err;
+  if (pFilename) {
+    if (pFilename.indexOf("-white.") > 0) {
+      // WHITE: exclude files that are already styled with a specfic color
+      console.warn("File '" + pFilename + "' is already an Icon with a defined color! File ignored");
+    } else if (pFilename.indexOf("-black.") > 0) {
+      // BLACK: exclude files that are already styled with a specfic color
+      console.warn("File '" + pFilename + "' is already an Icon with a defined color! File ignored");
+    } else if (pFilename.indexOf("-red.") > 0) {
+      // WHITE: exclude files that are already styled with a specfic color
+      console.warn("File '" + pFilename + "' is already an Icon with a defined color! File ignored");
+    } else {
+      if (position > 0) {
+        var vFilename4Color = [pFilename.slice(0, position), pInsert, pFilename.slice(position)].join('');
+        console.log("Save Icon with color postfix 'pInsert' to '" + vFilename4Color + "'");
+        fs.writeFile(vFilename4Color, pData, (err) => {
+            // throws an error, you could also catch it here
+            if (err) throw err;
 
-        // success case, the file was saved
-        console.log("DONE: Save Icon for Color '" + vFilename4Color + "'!");
-    });
+            // success case, the file was saved
+            console.log("DONE: Save Icon for Color '" + vFilename4Color + "'!");
+        });
+      } else {
+        console.log("save_icon4color(pFilename,...) - pFilename='" + pFilename + "' position '.' at "+position);
+      }
+    }
+  } else {
+    console.error("ERROR: save_icon4color(pFilename,...) - pFilename undefined");
   }
 }
 
@@ -133,17 +170,21 @@ function save_data2json(pFilename,pi,pName) {
       console.log("Read Icon File SYNC: '" + pFilename + "'");
       //json4icons.icons[i].src = "data:image/svg+xml;utf8," + data; // SVG is a XML string so store as string
       //json4icons.icons[i].src = "data:image/svg+xml;base64," + data.toString('base64'); // SVG is a XML string so store as string
-      json4icons.icons[i].src = "data:image/svg+xml;base64," + Base64.encode(data);
-      json4icons.icons[i].raw = data;
-      json4icons.icons[i].wikicommons = get_wikicommons_url(data);
-      save_color_icons(pFilename,pi,pName,data);
+      if (data) {
+        json4icons.icons[i].src = "data:image/svg+xml;base64," + Base64.encode(data);
+        json4icons.icons[i].raw = data;
+        json4icons.icons[i].icon_source = get_icon_source_url(data);
+        save_color_icons(pFilename,pi,pName,data);
+      } else {
+        console.error("ERROR: '" + pFilename + "' does not exist!");
+      }
 
     break;
     case "png":
       var data = fs.readFileSync(pFilename);
       console.log("PNG-File '" + pFilename + "' stored base64 encoded");
       json4icons.icons[i].src = "data:image/png;base64," + data.toString('base64');
-      json4icons.icons[i].wikicommons = get_wikicommons_url(null);
+      json4icons.icons[i].icon_source = get_icon_source_url(null);
     break;
     default:
       console.error("Unsupported Filetype '" + ext + "' of Icon: '" + pFilename + "'");

@@ -8,7 +8,7 @@
     fill-rule="evenodd"
     stroke-width="28.222"
     stroke-linejoin="round"
-    icons4menu="https://niebert.github.io/img/icons-svg/i4m-wiki2reveal.svg"
+    icons4menu="https://niebert.github.io/img/icons-svg/i4m-wiki2reveal-black.svg"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:ooo="http://xml.openoffice.org/svg/export"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -75,67 +75,67 @@
        <g class="com.sun.star.drawing.LineShape">
         <g id="id3">
          <rect class="BoundingBox" stroke="none" fill="none" x="207" y="29" width="258" height="258"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 434,255 L 238,60"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 434,255 L 238,60"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.LineShape">
         <g id="id4">
          <rect class="BoundingBox" stroke="none" fill="none" x="27" y="29" width="242" height="260"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 57,258 L 238,60"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 57,258 L 238,60"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.LineShape">
         <g id="id5">
          <rect class="BoundingBox" stroke="none" fill="none" x="27" y="25" width="61" height="263"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 57,257 L 57,55"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 57,257 L 57,55"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.LineShape">
         <g id="id6">
          <rect class="BoundingBox" stroke="none" fill="none" x="402" y="25" width="63" height="263"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 433,257 L 432,55"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 433,257 L 432,55"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.OpenBezierShape">
         <g id="id7">
          <rect class="BoundingBox" stroke="none" fill="none" x="243" y="162" width="190" height="147"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 402,224 C 343,162 279,199 274,278"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 402,224 C 343,162 279,199 274,278"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.OpenBezierShape">
         <g id="id8">
          <rect class="BoundingBox" stroke="none" fill="none" x="244" y="231" width="217" height="220"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 429,261 C 432,324 259,346 276,420"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 429,261 C 432,324 259,346 276,420"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.OpenBezierShape">
         <g id="id9">
          <rect class="BoundingBox" stroke="none" fill="none" x="30" y="411" width="226" height="64"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 61,444 C 144,442 136,445 225,441"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 61,444 C 144,442 136,445 225,441"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.LineShape">
         <g id="id10">
          <rect class="BoundingBox" stroke="none" fill="none" x="243" y="262" width="64" height="210"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 275,440 L 274,292"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 275,440 L 274,292"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.OpenBezierShape">
         <g id="id11">
          <rect class="BoundingBox" stroke="none" fill="none" x="57" y="163" width="190" height="148"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 87,225 C 147,163 210,200 215,279"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 87,225 C 147,163 210,200 215,279"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.OpenBezierShape">
         <g id="id12">
          <rect class="BoundingBox" stroke="none" fill="none" x="30" y="255" width="216" height="220"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 215,285 C 217,348 45,371 61,444"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 215,285 C 217,348 45,371 61,444"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.OpenBezierShape">
         <g id="id13">
          <rect class="BoundingBox" stroke="none" fill="none" x="305" y="317" width="156" height="154"/>
-         <path fill="none" stroke="fill:currentColor;" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 335,347 C 392,401 377,391 430,439"/>
+         <path fill="none" stroke="#000000" stroke-width="60" stroke-linejoin="round" stroke-linecap="round" d="M 335,347 C 392,401 377,391 430,439"/>
         </g>
        </g>
       </g>

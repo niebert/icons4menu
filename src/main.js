@@ -52,6 +52,10 @@ function init_readme() {
       //console.log("README Icon "+vName +" is black");
       i4m.icons[i].used = false;
     }
+    var vPath = i4m.icons[i].path;
+    if (vPath.indexOf("icons-png") > 0) {
+      i4m.icons[i].used = false;
+    }
     if (i4m.icons[i].used == true) {
       console.log("README Icon: '" + vName + "' ");
     }

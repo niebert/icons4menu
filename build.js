@@ -23,17 +23,39 @@ function get_extension(pFilename) {
   return ext;
 }
 
+function extract_parameter_svg(pName,data) {
+  var par = null;
+  if (data && pName) {
+    var pos = data.indexOf(pName);
+    if (pos > 0) {
+      var s1 = data.substr(pos+1);
+      if (s1) {
+        var pos1 = s1.indexOf('"');
+        if (pos1>0) {
+          var s2 = s1.substr(pos1+1);
+          if (s2) {
+            var pos2 = s2.indexOf('"');
+            if (pos2>0) {
+              par = s2.substr(0,pos2);
+            }
+          }
+        }
+      }
+    }
+  }
+  return par;
+}
 
-function X_get_icon_source_url(data) {
+function get_icon_source_url4file(data) {
   var url = "https://jquerymobile.com/download/";
   if (data) {
-    var param = i4m.extract_parameter_svg("wikicommons",data);
+    var param = extract_parameter_svg("wikicommons",data);
     if (param) {
         url = param;
         console.log("WikiCommons URL: '" + url + "'");
     }
 
-    param = i4m.extract_parameter_svg("icons4menu",data);
+    param = extract_parameter_svg("icons4menu",data);
     if (param) {
         url = param;
         console.log("Icons4Menu URL: '" + url + "'");
@@ -133,7 +155,7 @@ function save_data2json(pFilename,pi,pName) {
       if (data) {
         json4icons.icons[i].src = "data:image/svg+xml;base64," + Base64.encode(data);
         json4icons.icons[i].raw = data;
-        json4icons.icons[i].icon_source = i4m.get_icon_source_page(json4icons.icons[i],default_icon_source);
+        json4icons.icons[i].icon_source = get_icon_source_url4file(data);
         json4icons.icons[i].url = i4m.get_icon_source_url(json4icons.icons[i]);
         save_color_icons(pFilename,pi,pName,data);
       } else {

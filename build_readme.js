@@ -10,7 +10,10 @@ var web_icon_prefix = "https://niebert.github.io/icons4menu/";
 //=====================================================
 //==== START GENERATION of README for ICON4MENU =======
 //=====================================================
-var out = i4m.md_get_table4icons();
+i4m.init_readme();
+var vUsedIcons = i4m.get_used_icons();
+var out = i4m.md_get_table4icons(vUsedIcons);
+console.log("Icons Count: "+vUsedIcons.icons.length);
 // ----------------------------------------------------
 // --------- Write ICON TABLES for README--------------
 

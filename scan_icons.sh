@@ -3,7 +3,7 @@ SED_CMD="sed"
 SUBDIR="img"
 ROOT="./${SUBDIR}/" # ROOT = "./img/"
 MODULE="Icons4Menu"
-DOMAIN="https://niebert.github.io/icons4menu/"
+DOMAIN="https://niebert.github.io/icons4menu"
 REPO="https://github.com/niebert/icons4menu"
 WIKIVERSITY="https://en.wikiversity.org/wiki/AppLSAC"
 OUTPUT="${ROOT}index.html"
@@ -61,15 +61,15 @@ echo "if [ \$# -lt 2 ]" >> $WGETFILE
 echo "then" >> $WGETFILE
 echo "    ICON_SELECT=\"\$2\""
 echo "    echo \"Single Icon Download of Icon '\$ICON_SELECT' \"" >> $WGETFILE
-echo "    wget ${DOMAIN}$SUBDIR/icons-\$1/\$2 -O $SUBDIR/icons-\$1/\$2" >> $WGETFILE
+echo "    wget ${DOMAIN}/$SUBDIR/icons-\$1/\$2 -O $SUBDIR/icons-\$1/\$2" >> $WGETFILE
 echo "    wget " >> $WGETFILE
 echo "fi" >> $WGETFILE
 echo " " >> $WGETFILE
 echo "mkdir ${SUBDIR} " >> $WGETFILE
-echo "wget ${DOMAIN}README.html -O ${SUBDIR}/README_${MODULE}.html" >> $WGETFILE
-echo "wget ${DOMAIN}LICENSE_Jquery_Mobile.txt -O ${SUBDIR}/LICENSE_Jquery_Mobile.txt" >> $WGETFILE
-echo "wget ${DOMAIN}${SUBDIR}/${JSONFILE} -O ${SUBDIR}/${JSONFILE}" >> $WGETFILE
-echo "wget ${DOMAIN}update_wget_icons.sh -O ${SUBDIR}/update_wget_icons.sh" >> $WGETFILE
+echo "wget ${DOMAIN}/README.html -O ${SUBDIR}/README_${MODULE}.html" >> $WGETFILE
+echo "wget ${DOMAIN}/LICENSE_Jquery_Mobile.txt -O ${SUBDIR}/LICENSE_Jquery_Mobile.txt" >> $WGETFILE
+echo "wget ${DOMAIN}/${SUBDIR}/${JSONFILE} -O ${SUBDIR}/${JSONFILE}" >> $WGETFILE
+echo "wget ${DOMAIN}/update_wget_icons.sh -O ${SUBDIR}/update_wget_icons.sh" >> $WGETFILE
 
 ### OUTPUT ###
 echo "<HTML>\n\t<HEAD>\n\t\t<TITLE>Icons4Menu</TITLE>" > $OUTPUT
@@ -161,7 +161,7 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
         echo "    }" >> $JSONFILE
         COMMA="   ,"
         ### WGETFILE ###
-        echo "    wget ${DOMAIN}$SUBDIR/$path/$file -O $SUBDIR/$path/$file" >> $WGETFILE
+        echo "    wget ${DOMAIN}/$SUBDIR/$path/$file -O $SUBDIR/$path/$file" >> $WGETFILE
 
         ### OUTPUT ###
         echo "    <tr>" >> $OUTPUT

@@ -40,6 +40,23 @@ function init_used(pBoolean) {
     i4m.icons[i].used = false;
   }
 }
+function init_readme() {
+  for (var i = 0; i < i4m.icons.length; i++) {
+    i4m.icons[i].used = true;
+    var vName = i4m.icons[i].name;
+    if (vName.indexOf("-white") > 0) {
+      //console.log("README Icon "+vName +" is white");
+      i4m.icons[i].used = false;
+    }
+    if (vName.indexOf("-black") > 0) {
+      //console.log("README Icon "+vName +" is black");
+      i4m.icons[i].used = false;
+    }
+    if (i4m.icons[i].used == true) {
+      console.log("README Icon: '" + vName + "' ");
+    }
+  }
+}
 
 function scan_file(pContent) {
   console.log("Scan file content for used icons.");
@@ -281,7 +298,7 @@ function get_table_row4icon(icon) {
   var web_icon_prefix = get_web_icon_prefix(icon);
   var wc_name = get_icon_source_name(icon); // Wiki Commons Name
   out +="<tr>\n";
-  out += "<td style=\"background-color:#C0C0C0;\">  <img src=\"" + web_icon_prefix + "/" + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> <a href='" + icon.icon_source + "' target='_blank'><code>" + icon.name + "</code></a> </td><td> <code>" + icon.path + "</code>  </td><td> <a href='" + get_icon_source_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> <code>" + get_icon_group(icon) + "</code>  </td> ";
+  out += "<td style=\"background-color:#C0C0C0;\">  <img src=\"" + web_icon_prefix + "/" + icon.path + "/" + icon.name + "\" width=\"20\"> </td><td> <a href='" + icon.icon_source + "' target='_blank'><code>" + icon.name + "</code></a> </td><td> <code>" + icon.path + "</code>  </td><td> <a href='" + get_icon_source_page(icon) + "' target='_blank'>" + wc_name + "</a> </td><td> " + get_icon_license(icon) + " </td><td> <code>" + icon.group + "</code>  </td> ";
   out +="</tr>\n";
   return out;
 }
@@ -291,7 +308,7 @@ function md_get_table_row4icon(icon) {
   var web_icon_prefix = get_web_icon_prefix(icon);
   var wc_name = get_icon_source_name(icon); // Wiki Commons Name
   out += "| <span style='bgcolor:#888888'><img src=\"" + web_icon_prefix + "/" + icon.path + "/" + icon.name + "\" width=\"20\"> </span> ";
-  out += "| [\`" + icon.name + "\`](" + icon.icon_source +")  | \`" + icon.name + "\` | \`" + icon.path + "\`  | [\`" + wc_name + "\`](" + get_icon_source_page(icon) + ") | " + get_icon_license(icon) + " | \`" + get_icon_group(icon) + "\`  | ";
+  out += "| [\`" + icon.name + "\`](" + icon.icon_source +")  | \`" + icon.path + "\`  | [\`" + wc_name + "\`](" + get_icon_source_page(icon) + ") | " + get_icon_license(icon) + " | \`" + icon.group + "\`  | ";
   return out;
 }
 
@@ -353,6 +370,7 @@ i4m.ls = vLS;
 i4m.str = vSTR;
 
 i4m.init_used = init_used;
+i4m.init_readme = init_readme;
 i4m.list_dir = vLS.list_dir;
 i4m.load_file = vLS.load_file;
 i4m.save_file = vLS.save_file;

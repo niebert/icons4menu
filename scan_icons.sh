@@ -205,7 +205,7 @@ echo "-------------------"
 echo "Create README.md"
 echo "-------------------"
 cat ./src/readme/README_header.md > $READMEFILE
-cat $TABLE4ICONS  >> $READMEFILE
+cat ./src/readme/table4icons.md  >> $READMEFILE
 cat ./src/readme/README_create_icons.md  >> $READMEFILE
 cat ./src/readme/README_tail.md  >> $READMEFILE
 

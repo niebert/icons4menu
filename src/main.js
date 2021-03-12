@@ -169,9 +169,10 @@ function md_get_table4icons(pUsedIcons) {
 }
 
 function get_table4icons(pUsedIcons) {
-  var vIcons = pUsedIcons.icons || i4m.icons;
+  var vUsedIcons = pUsedIcons || i4m;
+  var vIcons = vUsedIcons.icons;
   var out = "";
-  var groups = get_groups4icons(vIcons);
+  var groups = get_groups4icons(vUsedIcons);
   for (var i = 0; i < groups.length; i++) {
     out += get_table_group_header(groups[i]);
     for (var j = 0; j < vIcons.length; j++) {

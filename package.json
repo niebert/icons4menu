@@ -6,7 +6,8 @@
   "scripts": {
     "build4node": "node ./build.js;node ./build_readme.js",
     "build": "sh ./scan_icons.sh",
-    "test": "jshint build.js"
+    "test": "node ./tests/test.js",
+    "jshint": "jshint build.js"
   },
   "repository": {
     "type": "git",

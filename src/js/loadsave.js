@@ -2,6 +2,7 @@ const fs = require("fs");
 
 // list all files in the directory
 function list_dir(dir) {
+    var file_list = [];
     fs.readdir(dir, (err, files) => {
         if (err) {
             throw err;
@@ -11,10 +12,13 @@ function list_dir(dir) {
         // log them on console
         files.forEach(file => {
             console.log("File: "+file);
+            file_list.pusg(file);
         });
     });
-
+    return file_list;
 }
+
+
 
 function clone_json(pJSON) {
   var vJSON = {};

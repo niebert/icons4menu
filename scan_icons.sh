@@ -10,6 +10,9 @@ OUTPUT="${ROOT}index.html"
 WGETFILE="wget_icons.sh"
 JSONFILE="${ROOT}json4icons.json"
 READMEFILE="README.md"
+### TABLE4ICONS is an markdown table that is concatenated as part of the README.md
+### the markdown for TABLE4ICONS is generated with the first step
+TABLE4ICONS="./src/html/table4icons.html";
 SEP="\""
 NOW=$(date +"%Y/%m/%d")
 ### sed command - sed differs on OSX
@@ -18,7 +21,8 @@ NOW=$(date +"%Y/%m/%d")
 SED_CMD="gsed"
 ### JSONFILE ###
 echo "{" > $JSONFILE
-echo "  ${SEP}repository${SEP}: ${SEP}https://www.github.io/niebert/icons4menu${SEP}, " >> $JSONFILE
+echo "  ${SEP}repository${SEP}: ${SEP}${REPO}${SEP}, " >> $JSONFILE
+echo "  ${SEP}webroot${SEP}: ${SEP}${DOMAIN}${SEP}, " >> $JSONFILE
 echo "  ${SEP}date${SEP}:       ${SEP}$NOW${SEP}," >> $JSONFILE
 echo "  ${SEP}icons${SEP}: [" >> $JSONFILE
 
@@ -117,7 +121,26 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
   	echo "         <b>Folder</b>" >> $OUTPUT
   	echo "       </td>" >> $OUTPUT
   	echo "    </tr>" >> $OUTPUT
-  	echo "Filepath: $filepath"
+
+    ### TABLE4ICONS ###
+    # echo "  <LI><b>PATH: <a href='$DOMAIN/$path' target='_blank'>$path</a></b></LI>" >> $OUTPUT
+  	echo "  <H3>Icons in Path: $path</H3>" >> $TABLE4ICONS
+  	echo "  <quote>" >> $TABLE4ICONS
+  	echo "  <table border='2' style='background-color:#CACACA;margin-left:40px'>" >> $TABLE4ICONS
+  	echo "    <tr>" >> $TABLE4ICONS
+  	echo "       <td>" >> $TABLE4ICONS
+  	echo "         <b>Icon</b>" >> $TABLE4ICONS
+  	echo "       </td>" >> $TABLE4ICONS
+  	echo "       <td>" >> $TABLE4ICONS
+  	echo "         <b>File</b>" >> $TABLE4ICONS
+  	echo "       </td>" >> $TABLE4ICONS
+  	echo "       <td>" >> $TABLE4ICONS
+  	echo "         <b>Folder</b>" >> $TABLE4ICONS
+  	echo "       </td>" >> $TABLE4ICONS
+  	echo "    </tr>" >> $TABLE4ICONS
+
+
+    echo "Filepath: $filepath"
   	rm "${filepath}/.DS_Store"
   	for i in `find "$filepath" -maxdepth 1 -mindepth 1 -type f| sort`; do
     	file=`basename "$i"`
@@ -142,9 +165,15 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
 
         ### OUTPUT ###
         echo "    <tr>" >> $OUTPUT
-  			echo "    <TD><img src=\"$path/$file\"></TD>" >> $OUTPUT
+  			echo "    <TD bgcolor=\"#888888\"><img src=\"$path/$file\"></TD>" >> $OUTPUT
   			echo "    <TD><a href=\"$path/$file\">$file</a></TD>" >> $OUTPUT
   			echo "    <TD>$path</TD>" >> $OUTPUT
+
+        ### TABLE4ICONS ###
+        echo "    <tr>" >> $TABLE4ICONS
+        echo "    <TD bgcolor=\"#888888\"><img src=\"$path/$file\"></TD>" >> $TABLE4ICONS
+        echo "    <TD><a href=\"$path/$file\">$file</a></TD>" >> $TABLE4ICONS
+        echo "    <TD>$path</TD>" >> $TABLE4ICONS
   		fi
   	done
     ### Set Comma to "," for seperating the attribution in the JSON "JSONFILE"
@@ -155,6 +184,10 @@ for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
     ### OUTPUT ###
     echo "  </TABLE>" >> $OUTPUT
   	echo "  <HR>" >> $OUTPUT
+
+    ### TABLE4ICONS ###
+    echo "  </TABLE>" >> $TABLE4ICONS
+  	echo "  <HR>" >> $TABLE4ICONS
   fi
 done
 ### OUTPUT ###
@@ -172,7 +205,7 @@ echo "-------------------"
 echo "Create README.md"
 echo "-------------------"
 cat ./src/readme/README_header.md > $READMEFILE
-cat ./src/readme/table4icons.md  >> $READMEFILE
+cat $TABLE4ICONS  >> $READMEFILE
 cat ./src/readme/README_create_icons.md  >> $READMEFILE
 cat ./src/readme/README_tail.md  >> $READMEFILE
 

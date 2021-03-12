@@ -1,6 +1,7 @@
 'use strict';
 var Base64 = require('js-base64').Base64;
 const fs = require('fs');
+const i4m = require('./src/main.js');
 //const shell = require('shelljs')
 //shell.exec('sh scan-icons.sh')
 var json4icons = require('./img/json4icons.json');
@@ -23,68 +24,16 @@ function get_extension(pFilename) {
 }
 
 
-function replaceString(pString,pSearch,pReplace)
-// replaces in the string "pString" multiple substrings "pSearch" by "pReplace"
-{
-	var vReturnString = '';
-	//alert("cstring.js - replaceString() "+pString);
-	pString = pString || "undefined string parameter in replaceString() call ";
-	if (!pString) {
-		console.log("replaceString()-Call - pString not defined!");
-	} else if (pString != '') {
-		var vHelpString = '';
-    var vN = pString.indexOf(pSearch);
-		while ( vN+1 > 0 ) {
-			if (vN > 0) {
-				vReturnString += pString.substring(0, vN);
-			};
-			vReturnString += pReplace;
-            if (vN + pSearch.length < pString.length) {
-				pString = pString.substring(vN+pSearch.length, pString.length);
-			} else {
-				pString = ''
-			}
-			vN = pString.indexOf(pSearch);
-		};
-	};
-	return (vReturnString + pString);
-}
-
-function capitalizeFirstLetter(string) {
-		if (!string) {
-			string = "undef_string"
-		};
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-function extract_parameter(pID,data) {
-  var param = null;
-  if (pID) {
-    var pos = data.indexOf(pID);
-    if (pos > 0) {
-      data = data.substr(pos + 1);
-      var arr = data.split('"');
-      if (arr.length > 2) {
-        param = arr[1];
-        console.log("Parameter [" + pID + "]: '" + param + "'");
-      }
-    }
-  } else {
-    console.error("ERROR: extract_parameter(pID,data) - pID not defined");
-  }
-  return param;
-}
-
-function get_icon_source_url(data) {
+function X_get_icon_source_url(data) {
   var url = "https://jquerymobile.com/download/";
   if (data) {
-    var param = extract_parameter("wikicommons",data);
+    var param = i4m.extract_parameter_svg("wikicommons",data);
     if (param) {
         url = param;
         console.log("WikiCommons URL: '" + url + "'");
     }
 
-    param = extract_parameter("icons4menu",data);
+    param = i4m.extract_parameter_svg("icons4menu",data);
     if (param) {
         url = param;
         console.log("Icons4Menu URL: '" + url + "'");
@@ -132,8 +81,8 @@ function save_icon4color(pFilename,pInsert,pData) {
 
 function correct_size(pData) {
   if (pData) {
-    pData = replaceString(pData,'width="100%"','width="14px"');
-    pData = replaceString(pData,'height="100%"','height="14px"');
+    pData = i4m.replaceString(pData,'width="100%"','width="14px"');
+    pData = i4m.replaceString(pData,'height="100%"','height="14px"');
   } else {
     pData = "undefined image";
   }
@@ -147,15 +96,15 @@ function save_color_icons(pFilename,pi,pName,pData) {
       // no write files
     } else {
       // search 'style="fill:currentColor"' and replace with
-      data = replaceString(data,'style="fill:currentColor"','style="fill:#EEE"');
-      data = replaceString(data,'fill="currentColor"','fill="#EEE"');
+      data = i4m.replaceString(data,'style="fill:currentColor"','style="fill:#EEE"');
+      data = i4m.replaceString(data,'fill="currentColor"','fill="#EEE"');
       // fill="currentColor"
       data = correct_size(data);
       save_icon4color(pFilename,"-white",data);
 
       data = pData;
-      data = replaceString(data,'style="fill:currentColor"','style="fill:#000"');
-      data = replaceString(data,'fill="currentColor"','fill="#000"');
+      data = i4m.replaceString(data,'style="fill:currentColor"','style="fill:#000"');
+      data = i4m.replaceString(data,'fill="currentColor"','fill="#000"');
       data = correct_size(data);
       save_icon4color(pFilename,"-black",data);
     }
@@ -164,6 +113,17 @@ function save_color_icons(pFilename,pi,pName,pData) {
 
 function save_data2json(pFilename,pi,pName) {
   var ext = get_extension(pFilename);
+  var default_icon_source = "https://jquerymobile.com/download/";
+  var icon = {
+    "name": "undef.svg",
+    "path": "img/icons-svg",
+    "used": false,
+    "src": "",
+    "license": "CC0",
+    "group": "undef_group",
+    "icon_source": default_icon_source,
+    "url": ""
+  };
   switch (ext) {
     case "svg":
       var data = fs.readFileSync(pFilename, 'utf8');
@@ -173,7 +133,8 @@ function save_data2json(pFilename,pi,pName) {
       if (data) {
         json4icons.icons[i].src = "data:image/svg+xml;base64," + Base64.encode(data);
         json4icons.icons[i].raw = data;
-        json4icons.icons[i].icon_source = get_icon_source_url(data);
+        json4icons.icons[i].icon_source = i4m.get_icon_source_page(json4icons.icons[i],default_icon_source);
+        json4icons.icons[i].url = i4m.get_icon_source_url(json4icons.icons[i]);
         save_color_icons(pFilename,pi,pName,data);
       } else {
         console.error("ERROR: '" + pFilename + "' does not exist!");
@@ -184,7 +145,8 @@ function save_data2json(pFilename,pi,pName) {
       var data = fs.readFileSync(pFilename);
       console.log("PNG-File '" + pFilename + "' stored base64 encoded");
       json4icons.icons[i].src = "data:image/png;base64," + data.toString('base64');
-      json4icons.icons[i].icon_source = get_icon_source_url(null);
+      json4icons.icons[i].icon_source = default_icon_source; //i4m.get_icon_source_url(null);
+      json4icons.icons[i].url = i4m.get_icon_source_url(json4icons.icons[i]);
     break;
     default:
       console.error("Unsupported Filetype '" + ext + "' of Icon: '" + pFilename + "'");
@@ -279,10 +241,16 @@ function init_icon_group() {
     } else if (vName.indexOf("carat-") == 0) {
       //---- NAVIGATION ----
       json4icons.icons[i].group = "navigation";
+    } else if (vName.indexOf("i4m-carat-") == 0) {
+      //---- NAVIGATION ----
+      json4icons.icons[i].group = "navigation";
     } else if (vName.indexOf("navigation-") == 0) {
       //---- NAVIGATION ----
       json4icons.icons[i].group = "navigation";
     } else if (vName.indexOf("location") == 0) {
+      //---- NAVIGATION ----
+      json4icons.icons[i].group = "navigation";
+    } else if (vName.indexOf("nav-back") == 0) {
       //---- NAVIGATION ----
       json4icons.icons[i].group = "navigation";
     } else if (vName.indexOf("audio-") == 0) {

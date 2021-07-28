@@ -181,9 +181,15 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/audio-black.svg -O img/icons-svg/audio-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/audio-white.svg -O img/icons-svg/audio-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/audio.svg -O img/icons-svg/audio.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/background-color-black.svg -O img/icons-svg/background-color-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/background-color-white.svg -O img/icons-svg/background-color-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/background-color.svg -O img/icons-svg/background-color.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bars-black.svg -O img/icons-svg/bars-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bars-white.svg -O img/icons-svg/bars-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bars.svg -O img/icons-svg/bars.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/brush-paint-black.svg -O img/icons-svg/brush-paint-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/brush-paint-white.svg -O img/icons-svg/brush-paint-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/brush-paint.svg -O img/icons-svg/brush-paint.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bullets-black.svg -O img/icons-svg/bullets-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bullets-white.svg -O img/icons-svg/bullets-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bullets.svg -O img/icons-svg/bullets.svg
@@ -388,6 +394,9 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu-black.svg -O img/icons-svg/i4m-carat-uu-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu-white.svg -O img/icons-svg/i4m-carat-uu-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu.svg -O img/icons-svg/i4m-carat-uu.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome-black.svg -O img/icons-svg/i4m-metronome-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome-white.svg -O img/icons-svg/i4m-metronome-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg -O img/icons-svg/i4m-metronome.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-black.svg -O img/icons-svg/i4m-wiki2reveal-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame-black.svg -O img/icons-svg/i4m-wiki2reveal-frame-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame-white.svg -O img/icons-svg/i4m-wiki2reveal-frame-white.svg
@@ -445,6 +454,9 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/user-black.svg -O img/icons-svg/user-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/user-white.svg -O img/icons-svg/user-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/user.svg -O img/icons-svg/user.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram-black.svg -O img/icons-svg/vehicle-tram-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram-white.svg -O img/icons-svg/vehicle-tram-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram.svg -O img/icons-svg/vehicle-tram.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/video-black.svg -O img/icons-svg/video-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/video-white.svg -O img/icons-svg/video-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/video.svg -O img/icons-svg/video.svg

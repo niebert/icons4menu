@@ -43,8 +43,39 @@ function correct_size_100_percent(pData) {
   }
   return pData;
 }
+function replace_icon_array_color(a,colarray,piconcolor) {
+	if (a) {
+		for (var i = 0; i < colarray.length; i++) {
+			a = replaceString(a,'style="fill:'+colarray[i]+';','style="fill:' + piconcolor + ';');
+			a = replaceString(a,'style="fill:'+colarray[i]+'"','style="fill:' + piconcolor + '"');
+			a = replaceString(a,'fill="'+colarray[i]+';','fill="' + piconcolor + ';');
+			a = replaceString(a,'fill="'+colarray[i]+'"','fill="' + piconcolor + '"');
+		}
+	}  else {
+		console.error("Image in replace_icon_array_color() was not defined");
+	}
+	return a;
+}
 
-
+function replace_icon_color(a,colarray,piconcolor) {
+	//console.log("replace_icon_color() BEFORE=" + a);
+	if (a) {
+		a = replaceString(a,'style="fill:currentColor"','style="fill:' + piconcolor + '"');
+		a = replaceString(a,'fill="currentColor"','fill="' + piconcolor + '"');
+		for (var i = 0; i < colarray.length; i++) {
+				colarray[i] = (colarray[i]).toUpperCase();
+		}
+		replace_icon_array_color(a,colarray,piconcolor);
+		for (var j = 0; j < colarray.length; j++) {
+			colarray[j] = (colarray[j]).toLowerCase();
+		}
+		replace_icon_array_color(a,colarray,piconcolor);
+	} else {
+		console.error("Image in replace_icon_color() was not defined");
+	}
+	//console.log("replace_icon_color() AFTER="+a);
+	return a;
+}
 
 function handle_src_SVG(picon,piconcolor) {
   console.log("CALL: handle_src('" + picon.name + "')");
@@ -65,17 +96,16 @@ function handle_src_SVG(picon,piconcolor) {
         console.log("CALL: piconcolor defined piconcolor='" + piconcolor + "'");
         if (picon.name.indexOf("-black.svg") > 0) {
           console.log("ICON: '" + picon.name + "' has black default color");
-          a = replaceString(a,'style="fill:#000"','style="fill:' + piconcolor + '"');
-          a = replaceString(a,'fill="#000"','fill="#FFF"');
-        } else if (picon.name.indexOf("-white.svg") > 0) {
+					a = replace_icon_color(a,["#000000","#111111","#000","#111"],piconcolor);
+	      } else if (picon.name.indexOf("-white.svg") > 0) {
           console.log("ICON: '" + picon.name + "' has white default color");
-          a = replaceString(a,'style="fill:currentColor"','style="fill:' + piconcolor + '"');
-          a = replaceString(a,'fill="currentColor"','fill="#000"');
-        } else {
+					a = replace_icon_color(a,["#FFFFFF","#EEEEEE","#FFF","#EEE"],piconcolor);
+		    } else {
           console.log("ICON: '" + picon.name + "' set with color '" + piconcolor + "'");
-          a = replaceString(a,'style="fill:currentColor"','style="fill:' + piconcolor + '"');
+          a = replaceString(a,'style="fill:currentColor','style="fill:' + piconcolor + '');
           a = replaceString(a,'fill="currentColor"','fill="' + piconcolor + '"');
-        }
+					a = replace_icon_colorr(a,["#000000","#111111","#000","#111"],piconcolor);
+	      }
         a = correct_size_100_percent(a);
         console.log("SVG: '" + picon.name + "' " + a);
         src = h + "," + btoa(a);
@@ -91,7 +121,7 @@ function handle_src_SVG(picon,piconcolor) {
     //src = src.replace(/standalone="no"/g,"");
     //src = src.replace(/"/g,"'");
   }
-  console.log("SVG: "+a);
+  console.log("SVG: "+a.str(0,150));
   return src;
 }
 
@@ -117,16 +147,22 @@ function handle_src(picon,pext,piconcolor) {
 						console.log("CALL: piconcolor defined piconcolor='" + piconcolor + "'");
 						if (picon.name.indexOf("-black.svg") > 0) {
 							console.log("ICON: '" + picon.name + "' has black default color");
-							a = replaceString(a,'style="fill:#000"','style="fill:' + piconcolor + '"');
-							a = replaceString(a,'fill="#000"','fill="#FFF"');
+							a = replace_icon_color(a,["#000000","#111111","#000","#111"],piconcolor);
+							//a = replaceString(a,'style="fill:#000"','style="fill:' + piconcolor + '"');
+							//a = replaceString(a,'fill="#000"','fill="#FFF"');
 						} else if (picon.name.indexOf("-white.svg") > 0) {
 							console.log("ICON: '" + picon.name + "' has white default color");
-							a = replaceString(a,'style="fill:currentColor"','style="fill:' + piconcolor + '"');
-							a = replaceString(a,'fill="currentColor"','fill="#000"');
+							//a = replaceString(a,'style="fill:currentColor"','style="fill:' + piconcolor + '"');
+							//a = replaceString(a,'fill="currentColor"','fill="#000"');
+							a = replace_icon_color(a,["#FFFFFF","#EEEEEE","#FFF","#EEE"],piconcolor);
 						} else {
 							console.log("ICON: '" + picon.name + "' set with color '" + piconcolor + "'");
-							a = replaceString(a,'style="fill:currentColor"','style="fill:' + piconcolor + '"');
+							//a = replaceString(a,'style="fill:currentColor"','style="fill:' + piconcolor + '"');
+							//a = replaceString(a,'fill="currentColor"','fill="' + piconcolor + '"');
+							a = replaceString(a,'style="fill:currentColor','style="fill:' + piconcolor + '');
 							a = replaceString(a,'fill="currentColor"','fill="' + piconcolor + '"');
+							a = replace_icon_color(a,["#000000","#111111","#000","#111"],piconcolor);
+
 						}
 						a = correct_size_100_percent(a);
 						console.log("SVG: '" + picon.name + "' " + a.substr(0,30)+"...");

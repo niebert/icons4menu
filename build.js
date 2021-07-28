@@ -133,6 +133,38 @@ function save_color_icons(pFilename,pi,pName,pData) {
   }
 }
 
+function get_icon_license (pData,pLicense) {
+  var data = pData;
+  var license = pLicense || "CC4SA";
+  if (data) {
+    var param = extract_parameter_svg("iconlicense",data);
+    if (param) {
+        license = param;
+        console.log("Icon Licence: '" + license + "'");
+    }
+  } else {
+    console.warn("get_icon_license(pData,pLicense) - data was not defined");
+  }
+  return license;
+
+}
+
+function get_icon_group (pData,pIconGroup) {
+  var data = pData;
+  var icongroup = pIconGroup || "other";
+  if (data) {
+    var param = extract_parameter_svg("icongroup",data);
+    if (param) {
+        icongroup = param;
+        console.log("Icon Group: '" + icongroup + "'");
+    }
+  } else {
+    console.warn("get_icon_group(pData,pIconGroup) - data was not defined");
+  }
+  return icongroup;
+
+}
+
 function save_data2json(pFilename,pi,pName) {
   var ext = get_extension(pFilename);
   var default_icon_source = "https://jquerymobile.com/download/";
@@ -146,6 +178,8 @@ function save_data2json(pFilename,pi,pName) {
     "icon_source": default_icon_source,
     "url": ""
   };
+  var license = "";
+  var icongroup = "";
   switch (ext) {
     case "svg":
       var data = fs.readFileSync(pFilename, 'utf8');
@@ -157,6 +191,10 @@ function save_data2json(pFilename,pi,pName) {
         json4icons.icons[i].raw = data;
         json4icons.icons[i].icon_source = get_icon_source_url4file(data);
         json4icons.icons[i].url = i4m.get_icon_source_url(json4icons.icons[i]);
+        license = json4icons.icons[i].license;
+        json4icons.icons[i].license = get_icon_license(data,license);
+        icongroup = json4icons.icons[i].group;
+        json4icons.icons[i].group = get_icon_group(data,icongroup);
         save_color_icons(pFilename,pi,pName,data);
       } else {
         console.error("ERROR: '" + pFilename + "' does not exist!");
@@ -345,6 +383,9 @@ function init_icon_group() {
       //---- PRODUCT/OBJECTS ----
       json4icons.icons[i].group = "product";
     } else if (vName.indexOf("fa-truck") == 0) {
+      //---- VEHICLE ----
+      json4icons.icons[i].group = "vehicle";
+    } else if (vName.indexOf("vehicle-") == 0) {
       //---- VEHICLE ----
       json4icons.icons[i].group = "vehicle";
     }

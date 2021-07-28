@@ -8,7 +8,8 @@ REPO="https://github.com/niebert/icons4menu"
 WIKIVERSITY="https://en.wikiversity.org/wiki/AppLSAC"
 OUTPUT="${ROOT}index.html"
 WGETFILE="wget_icons.sh"
-JSONFILE="${ROOT}json4icons.json"
+JSONFILENAME="json4icons.json"
+JSONFILE="${ROOT}${JSONFILENAME}"
 READMEFILE="README.md"
 ### TABLE4ICONS is an markdown table that is concatenated as part of the README.md
 ### the markdown for TABLE4ICONS is generated with the first step
@@ -62,14 +63,15 @@ echo "then" >> $WGETFILE
 echo "    ICON_SELECT=\"\$2\""
 echo "    echo \"Single Icon Download of Icon '\$ICON_SELECT' \"" >> $WGETFILE
 echo "    wget ${DOMAIN}/$SUBDIR/icons-\$1/\$2 -O $SUBDIR/icons-\$1/\$2" >> $WGETFILE
-echo "    wget " >> $WGETFILE
+echo "    DOWNLOAD_FOLDER=\"NONE\"" >> $WGETFILE
 echo "fi" >> $WGETFILE
 echo " " >> $WGETFILE
 echo "mkdir ${SUBDIR} " >> $WGETFILE
 echo "wget ${DOMAIN}/README.html -O ${SUBDIR}/README_${MODULE}.html" >> $WGETFILE
 echo "wget ${DOMAIN}/LICENSE_Jquery_Mobile.txt -O ${SUBDIR}/LICENSE_Jquery_Mobile.txt" >> $WGETFILE
-echo "wget ${DOMAIN}/${SUBDIR}/${JSONFILE} -O ${SUBDIR}/${JSONFILE}" >> $WGETFILE
+echo "wget ${DOMAIN}/${SUBDIR}/${JSONFILENAME} -O ${SUBDIR}/${JSONFILENAME}" >> $WGETFILE
 echo "wget ${DOMAIN}/update_wget_icons.sh -O ${SUBDIR}/update_wget_icons.sh" >> $WGETFILE
+# echo "wget ${DOMAIN}/wget_icons.sh -O ${SUBDIR}/wget_icons.sh" >> $WGETFILE
 
 ### OUTPUT ###
 echo "<HTML>\n\t<HEAD>\n\t\t<TITLE>Icons4Menu</TITLE>" > $OUTPUT

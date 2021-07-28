@@ -8,22 +8,34 @@ Icons4Menu are generated for the Wikiversity Learning Resource about [AppLSAC](h
 
 ## Download of Icons with a Script
 The icons can be downloaded with a script:
-* [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh)
-* The download of icons for your WebApp (resp. [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC)) can be started from the shell command line with
+* [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh) - which allows fetching all icons and the README and licencing information about the icons. In case you want to use the latest icons added to the repository you should update the [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh). If you do not have any of the available icons in the repository it is recommended to [download the `ZIP`-file of the repository](https://github.com/niebert/icons4menu/archive/refs/heads/master.zip) for your [HTML5-WebApp](https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu), because it will reduce the number of server requests for the GitHub-server infrastructure.
+* **(All Icons)** The download of icons for your WebApp (resp. [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC)) can be started from the shell command line with
 ```
    sh ./wget_icons.sh
 ```
-* the script call of [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh) downloads the SVG icons of this repository and it is equivalent to the script call:
+* **(All Icons of Format SVG)** the script call of [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh) downloads the SVG icons of this repository and it is equivalent to the script call:
 ```
    sh ./wget_icons.sh svg
 ```
-* if you want to download the PNG icons of the repository (JQuery Mobile 1.4.5 - CC0) you can call the script with the parameter `png`:
+* **(All Icons of Format PNG)** the script call of [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh) downloads the SVG icons of this repository and it is equivalent to the script call:
 ```
    sh ./wget_icons.sh png
 ```
+* **(Single Icons of Format SVG)** if you want to download a single PNG icon (e.g. `video.svg` or `video-white.svg`) you can call the script with the format parameter `svg` and:
+```
+   sh ./wget_icons.sh svg video.svg
+   sh ./wget_icons.sh svg video-white.svg
+```
+* **(Single Icons of Format PNG)** if you want to download a single PNG icon (e.g. `video.png` or `video-white.png`) you can call the script with the format parameter `png` and:
+```
+   sh ./wget_icons.sh png video.png
+   sh ./wget_icons.sh png video-white.png
+```
+## Update Icons with the `ZIP` File
+A `wget_icons.sh` script command should be used for single icon updates from the repository and that creates a server request only for single additional icon you need, that you might not have currently. For a complete repository you can [download the `ZIP`-file of the repository](https://github.com/niebert/icons4menu/archive/refs/heads/master.zip) for your [HTML5-WebApp](https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu), this is just a single server request for all icons (with this you can help to reduce the traffic on network infrastructure and the number of server requests - thank you)
 
 ## Update the `wget_icons.sh` Script
-Any time new icons are added to the repository `icons4menu` the script `wget_icons.sh` is updated as well, because the new icons are added to the list of `wget` download commands in the script. There is an easy way to update the `wget_icons.sh` script to the latest version by downloading the script   [`update_wget_icons.sh`](https://niebert.github.io/icons4menu/update_wget_icons.sh). If you want to use the update script, navigate to the folder in which you want to have the `icons4menu` folder `img/` and then download the script with:
+Any time new icons are added to the repository `icons4menu` the script `wget_icons.sh` is updated as well, because the new icons are added to the list of `wget` download commands in the script. There is an option to update the `wget_icons.sh` script to the latest version by downloading the script   [`update_wget_icons.sh`](https://niebert.github.io/icons4menu/update_wget_icons.sh). If you want to use the update script, navigate to the folder in which you want to have the `icons4menu` folder `img/` and then download the script with:
 ```
   wget https://niebert.github.io/icons4menu/update_wget_icons.sh
 ```
@@ -31,7 +43,6 @@ Please check the content of the script before executing, so that you are sure th
 ```
   sh ./wget_icons.sh
 ```
-
 
 ## JSON file `json4icons.json` and `json4icons.js`
 The JSON file `json4icons.json` contains a list of all icons with

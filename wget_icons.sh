@@ -40,7 +40,6 @@ wget https://niebert.github.io/icons4menu/README.html -O img/README_Icons4Menu.h
 wget https://niebert.github.io/icons4menu/LICENSE_Jquery_Mobile.txt -O img/LICENSE_Jquery_Mobile.txt
 wget https://niebert.github.io/icons4menu/img/./img/json4icons.json -O img/./img/json4icons.json
 wget https://niebert.github.io/icons4menu/update_wget_icons.sh -O img/update_wget_icons.sh
-wget https://niebert.github.io/icons4menu/img/wget_icons.sh -O img/wget_icons.sh
 
 if [ "$DOWNLOAD_FOLDER" = "icons-png" ]; then
     echo "Download icons-png"

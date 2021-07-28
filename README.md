@@ -32,7 +32,7 @@ The icons can be downloaded with a script:
    sh ./wget_icons.sh png video-white.png
 ```
 ## Update Icons with the `ZIP` File
-A `wget` command creates a server request for any icon
+A `wget_icons.sh` script command should be used for single icon updates from the repository and that creates a server request only for single additional icon you need, that you might not have currently. For a complete repository you can [download the `ZIP`-file of the repository](https://github.com/niebert/icons4menu/archive/refs/heads/master.zip) for your [HTML5-WebApp](https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu), this is just a single server request for all icons (with this you can help to reduce the traffic on network infrastructure and the number of server requests - thank you)
 
 ## Update the `wget_icons.sh` Script
 Any time new icons are added to the repository `icons4menu` the script `wget_icons.sh` is updated as well, because the new icons are added to the list of `wget` download commands in the script. There is an option to update the `wget_icons.sh` script to the latest version by downloading the script   [`update_wget_icons.sh`](https://niebert.github.io/icons4menu/update_wget_icons.sh). If you want to use the update script, navigate to the folder in which you want to have the `icons4menu` folder `img/` and then download the script with:

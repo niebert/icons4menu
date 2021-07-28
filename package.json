@@ -1,6 +1,6 @@
 {
   "name": "icons4menu",
-  "version": "1.1.36",
+  "version": "1.1.37",
   "description": "SVG and PNG Icons for Menus and Buttons that can be used in AppLSAC, Electron application or in general in WebApps. ",
   "main": "src/main.js",
   "scripts": {

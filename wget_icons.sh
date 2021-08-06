@@ -14,37 +14,36 @@ if [ "$currentfolder" = "img" ]; then
 else
     echo "Not started in directory 'img' - start script directly!"
 fi;
-
+ 
 DOWNLOAD_FOLDER="icons-svg"
-
+ 
 if [ "$1" = "svg" ]; then
   echo "Download SVG"
   DOWNLOAD_FOLDER="icons-svg"
 fi
-
+ 
 if [ "$1" = "png" ]; then
   echo "Download PNG Icons"
   DOWNLOAD_FOLDER="icons-png"
 fi
-
+ 
 if [ $# -lt 2 ]
 then
-    $ICON_SELECT="img/icons-$1/$2"
     echo "Single Icon Download of Icon '$ICON_SELECT' "
     wget https://niebert.github.io/icons4menu/img/icons-$1/$2 -O img/icons-$1/$2
     DOWNLOAD_FOLDER="NONE"
 fi
-
-mkdir img
+ 
+mkdir img 
 wget https://niebert.github.io/icons4menu/README.html -O img/README_Icons4Menu.html
 wget https://niebert.github.io/icons4menu/LICENSE_Jquery_Mobile.txt -O img/LICENSE_Jquery_Mobile.txt
-wget https://niebert.github.io/icons4menu/img/./img/json4icons.json -O img/./img/json4icons.json
+wget https://niebert.github.io/icons4menu/img/json4icons.json -O img/json4icons.json
 wget https://niebert.github.io/icons4menu/update_wget_icons.sh -O img/update_wget_icons.sh
-
+ 
 if [ "$DOWNLOAD_FOLDER" = "icons-png" ]; then
     echo "Download icons-png"
-    mkdir img/icons-png
-
+    mkdir img/icons-png 
+ 
     wget https://niebert.github.io/icons4menu/img/icons-png/action-black.png -O img/icons-png/action-black.png
     wget https://niebert.github.io/icons4menu/img/icons-png/action-white.png -O img/icons-png/action-white.png
     wget https://niebert.github.io/icons4menu/img/icons-png/alert-black.png -O img/icons-png/alert-black.png
@@ -146,11 +145,11 @@ if [ "$DOWNLOAD_FOLDER" = "icons-png" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-png/video-black.png -O img/icons-png/video-black.png
     wget https://niebert.github.io/icons4menu/img/icons-png/video-white.png -O img/icons-png/video-white.png
 fi
-
+ 
 if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     echo "Download icons-svg"
-    mkdir img/icons-svg
-
+    mkdir img/icons-svg 
+ 
     wget https://niebert.github.io/icons4menu/img/icons-svg/action-black.svg -O img/icons-svg/action-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/action-white.svg -O img/icons-svg/action-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/action.svg -O img/icons-svg/action.svg
@@ -461,4 +460,7 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/video-black.svg -O img/icons-svg/video-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/video-white.svg -O img/icons-svg/video-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/video.svg -O img/icons-svg/video.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone-black.svg -O img/icons-svg/wc_cc0_smartphone-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone-white.svg -O img/icons-svg/wc_cc0_smartphone-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone.svg -O img/icons-svg/wc_cc0_smartphone.svg
 fi

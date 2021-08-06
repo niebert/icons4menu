@@ -53,16 +53,24 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h2 id="usage-of-icons4menu---webapps">Usage of Icons4Menu - WebApps</h2>
 <p>Icons4Menu are generated for the Wikiversity Learning Resource about <a href="https://en.wikiversity.org/wiki/AppLSAC">AppLSAC</a>. * <strong><code>hamburger_menu_app</code></strong> Icons in Hamburger Menus like <a href="https://niebert.github.io/hamburger_menu_app/">hamburger_menu_app</a> * <strong><code>jsoneditor_app</code></strong> Icons in JSON Editor WebApp in buttons - see <a href="https://niebert.github.io/jsoneditor_app/">jsoneditor_app</a></p>
 <h2 id="download-of-icons-with-a-script">Download of Icons with a Script</h2>
-<p>The icons can be downloaded with a script: * <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> * The download of icons for your WebApp (resp. <a href="https://en.wikiversity.org/wiki/AppLSAC">AppLSAC</a>) can be started from the shell command line with</p>
+<p>The icons can be downloaded with a script: * <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> - which allows fetching all icons and the README and licencing information about the icons. In case you want to use the latest icons added to the repository you should update the <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a>. If you do not have any of the available icons in the repository it is recommended to <a href="https://github.com/niebert/icons4menu/archive/refs/heads/master.zip">download the <code>ZIP</code>-file of the repository</a> for your <a href="https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu">HTML5-WebApp</a>, because it will reduce the number of server requests for the GitHub-server infrastructure. * <strong>(All Icons)</strong> The download of icons for your WebApp (resp. <a href="https://en.wikiversity.org/wiki/AppLSAC">AppLSAC</a>) can be started from the shell command line with</p>
 <pre><code>   sh ./wget_icons.sh</code></pre>
 <ul>
-<li><p>the script call of <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> downloads the SVG icons of this repository and it is equivalent to the script call:</p>
+<li><p><strong>(All Icons of Format SVG)</strong> the script call of <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> downloads the SVG icons of this repository and it is equivalent to the script call:</p>
 <pre><code>   sh ./wget_icons.sh svg</code></pre></li>
-<li><p>if you want to download the PNG icons of the repository (JQuery Mobile 1.4.5 - CC0) you can call the script with the parameter <code>png</code>:</p>
+<li><p><strong>(All Icons of Format PNG)</strong> the script call of <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> downloads the SVG icons of this repository and it is equivalent to the script call:</p>
 <pre><code>   sh ./wget_icons.sh png</code></pre></li>
+<li><p><strong>(Single Icons of Format SVG)</strong> if you want to download a single PNG icon (e.g. <code>video.svg</code> or <code>video-white.svg</code>) you can call the script with the format parameter <code>svg</code> and:</p>
+<pre><code>   sh ./wget_icons.sh svg video.svg
+   sh ./wget_icons.sh svg video-white.svg</code></pre></li>
+<li><p><strong>(Single Icons of Format PNG)</strong> if you want to download a single PNG icon (e.g. <code>video.png</code> or <code>video-white.png</code>) you can call the script with the format parameter <code>png</code> and:</p>
+<pre><code>   sh ./wget_icons.sh png video.png
+   sh ./wget_icons.sh png video-white.png</code></pre>
+<h2 id="update-icons-with-the-zip-file">Update Icons with the <code>ZIP</code> File</h2>
+<p>A <code>wget_icons.sh</code> script command should be used for single icon updates from the repository and that creates a server request only for single additional icon you need, that you might not have currently. For a complete repository you can <a href="https://github.com/niebert/icons4menu/archive/refs/heads/master.zip">download the <code>ZIP</code>-file of the repository</a> for your <a href="https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu">HTML5-WebApp</a>, this is just a single server request for all icons (with this you can help to reduce the traffic on network infrastructure and the number of server requests - thank you)</p></li>
 </ul>
 <h2 id="update-the-wget_icons.sh-script">Update the <code>wget_icons.sh</code> Script</h2>
-<p>Any time new icons are added to the repository <code>icons4menu</code> the script <code>wget_icons.sh</code> is updated as well, because the new icons are added to the list of <code>wget</code> download commands in the script. There is an easy way to update the <code>wget_icons.sh</code> script to the latest version by downloading the script <a href="https://niebert.github.io/icons4menu/update_wget_icons.sh"><code>update_wget_icons.sh</code></a>. If you want to use the update script, navigate to the folder in which you want to have the <code>icons4menu</code> folder <code>img/</code> and then download the script with:</p>
+<p>Any time new icons are added to the repository <code>icons4menu</code> the script <code>wget_icons.sh</code> is updated as well, because the new icons are added to the list of <code>wget</code> download commands in the script. There is an option to update the <code>wget_icons.sh</code> script to the latest version by downloading the script <a href="https://niebert.github.io/icons4menu/update_wget_icons.sh"><code>update_wget_icons.sh</code></a>. If you want to use the update script, navigate to the folder in which you want to have the <code>icons4menu</code> folder <code>img/</code> and then download the script with:</p>
 <pre><code>  wget https://niebert.github.io/icons4menu/update_wget_icons.sh</code></pre>
 <p>Please check the content of the script before executing, so that you are sure that the script does what you expect the script to (i.e. updating the script <code>wget_icons.sh</code>). Then check the content of <code>wget_icons.sh</code>. Performs the script the expected down or do you want to reduce the number of downloaded icons before executing the script <code>wget_icons.sh</code>. If you are sure that the script download all the icons you need, perform the download operation by calling:</p>
 <pre><code>  sh ./wget_icons.sh</code></pre>
@@ -128,7 +136,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/3/3a/Folder_open_alt_font_awesome.svg"><code>fa-folder-open.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Folder_open_alt_font_awesome.svg"><code>Folder_open_alt_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>main</code></td>
 </tr>
 <tr class="odd">
@@ -136,7 +144,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/0/04/Reorder_font_awesome.svg"><code>fa-hamburger-icon.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Reorder_font_awesome.svg"><code>Reorder_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>main</code></td>
 </tr>
 <tr class="even">
@@ -144,7 +152,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg"><code>fa-print.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Print_font_awesome.svg"><code>Print_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>main</code></td>
 </tr>
 <tr class="odd">
@@ -152,7 +160,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/9/92/Cog_font_awesome.svg"><code>fa-settings.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Cog_font_awesome.svg"><code>Cog_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>main</code></td>
 </tr>
 <tr class="even">
@@ -160,7 +168,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg"><code>fa-trash.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Trash_font_awesome.svg"><code>Trash_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>main</code></td>
 </tr>
 <tr class="odd">
@@ -327,7 +335,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg"><code>fa-barcode.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Barcode_font_awesome.svg"><code>Barcode_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="odd">
@@ -335,7 +343,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/4/4c/Edit_font_awesome.svg"><code>fa-edit.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Edit_font_awesome.svg"><code>Edit_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="even">
@@ -343,7 +351,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/3/3d/Envelope_font_awesome.svg"><code>fa-envelope.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Envelope_font_awesome.svg"><code>Envelope_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="odd">
@@ -351,7 +359,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg"><code>fa-file-save.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg"><code>Save_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="even">
@@ -359,7 +367,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/8/8b/Globe_font_awesome.svg"><code>fa-globe.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Globe_font_awesome.svg"><code>Globe_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="odd">
@@ -367,7 +375,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/f/ff/Font_Awesome_5_solid_hdd.svg"><code>fa-harddisk.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_hdd.svg"><code>Font_Awesome_5_solid_hdd.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="even">
@@ -375,7 +383,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/3/32/Language_font_awesome_v5.svg"><code>fa-language.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Language_font_awesome_v5.svg"><code>Language_font_awesome_v5.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="odd">
@@ -383,7 +391,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/b/bb/Qrcode_font_awesome.svg"><code>fa-qrcode.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Qrcode_font_awesome.svg"><code>Qrcode_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="even">
@@ -391,7 +399,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/0/07/Sort_font_awesome.svg"><code>fa-sort.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Sort_font_awesome.svg"><code>Sort_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="odd">
@@ -428,7 +436,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </tr>
 <tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg" width="20"> </span></td>
-<td><a href="https://niebert.github.io/img/icons-svg/i4m-wiki2reveal-frame.svg"><code>i4m-wiki2reveal-frame.svg</code></a></td>
+<td><a href="https://jquerymobile.com/download/"><code>i4m-wiki2reveal-frame.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Icon4Menu-wiki2reveal-frame.svg"><code>Icon4Menu-wiki2reveal-frame.svg</code></a></td>
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
@@ -463,14 +471,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://jquerymobile.com/download/"><code>recycle.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://jquerymobile.com/download/"><code>JQ-recycle.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
-<td><code>other</code></td>
-</tr>
-<tr class="even">
-<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/video.svg" width="20"> </span></td>
-<td><a href="https://jquerymobile.com/download/"><code>video.svg</code></a></td>
-<td><code>img/icons-svg</code></td>
-<td><a href="https://jquerymobile.com/download/"><code>JQ-video.svg</code></a></td>
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>other</code></td>
 </tr>
@@ -581,7 +581,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/0/04/Copy_font_awesome.svg"><code>fa-copy.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Copy_font_awesome.svg"><code>Copy_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>editor</code></td>
 </tr>
 <tr class="even">
@@ -589,7 +589,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg"><code>fa-enumeration.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Ol_font_awesome.svg"><code>Ol_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>editor</code></td>
 </tr>
 <tr class="odd">
@@ -597,7 +597,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/f/f1/Font_Awesome_5_solid_font.svg"><code>fa-font.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_font.svg"><code>Font_Awesome_5_solid_font.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>editor</code></td>
 </tr>
 <tr class="even">
@@ -605,7 +605,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg"><code>fa-list.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:List_font_awesome.svg"><code>List_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>editor</code></td>
 </tr>
 <tr class="odd">
@@ -613,7 +613,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/7/72/Font_Awesome_5_solid_minus-square.svg"><code>fa-minus-square.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_minus-square.svg"><code>Font_Awesome_5_solid_minus-square.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>editor</code></td>
 </tr>
 <tr class="even">
@@ -621,7 +621,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg"><code>fa-paste.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Paste_font_awesome.svg"><code>Paste_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>editor</code></td>
 </tr>
 <tr class="odd">
@@ -629,7 +629,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/2/20/Font_Awesome_5_solid_plus-square.svg"><code>fa-plus-square.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_plus-square.svg"><code>Font_Awesome_5_solid_plus-square.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>editor</code></td>
 </tr>
 <tr class="even">
@@ -771,7 +771,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg"><code>fa-audio-backward.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Backward_font_awesome.svg"><code>Backward_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>audio</code></td>
 </tr>
 <tr class="even">
@@ -779,7 +779,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/1/14/Font_Awesome_5_solid_eject.svg"><code>fa-audio-eject.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_eject.svg"><code>Font_Awesome_5_solid_eject.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>audio</code></td>
 </tr>
 <tr class="odd">
@@ -787,7 +787,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Forward_font_awesome.svg"><code>fa-audio-forward.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Forward_font_awesome.svg"><code>Forward_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>audio</code></td>
 </tr>
 <tr class="even">
@@ -795,7 +795,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg"><code>fa-audio-pause.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Pause_font_awesome.svg"><code>Pause_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>audio</code></td>
 </tr>
 <tr class="odd">
@@ -803,7 +803,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg"><code>fa-audio-play.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Play_font_awesome.svg"><code>Play_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>audio</code></td>
 </tr>
 <tr class="even">
@@ -811,7 +811,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_font_awesome.svg"><code>fa-audio-record.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Circle_font_awesome.svg"><code>Circle_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>audio</code></td>
 </tr>
 <tr class="odd">
@@ -819,7 +819,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b9/Font_Awesome_5_solid_square.svg"><code>fa-audio-stop.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_square.svg"><code>Font_Awesome_5_solid_square.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>audio</code></td>
 </tr>
 </tbody>
@@ -842,7 +842,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg"><code>fa-book.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Book_font_awesome.svg"><code>Book_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>product</code></td>
 </tr>
 <tr class="even">
@@ -850,7 +850,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Font_Awesome_5_solid_key.svg"><code>fa-key.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_key.svg"><code>Font_Awesome_5_solid_key.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>product</code></td>
 </tr>
 <tr class="odd">
@@ -858,7 +858,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/8/84/Picture_font_awesome.svg"><code>fa-picture.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Picture_font_awesome.svg"><code>Picture_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>product</code></td>
 </tr>
 </tbody>
@@ -889,7 +889,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/d/d1/Camera_font_awesome.svg"><code>fa-camera.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Camera_font_awesome.svg"><code>Camera_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>device</code></td>
 </tr>
 <tr class="even">
@@ -897,7 +897,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg"><code>fa-tablet.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Tablet_font_awesome.svg"><code>Tablet_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>device</code></td>
 </tr>
 <tr class="odd">
@@ -905,7 +905,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_brands_simplybuilt.svg"><code>fa-vr-headset.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:File:Font_Awesome_5_brands_simplybuilt.svg"><code>File:Font_Awesome_5_brands_simplybuilt.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>device</code></td>
 </tr>
 <tr class="even">
@@ -913,6 +913,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://jquerymobile.com/download/"><code>phone.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://jquerymobile.com/download/"><code>JQ-phone.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>device</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Smart_phone_%28448965%29_-_The_Noun_Project.svg"><code>wc_cc0_smartphone.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Smart_phone_%28448965%29_-_The_Noun_Project.svg"><code>JQ-wc_cc0_smartphone.svg</code></a></td>
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>device</code></td>
 </tr>
@@ -936,7 +944,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/d/de/Remove_font_awesome.svg"><code>fa-cancel.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Remove_font_awesome.svg"><code>Remove_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>action</code></td>
 </tr>
 <tr class="even">
@@ -944,7 +952,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg"><code>fa-spinner.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Spinner_font_awesome.svg"><code>Spinner_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>action</code></td>
 </tr>
 <tr class="odd">
@@ -952,7 +960,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/0/0d/Undo_font_awesome.svg"><code>fa-undo.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Undo_font_awesome.svg"><code>Undo_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>action</code></td>
 </tr>
 <tr class="even">
@@ -1031,7 +1039,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/5/56/Font_Awesome_5_solid_chart-pie.svg"><code>fa-chart-pie.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_chart-pie.svg"><code>Font_Awesome_5_solid_chart-pie.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>media</code></td>
 </tr>
 <tr class="even">
@@ -1039,7 +1047,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/e/ed/Font_Awesome_5_solid_chart-line.svg"><code>fa-line-chart.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_chart-line.svg"><code>Font_Awesome_5_solid_chart-line.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>media</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/video.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>video.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-video.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>media</code></td>
 </tr>
 </tbody>
@@ -1070,7 +1086,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg"><code>fa-file-archive.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_regular_file-archive.svg"><code>Font_Awesome_5_regular_file-archive.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>filetype</code></td>
 </tr>
 </tbody>
@@ -1093,7 +1109,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/c/c5/Signin_font_awesome.svg"><code>fa-signin.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Signin_font_awesome.svg"><code>Signin_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>login</code></td>
 </tr>
 <tr class="even">
@@ -1101,7 +1117,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/d/db/Signout_font_awesome.svg"><code>fa-signout.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Signout_font_awesome.svg"><code>Signout_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>login</code></td>
 </tr>
 <tr class="odd">
@@ -1140,7 +1156,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg"><code>fa-truck.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Truck_font_awesome.svg"><code>Truck_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses/by-sa/3.0/' target='_blank'>CC BY-SA 3.0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>vehicle</code></td>
 </tr>
 <tr class="even">

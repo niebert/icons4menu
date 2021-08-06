@@ -135,7 +135,7 @@ function save_color_icons(pFilename,pi,pName,pData) {
 
 function get_icon_license (pData,pLicense) {
   var data = pData;
-  var license = pLicense || "CC4SA";
+  var license = pLicense || "CCBY4SA";
   if (data) {
     var param = extract_parameter_svg("iconlicense",data);
     if (param) {
@@ -364,7 +364,7 @@ function init_icon_group() {
     } else if (vName.indexOf("phone") == 0) {
       //---- DEVICE ----
       json4icons.icons[i].group = "device";
-    } else if (vName.indexOf("phone") == 0) {
+    } else if (vName.indexOf("smartphone") >= 0) {
       //---- DEVICE ----
       json4icons.icons[i].group = "device";
     } else if (vName.indexOf("fa-camera") == 0) {

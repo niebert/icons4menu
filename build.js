@@ -265,6 +265,9 @@ function init_icon_group() {
     } else if (vName.indexOf("fa-file") == 0) {
       //---- MAIN ----
       json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("edit.") == 0) {
+      //---- ACTION/PROCESSES ----
+      json4icons.icons[i].group = "main";
     } else if (vName.indexOf("fa-print") == 0) {
       //---- MAIN ----
       json4icons.icons[i].group = "main";
@@ -373,8 +376,8 @@ function init_icon_group() {
       //---- DEVICE ----
       json4icons.icons[i].group = "device";
     } else if (vName.indexOf("camera") == 0) {
-      //---- DEVICE ----
-      json4icons.icons[i].group = "device";
+      //---- MEDIA ----
+      json4icons.icons[i].group = "media";
     } else if (vName.indexOf("fa-tablet") == 0) {
       //---- DEVICE ----
       json4icons.icons[i].group = "device";

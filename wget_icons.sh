@@ -455,7 +455,6 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     wget https://niebert.github.io/icons4menu/img/icons-svg/user-white.svg -O img/icons-svg/user-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/user.svg -O img/icons-svg/user.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram-black.svg -O img/icons-svg/vehicle-tram-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram-black.svg.svg -O img/icons-svg/vehicle-tram-black.svg.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram-white.svg -O img/icons-svg/vehicle-tram-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram.svg -O img/icons-svg/vehicle-tram.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/video-black.svg -O img/icons-svg/video-black.svg

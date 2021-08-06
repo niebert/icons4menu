@@ -46,24 +46,23 @@ function extract_parameter_svg(pName,data) {
   return par;
 }
 
-function get_icon_source_url4file(data) {
+function get_icon_source_url4file(data,pName) {
   var url = "https://jquerymobile.com/download/";
   if (data) {
     var param = extract_parameter_svg("wikicommons",data);
     if (param) {
         url = param;
-        console.log("File '" + data.name + "' - WikiCommons URL: '" + url + "'");
+        console.log("File '" + pName + "' - WikiCommons URL: '" + url + "'");
     }
-    if (data.name) {
-      if (data.name.indexOf("i4m-")== 0) {
-        url = "https://niebert.github.io/icons4menu/img/icons-svg/" + data.name;
+    param = extract_parameter_svg("icons4menu",data);
+    if (param) {
+        url = param;
         console.log("Icons4Menu URL: '" + url + "'");
-      } else {
-        param = extract_parameter_svg("icons4menu",data);
-        if (param) {
-            url = param;
-            console.log("Icons4Menu URL: '" + url + "'");
-        }
+    }
+    if (pName) {
+      if (pName.indexOf("i4m-")== 0) {
+        url = "https://niebert.github.io/icons4menu/img/icons-svg/" + pName;
+        console.log("Icons4Menu URL: '" + url + "'");
       }
     }
   } else {
@@ -195,7 +194,7 @@ function save_data2json(pFilename,pi,pName) {
       if (data) {
         json4icons.icons[i].src = "data:image/svg+xml;base64," + Base64.encode(data);
         json4icons.icons[i].raw = data;
-        json4icons.icons[i].icon_source = get_icon_source_url4file(data);
+        json4icons.icons[i].icon_source = get_icon_source_url4file(data,pName);
         json4icons.icons[i].url = i4m.get_icon_source_url(json4icons.icons[i]);
         license = json4icons.icons[i].license;
         json4icons.icons[i].license = get_icon_license(data,license);

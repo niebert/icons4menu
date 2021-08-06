@@ -369,7 +369,7 @@ function get_icon_source_page(icon,urlinit) {
   if (icon.name.indexOf("fa-") == 0) {
     url = "https://commons.wikimedia.org/wiki/File:" + get_icon_source_name(icon);
   } else if (icon.name.indexOf("i4m-") == 0) {
-    url = "https://niebert.github.io/img/icons-svg/" + icon.name;
+    url = "https://niebert.github.io/icons4menu/img/icons-svg/" + icon.name;
   }
   return url;
 }

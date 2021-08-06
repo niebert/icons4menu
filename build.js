@@ -52,13 +52,19 @@ function get_icon_source_url4file(data) {
     var param = extract_parameter_svg("wikicommons",data);
     if (param) {
         url = param;
-        console.log("WikiCommons URL: '" + url + "'");
+        console.log("File '" + data.name + "' - WikiCommons URL: '" + url + "'");
     }
-
-    param = extract_parameter_svg("icons4menu",data);
-    if (param) {
-        url = param;
+    if (data.name) {
+      if (data.name.indexOf("i4m-")== 0) {
+        url = "https://niebert.github.io/icons4menu/img/icons-svg/" + data.name;
         console.log("Icons4Menu URL: '" + url + "'");
+      } else {
+        param = extract_parameter_svg("icons4menu",data);
+        if (param) {
+            url = param;
+            console.log("Icons4Menu URL: '" + url + "'");
+        }
+      }
     }
   } else {
     console.warn("get_icon_source_url(data) - data was not defined");
@@ -253,6 +259,12 @@ function init_icon_group() {
     } else if (vName.indexOf("grid") == 0) {
       //---- MAIN ----
       json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("mail") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
+    } else if (vName.indexOf("fa-file") == 0) {
+      //---- MAIN ----
+      json4icons.icons[i].group = "main";
     } else if (vName.indexOf("fa-print") == 0) {
       //---- MAIN ----
       json4icons.icons[i].group = "main";
@@ -324,7 +336,7 @@ function init_icon_group() {
       json4icons.icons[i].group = "media";
     } else if (vName.indexOf("fa-audio-") == 0) {
       json4icons.icons[i].group = "audio";
-    } else if (vName.indexOf("audio-") == 0) {
+    } else if (vName.indexOf("audio") == 0) {
       json4icons.icons[i].group = "audio";
     } else if (vName.indexOf("user") == 0) {
       //---- LOGIN/SIGN IN/OUT ----
@@ -352,10 +364,15 @@ function init_icon_group() {
       json4icons.icons[i].group = "editor";
     } else if (vName.indexOf("fa-minus-") == 0) {
       json4icons.icons[i].group = "editor";
+    } else if (vName.indexOf("fa-bullets-") == 0) {
+      json4icons.icons[i].group = "editor";
     } else if (vName.indexOf("heart") == 0) {
       //---- MEDICAL ----
       json4icons.icons[i].group = "medical";
     } else if (vName.indexOf("fa-vr-") == 0) {
+      //---- DEVICE ----
+      json4icons.icons[i].group = "device";
+    } else if (vName.indexOf("camera") == 0) {
       //---- DEVICE ----
       json4icons.icons[i].group = "device";
     } else if (vName.indexOf("fa-tablet") == 0) {

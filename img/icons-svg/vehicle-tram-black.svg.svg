@@ -15,7 +15,7 @@
    viewBox="0 0 14 14"
    version="1.1"
    id="svg2508"
-   sodipodi:docname="vehicle-tram.svg"
+   sodipodi:docname="vehicle-tram-black.svg.svg"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
   <defs
      id="defs2502" />
@@ -60,7 +60,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

@@ -306,15 +306,16 @@ If you want to check out an [example repository on GitHub](), that uses the [Ico
 
 ## Add License Info File
 If you use the repository add this README.md file to the [WebApp](https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache), so that users of web-based applications can identify the origin of the SVG and PNG icons. The repository incorporated SVG and PNG icons with two licenses:
-* Creative Commons `CC Zero` - https://creativecommons.org/publicdomain/zero/1.0/deed.en
-* Creative Commons `CC BY-SA 3.0`  - see https://creativecommons.org/licenses/by-sa/3.0/  with the `fa-` as file attribution prefix.
+
+* [Creative Commons `CC Zero`](https://creativecommons.org/publicdomain/zero/1.0/deed.en) - [https://creativecommons.org/publicdomain/zero/1.0/deed.en](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
+* [Creative Commons `CC BY-SA 3.0`](https://creativecommons.org/licenses/by-sa/3.0/)  - see [https://creativecommons.org/licenses/by-sa/3.0/](https://creativecommons.org/licenses/by-sa/3.0/)  with the `fa-` as file attribution prefix.
 
 ### Attribution for Files - File Prefix
 If we consider the `CC BY-SA 3.0` license provides the freedom to:
+
 * **Share** — copy and redistribute the material in any medium or format
 * **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
-These two freedoms are also provided for the license `CC Zero`. Furthermore for all `CC BY-SA 3.0` licensed icons an `attribution` and a `share alike` requirement is defined (see https://creativecommons.org/licenses/by-sa/3.0/):
-
+These two freedoms are also provided for the license `CC Zero`. Furthermore for all `CC BY-SA 3.0` licensed icons an `attribution` and a `share alike` requirement is defined (see https://creativecommons.org/licenses/by-sa/3.0/)
 * **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 * **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 

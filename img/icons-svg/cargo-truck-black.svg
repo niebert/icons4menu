@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="-11.75 -10.014 126 108.985"
+   enable-background="new -11.75 -10.014 126 108.985"
+   width="14px"
+   height="14px"
+   iconlicense="CC0"
+   icongroup="vehicle"
+   wikicommons="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cargo_Truck.svg"
+   sodipodi:docname="cargo-truck-black.svg"
+   xml:space="preserve"
+   id="svg14"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs18" /><sodipodi:namedview
+   id="namedview16"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="51.928571"
+   inkscape:cx="8.3383769"
+   inkscape:cy="5.2283356"
+   inkscape:window-width="1920"
+   inkscape:window-height="1056"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg14" />
+  <path
+   style="fill:#000000;stroke-width:1.43948"
+   d="M 0.78298934,67.95697 H 16.901235 c -1.448273,3.2812 -2.308427,7.299917 -2.308427,11.732548 H 3.9383549 L 0.78298934,75.943607 Z"
+   id="path2" />
+  <path
+   style="fill:#000000;stroke-width:1.43948"
+   d="m 26.072171,65.336149 c -4.654303,0 -8.43193,6.44387 -8.43193,14.355251 0,7.962179 3.778729,14.381591 8.43193,14.381591 4.638883,0 8.403294,-6.417531 8.403294,-14.381591 0,-7.913262 -3.764411,-14.355251 -8.403294,-14.355251 z m 0,22.193255 c -2.54632,0 -4.61135,-3.501327 -4.61135,-7.839886 0,-4.31222 2.06503,-7.813546 4.61135,-7.813546 2.524292,0 4.589322,3.501326 4.589322,7.813546 0,4.338559 -2.06503,7.839886 -4.589322,7.839886 z"
+   id="path4" />
+  <path
+   style="fill:#000000;stroke-width:1.43948"
+   d="m 84.771882,65.334266 c -4.657605,0 -8.436334,6.453279 -8.436334,14.355252 0,7.958416 3.778729,14.374066 8.436334,14.374066 4.636681,0 8.41541,-6.41565 8.41541,-14.374066 -0.0011,-7.901973 -3.778729,-14.355252 -8.41541,-14.355252 z m 0,22.200783 c -2.533103,0 -4.603639,-3.499446 -4.603639,-7.845531 0,-4.308456 2.070536,-7.807902 4.603639,-7.807902 2.52209,0 4.581614,3.499446 4.581614,7.807902 0,4.346085 -2.059524,7.845531 -4.581614,7.845531 z"
+   id="path6" />
+  <path
+   style="fill:#000000;stroke-width:1.43948"
+   d="M 104.30982,39.21072 98.209445,7.8643447 88.593564,0 H 69.408061 v 67.95697 h -34.18588 c 1.442766,3.292488 2.312833,7.299917 2.312833,11.758888 H 73.28481 c 0,-10.818177 5.143301,-19.566791 11.487072,-19.566791 4.449452,0 8.29316,4.346086 10.198495,10.705292 0.682836,2.238893 1.124477,4.778813 1.212585,7.488061 0.01101,0.432727 0.05507,0.884268 0.05507,1.373438 h 9.173138 V 47.035555 Z m -29.494135,0 V 15.692943 h 20.332009 l 4.581613,23.517777 z"
+   id="path8" />
+  <polygon
+   fill="#eeeeee"
+   points="94.841,20.841 72.22,20.841 72.22,8.341 90.681,8.341 "
+   id="polygon10"
+   transform="matrix(1.1013492,0,0,1.8814222,-4.7237569,0)" />
+  <rect
+   x="-3.071733"
+   y="0"
+   width="69.385002"
+   height="63.313618"
+   id="rect12"
+   style="stroke-width:1.43948" />
+</svg>

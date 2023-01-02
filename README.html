@@ -1,81 +1,330 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>README</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="date" content=''>
+    <title></title>
+    <style>
+		/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+body {
+  margin: 30px;
+  background-color: #C0C0C0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+mark {
+  color: #000;
+  background: #ff0;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -.5em;
+}
+sub {
+  bottom: -.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  .navbar {
+    display: none;
+  }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
+html {
+  font-size: 10px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.img-circle {
+  border-radius: 50%;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small {
+  font-size: 65%;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+  font-size: 75%;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+p {
+  margin: 0 0 10px;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+    </style>
+  </head>
+  <body>
 <h1 id="icons4menu">Icons4Menu</h1>
 <p>This repository is a SVG images resource based on SVG icons <a href="https://jquerymobile.com/download/">JQuery Mobile 1.4.5</a> and extended with SVG icons from <a href="https://commons.wikimedia.org/">Wiki Commons</a>. The icons are primary collected for menus in webbased application or for icons in buttons.</p>
 <h2 id="usage-of-icons4menu---webapps">Usage of Icons4Menu - WebApps</h2>
@@ -113,16 +362,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 * <code>src</code>: is the base64 encoded data of the image as Data URL that can used in images in the DOM. The source us either the <code>XML</code> source text of the <code>SVG</code> image or the binary data as base64 encoded data of the image.</p>
 <p>The file <code>json4icons.js</code> is a library that populates a hash object <code>vDataJSON</code> defined with <code>var vDataJSON = {};</code> in the main HTML file that embeds the <code>icons4menu</code>. * <code>used</code> is boolean that can be set by an application to reduce the number of icons in the JSON data to the used icons. Set all used icons to <code>true</code> and remove all the unused icons from the JSON to reduce the size of the JSON especially for WebApps (see also <a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache">AppLSAC on Wikiversity</a> ).</p>
 <h3 id="example-icon-record-in-json4icons.js">Example Icon Record in <code>json4icons.js</code></h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb8-1" title="1"><span class="fu">{</span></a>
-<a class="sourceLine" id="cb8-2" title="2">    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;arrow-r-black.svg&quot;</span><span class="fu">,</span></a>
-<a class="sourceLine" id="cb8-3" title="3">    <span class="dt">&quot;path&quot;</span><span class="fu">:</span> <span class="st">&quot;img/icons-svg&quot;</span><span class="fu">,</span></a>
-<a class="sourceLine" id="cb8-4" title="4">    <span class="dt">&quot;used&quot;</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></a>
-<a class="sourceLine" id="cb8-5" title="5">    <span class="dt">&quot;src&quot;</span><span class="fu">:</span> <span class="st">&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0....&quot;</span><span class="fu">,</span></a>
-<a class="sourceLine" id="cb8-6" title="6">    <span class="dt">&quot;license&quot;</span><span class="fu">:</span> <span class="st">&quot;CC0&quot;</span><span class="fu">,</span></a>
-<a class="sourceLine" id="cb8-7" title="7">    <span class="dt">&quot;group&quot;</span><span class="fu">:</span> <span class="st">&quot;arrow&quot;</span><span class="fu">,</span></a>
-<a class="sourceLine" id="cb8-8" title="8">    <span class="dt">&quot;raw&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;?xml version=</span><span class="ch">\&quot;</span><span class="st">1.0</span><span class="ch">\&quot;</span><span class="st">...&quot;</span><span class="fu">,</span></a>
-<a class="sourceLine" id="cb8-9" title="9">    <span class="dt">&quot;wikicommons&quot;</span><span class="fu">:</span> <span class="st">&quot;https://jquerymobile.com/download/&quot;</span></a>
-<a class="sourceLine" id="cb8-10" title="10"><span class="fu">}</span></a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true"></a><span class="fu">{</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true"></a>    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;arrow-r-black.svg&quot;</span><span class="fu">,</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true"></a>    <span class="dt">&quot;path&quot;</span><span class="fu">:</span> <span class="st">&quot;img/icons-svg&quot;</span><span class="fu">,</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true"></a>    <span class="dt">&quot;used&quot;</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true"></a>    <span class="dt">&quot;src&quot;</span><span class="fu">:</span> <span class="st">&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0....&quot;</span><span class="fu">,</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true"></a>    <span class="dt">&quot;license&quot;</span><span class="fu">:</span> <span class="st">&quot;CC0&quot;</span><span class="fu">,</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true"></a>    <span class="dt">&quot;group&quot;</span><span class="fu">:</span> <span class="st">&quot;arrow&quot;</span><span class="fu">,</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true"></a>    <span class="dt">&quot;raw&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;?xml version=</span><span class="ch">\&quot;</span><span class="st">1.0</span><span class="ch">\&quot;</span><span class="st">...&quot;</span><span class="fu">,</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true"></a>    <span class="dt">&quot;wikicommons&quot;</span><span class="fu">:</span> <span class="st">&quot;https://jquerymobile.com/download/&quot;</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true"></a><span class="fu">}</span></span></code></pre></div>
 <p>The content in <code>src</code> and <code>raw</code> are shortend so that the record fits into this README page.</p>
 <h2 id="json-file-icons4menu">JSON File Icons4Menu</h2>
 <p>The repository contains also a <a href="https://niebert.github.io/icons4menu/json4icons.json">JSON file</a> with all icons of the repository. The JSON file <a href="https://niebert.github.io/icons4menu/json4icons.json"><code>json4icons.json</code></a> can be used to identify the used icons with NodeJS and delete the unused icons from your <code>img/</code> folder of your WebApp to save disk space and reduce the size of your WebApp.</p>
@@ -449,34 +698,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-avatar-a.svg"><code>i4m-avatar-a.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-avatar-a.svg"><code>Icon4Menu-avatar-a.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
 <tr class="even">
-<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg" width="20"> </span></td>
-<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg"><code>i4m-metronome.svg</code></a></td>
-<td><code>img/icons-svg</code></td>
-<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg"><code>Icon4Menu-metronome.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
-<td><code>other</code></td>
-</tr>
-<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg" width="20"> </span></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg"><code>i4m-wiki2reveal-frame.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg"><code>Icon4Menu-wiki2reveal-frame.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal.svg" width="20"> </span></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal.svg"><code>i4m-wiki2reveal.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal.svg"><code>Icon4Menu-wiki2reveal.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/lock.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>lock.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -484,7 +725,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/recycle.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>recycle.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -746,6 +987,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><code>editor</code></td>
 </tr>
 <tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-header.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-header.svg"><code>i4m-header.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-header.svg"><code>Icon4Menu-header.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/search.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>search.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -860,7 +1109,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-dd.svg"><code>i4m-carat-dd.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-dd.svg"><code>Icon4Menu-carat-dd.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>navigation</code></td>
 </tr>
 <tr class="even">
@@ -868,7 +1117,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-ll.svg"><code>i4m-carat-ll.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-ll.svg"><code>Icon4Menu-carat-ll.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>navigation</code></td>
 </tr>
 <tr class="odd">
@@ -876,7 +1125,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-rr.svg"><code>i4m-carat-rr.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-rr.svg"><code>Icon4Menu-carat-rr.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>navigation</code></td>
 </tr>
 <tr class="even">
@@ -884,7 +1133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu.svg"><code>i4m-carat-uu.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu.svg"><code>Icon4Menu-carat-uu.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>navigation</code></td>
 </tr>
 <tr class="odd">
@@ -910,6 +1159,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><a href="https://jquerymobile.com/download/"><code>JQ-navigation.svg</code></a></td>
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>navigation</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="vehicle">Vehicle</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/cargo-truck.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cargo_Truck.svg"><code>cargo-truck.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cargo_Truck.svg"><code>JQ-cargo-truck.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>vehicle</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-truck.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg"><code>fa-truck.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Truck_font_awesome.svg"><code>Truck_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>vehicle</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset.svg" width="20"> </span></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_brands_simplybuilt.svg"><code>fa-vr-headset.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:File:Font_Awesome_5_brands_simplybuilt.svg"><code>File:Font_Awesome_5_brands_simplybuilt.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>vehicle</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/2/21/Tram_icon_black_and_transparent_background.svg"><code>vehicle-tram.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/2/21/Tram_icon_black_and_transparent_background.svg"><code>JQ-vehicle-tram.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CC4SA</a></td>
+<td><code>vehicle</code></td>
 </tr>
 </tbody>
 </table>
@@ -953,15 +1257,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 <h3 id="device">Device</h3>
-<table style="width:100%;">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-</colgroup>
+<table>
 <thead>
 <tr class="header">
 <th>Icon</th>
@@ -982,6 +1278,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><code>device</code></td>
 </tr>
 <tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-laptop.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b9/Laptop_font_awesome.svg"><code>fa-laptop.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Laptop_font_awesome.svg"><code>Laptop_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>device</code></td>
+</tr>
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-tablet.svg" width="20"> </span></td>
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg"><code>fa-tablet.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -989,15 +1293,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>device</code></td>
 </tr>
-<tr class="odd">
-<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset.svg" width="20"> </span></td>
-<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_brands_simplybuilt.svg"><code>fa-vr-headset.svg</code></a></td>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg"><code>i4m-metronome.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
-<td><a href="https://commons.wikimedia.org/wiki/File:File:Font_Awesome_5_brands_simplybuilt.svg"><code>File:Font_Awesome_5_brands_simplybuilt.svg</code></a></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg"><code>Icon4Menu-metronome.svg</code></a></td>
 <td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>device</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/phone.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>phone.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -1005,7 +1309,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>device</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone.svg" width="20"> </span></td>
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Smart_phone_%28448965%29_-_The_Noun_Project.svg"><code>wc_cc0_smartphone.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -1180,37 +1484,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 </tbody>
 </table>
-<h3 id="vehicle">Vehicle</h3>
-<table>
-<thead>
-<tr class="header">
-<th>Icon</th>
-<th>File</th>
-<th>Folder</th>
-<th>Source File</th>
-<th>Licence</th>
-<th>Group</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-truck.svg" width="20"> </span></td>
-<td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg"><code>fa-truck.svg</code></a></td>
-<td><code>img/icons-svg</code></td>
-<td><a href="https://commons.wikimedia.org/wiki/File:Truck_font_awesome.svg"><code>Truck_font_awesome.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
-<td><code>vehicle</code></td>
-</tr>
-<tr class="even">
-<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram.svg" width="20"> </span></td>
-<td><a href="https://upload.wikimedia.org/wikipedia/commons/2/21/Tram_icon_black_and_transparent_background.svg"><code>vehicle-tram.svg</code></a></td>
-<td><code>img/icons-svg</code></td>
-<td><a href="https://upload.wikimedia.org/wikipedia/commons/2/21/Tram_icon_black_and_transparent_background.svg"><code>JQ-vehicle-tram.svg</code></a></td>
-<td><a href='https://creativecommons.org/licenses' target='_blank'>CC4SA</a></td>
-<td><code>vehicle</code></td>
-</tr>
-</tbody>
-</table>
 <h3 id="medical">Medical</h3>
 <table>
 <thead>
@@ -1244,23 +1517,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Save the icon with 14x14 pixel for width and height, so that the icon has a standard size for a menu if not additional size attributes are used in CSS or the <code>img</code>-tag itself.</p>
 <h2 id="style-sheets-css-for-icons">Style Sheets CSS for Icons</h2>
 <p>The spinner icon is static. You might expect the spinner icon <code>fa-spinner.svg</code> to rotate. This can be accomplish with CSS class definition for a class <code>icon-spin</code>: * Add in your CSS file the following styles for the class <code>icon-spin</code>:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb9-1" title="1"><span class="fu">.icon-spin</span> {</a>
-<a class="sourceLine" id="cb9-2" title="2">    <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb9-3" title="3">    <span class="kw">top</span>: <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb9-4" title="4">    <span class="kw">left</span>: <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb9-5" title="5">    <span class="kw">width</span>: <span class="dv">120</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb9-6" title="6">    <span class="kw">height</span>: <span class="dv">120</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb9-7" title="7">    <span class="kw">margin</span>:<span class="dv">-60</span><span class="dt">px</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">-60</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb9-8" title="8">    <span class="kw">-webkit-animation</span>:spin <span class="dv">4</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb9-9" title="9">    <span class="kw">-moz-animation</span>:spin <span class="dv">4</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb9-10" title="10">    <span class="kw">animation</span>:spin <span class="dv">4</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb9-11" title="11">}</a>
-<a class="sourceLine" id="cb9-12" title="12"><span class="im">@-moz-keyframes</span> spin { 100% { <span class="kw">-moz-transform</span>: <span class="fu">rotate(</span><span class="dv">360</span><span class="dt">deg</span><span class="fu">)</span><span class="op">;</span> } }</a>
-<a class="sourceLine" id="cb9-13" title="13"><span class="im">@-webkit-keyframes</span> spin { 100% { <span class="kw">-webkit-transform</span>: <span class="fu">rotate(</span><span class="dv">360</span><span class="dt">deg</span><span class="fu">)</span><span class="op">;</span> } }</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true"></a><span class="fu">.icon-spin</span> {</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true"></a>    <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true"></a>    <span class="kw">top</span>: <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true"></a>    <span class="kw">left</span>: <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true"></a>    <span class="kw">width</span>: <span class="dv">120</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true"></a>    <span class="kw">height</span>: <span class="dv">120</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true"></a>    <span class="kw">margin</span>:<span class="dv">-60</span><span class="dt">px</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">-60</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true"></a>    <span class="kw">-webkit-animation</span>:spin <span class="dv">4</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true"></a>    <span class="kw">-moz-animation</span>:spin <span class="dv">4</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true"></a>    <span class="kw">animation</span>:spin <span class="dv">4</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true"></a>}</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true"></a><span class="im">@-moz-keyframes</span> spin { 100% { <span class="kw">-moz-transform</span>: <span class="fu">rotate(</span><span class="dv">360</span><span class="dt">deg</span><span class="fu">)</span><span class="op">;</span> } }</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true"></a><span class="im">@-webkit-keyframes</span> spin { 100% { <span class="kw">-webkit-transform</span>: <span class="fu">rotate(</span><span class="dv">360</span><span class="dt">deg</span><span class="fu">)</span><span class="op">;</span> } }</span></code></pre></div>
 <ul>
 <li>The you can make the icons rotate by adding the <code>icon-spin</code> classname to the icon:</li>
 </ul>
-<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">&lt;img</span><span class="ot"> class=</span><span class="st">&quot;icon-spin&quot;</span><span class="ot"> src=</span><span class="st">&quot;img/icons-svg/fa-spinner.svg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;&quot;</span><span class="ot"> width=</span><span class="st">&quot;20&quot;</span><span class="ot"> height=</span><span class="st">&quot;20&quot;</span><span class="kw">&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true"></a><span class="kw">&lt;img</span><span class="ot"> class=</span><span class="st">&quot;icon-spin&quot;</span><span class="ot"> src=</span><span class="st">&quot;img/icons-svg/fa-spinner.svg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;&quot;</span><span class="ot"> width=</span><span class="st">&quot;20&quot;</span><span class="ot"> height=</span><span class="st">&quot;20&quot;</span><span class="kw">&gt;</span></span></code></pre></div>
 <h2 id="scan-icons">Scan Icons</h2>
 <h3 id="scan-shell-script-for-images">Scan Shell Script for images</h3>
 <p>The shell script <code>scan_icons.sh</code> scans all icons in the subdirectory <code>img/</code> and creates and HTML file <code>img/index.html</code> and a <code>wget</code> download script, that can be modified for downloading a subset of the images.</p>
@@ -1273,8 +1546,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 id="use-in-other-svg-images-in-other-repositories">Use in other SVG Images in other repositories</h3>
 <p>The script <code>update_wget_icons.sh</code> updates the script <code>wget_icons.sh</code> from the repository <a href="https://www.github.com/niebert/icons4menu">icons4menu</a> and replaces the script <code>wget_icons.sh</code>. The script <code>wget_icons.sh</code> can be used to download an updated version of the icons. Please modify the script according to your needs, to download just a subset for your <a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache">AppLSAC</a>.</p>
 <p>If the repository <a href="https://www.github.com/niebert/icons4menu">icons4menu</a> is expanded with more icons with a Creative Commons license, that it is recommended to update the download script <code>wget_icons.sh</code> with the following commands:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="fu">sh</span> ./update_wget_icons.sh</a>
-<a class="sourceLine" id="cb11-2" title="2"><span class="fu">sh</span> ./wget_icons.sh</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true"></a><span class="fu">sh</span> ./update_wget_icons.sh</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true"></a><span class="fu">sh</span> ./wget_icons.sh</span></code></pre></div>
 <p>The second command downloads the icons. You can help to minimize the GitHub server load by tailoring the script according to your needs.</p>
 <p>If you want to check out an <a href="">example repository on GitHub</a>, that uses the <a href="https://niebert.github.io/hamburger_menu_app">Icons4Menu icons</a> in an AppLSAC analyze the subdirectory <code>img/</code> in <a href="https://www.github.com/niebert/hamburger_menu_app"><code>hamburger_menu_app</code></a>.</p>
 <h2 id="add-license-info-file">Add License Info File</h2>
@@ -1300,5 +1573,5 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><code>cc4by-recycle.svg</code> for <a href="https://creativecommons.org/licenses/by/4.0/"><code>CC BY 4.0</code></a> licensed icons e.g. from an additional source used in the fork of <code>icons4menu</code>.</li>
 </ul>
 <p>This allows users to identify the license of the file directly from the filename.</p>
-</body>
+  </body>
 </html>

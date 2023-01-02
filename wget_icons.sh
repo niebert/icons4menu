@@ -151,316 +151,333 @@ if [ "$DOWNLOAD_FOLDER" = "icons-svg" ]; then
     mkdir img/icons-svg 
  
     wget https://niebert.github.io/icons4menu/img/icons-svg/action-black.svg -O img/icons-svg/action-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/action-white.svg -O img/icons-svg/action-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/action.svg -O img/icons-svg/action.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/action-white.svg -O img/icons-svg/action-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/alert-black.svg -O img/icons-svg/alert-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/alert-white.svg -O img/icons-svg/alert-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/alert.svg -O img/icons-svg/alert.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/alert-white.svg -O img/icons-svg/alert-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-black.svg -O img/icons-svg/arrow-d-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-l-black.svg -O img/icons-svg/arrow-d-l-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-l-white.svg -O img/icons-svg/arrow-d-l-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-r-black.svg -O img/icons-svg/arrow-d-r-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-r-white.svg -O img/icons-svg/arrow-d-r-white.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-white.svg -O img/icons-svg/arrow-d-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d.svg -O img/icons-svg/arrow-d.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-d-white.svg -O img/icons-svg/arrow-d-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-l-black.svg -O img/icons-svg/arrow-l-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-l-white.svg -O img/icons-svg/arrow-l-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-l.svg -O img/icons-svg/arrow-l.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-l-white.svg -O img/icons-svg/arrow-l-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-r-black.svg -O img/icons-svg/arrow-r-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-r-white.svg -O img/icons-svg/arrow-r-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-r.svg -O img/icons-svg/arrow-r.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-r-white.svg -O img/icons-svg/arrow-r-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-black.svg -O img/icons-svg/arrow-u-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-l-black.svg -O img/icons-svg/arrow-u-l-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-l-white.svg -O img/icons-svg/arrow-u-l-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-l.svg -O img/icons-svg/arrow-u-l.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-l-white.svg -O img/icons-svg/arrow-u-l-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-r-black.svg -O img/icons-svg/arrow-u-r-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-r-white.svg -O img/icons-svg/arrow-u-r-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-r.svg -O img/icons-svg/arrow-u-r.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-white.svg -O img/icons-svg/arrow-u-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-r-white.svg -O img/icons-svg/arrow-u-r-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u.svg -O img/icons-svg/arrow-u.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-white.svg -O img/icons-svg/arrow-u-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/audio-black.svg -O img/icons-svg/audio-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/audio-white.svg -O img/icons-svg/audio-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/audio.svg -O img/icons-svg/audio.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/audio-white.svg -O img/icons-svg/audio-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/background-color-black.svg -O img/icons-svg/background-color-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/background-color-white.svg -O img/icons-svg/background-color-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/background-color.svg -O img/icons-svg/background-color.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/background-color-white.svg -O img/icons-svg/background-color-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bars-black.svg -O img/icons-svg/bars-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/bars-white.svg -O img/icons-svg/bars-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bars.svg -O img/icons-svg/bars.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/bars-white.svg -O img/icons-svg/bars-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/brush-paint-black.svg -O img/icons-svg/brush-paint-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/brush-paint-white.svg -O img/icons-svg/brush-paint-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/brush-paint.svg -O img/icons-svg/brush-paint.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/brush-paint-white.svg -O img/icons-svg/brush-paint-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bullets-black.svg -O img/icons-svg/bullets-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/bullets-white.svg -O img/icons-svg/bullets-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/bullets.svg -O img/icons-svg/bullets.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/bullets-white.svg -O img/icons-svg/bullets-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/calendar-black.svg -O img/icons-svg/calendar-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/calendar-white.svg -O img/icons-svg/calendar-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/calendar.svg -O img/icons-svg/calendar.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/calendar-white.svg -O img/icons-svg/calendar-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/camera-black.svg -O img/icons-svg/camera-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/camera-white.svg -O img/icons-svg/camera-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/camera.svg -O img/icons-svg/camera.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/camera-white.svg -O img/icons-svg/camera-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/carat-d-black.svg -O img/icons-svg/carat-d-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/carat-d-white.svg -O img/icons-svg/carat-d-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/carat-d.svg -O img/icons-svg/carat-d.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/carat-d-white.svg -O img/icons-svg/carat-d-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/carat-l-black.svg -O img/icons-svg/carat-l-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/carat-l-white.svg -O img/icons-svg/carat-l-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/carat-l.svg -O img/icons-svg/carat-l.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/carat-l-white.svg -O img/icons-svg/carat-l-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/carat-r-black.svg -O img/icons-svg/carat-r-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/carat-r-white.svg -O img/icons-svg/carat-r-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/carat-r.svg -O img/icons-svg/carat-r.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/carat-r-white.svg -O img/icons-svg/carat-r-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/carat-u-black.svg -O img/icons-svg/carat-u-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/carat-u-white.svg -O img/icons-svg/carat-u-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/carat-u.svg -O img/icons-svg/carat-u.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/carat-u-white.svg -O img/icons-svg/carat-u-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/cargo-truck-black.svg -O img/icons-svg/cargo-truck-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/cargo-truck.svg -O img/icons-svg/cargo-truck.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/cargo-truck-white.svg -O img/icons-svg/cargo-truck-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/check-black.svg -O img/icons-svg/check-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/check-white.svg -O img/icons-svg/check-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/check.svg -O img/icons-svg/check.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/check-white.svg -O img/icons-svg/check-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/clock-black.svg -O img/icons-svg/clock-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/clock-white.svg -O img/icons-svg/clock-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/clock.svg -O img/icons-svg/clock.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/clock-white.svg -O img/icons-svg/clock-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/cloud-black.svg -O img/icons-svg/cloud-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/cloud-white.svg -O img/icons-svg/cloud-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/cloud.svg -O img/icons-svg/cloud.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/cloud-white.svg -O img/icons-svg/cloud-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/comment-black.svg -O img/icons-svg/comment-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/comment-white.svg -O img/icons-svg/comment-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/comment.svg -O img/icons-svg/comment.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/comment-white.svg -O img/icons-svg/comment-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/delete-black.svg -O img/icons-svg/delete-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/delete-white.svg -O img/icons-svg/delete-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/delete.svg -O img/icons-svg/delete.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/delete-white.svg -O img/icons-svg/delete-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/edit-black.svg -O img/icons-svg/edit-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/edit-white.svg -O img/icons-svg/edit-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/edit.svg -O img/icons-svg/edit.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/edit-white.svg -O img/icons-svg/edit-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/eye-black.svg -O img/icons-svg/eye-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/eye-white.svg -O img/icons-svg/eye-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/eye.svg -O img/icons-svg/eye.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/eye-white.svg -O img/icons-svg/eye-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-back-black.svg -O img/icons-svg/fa-audio-back-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-back.svg -O img/icons-svg/fa-audio-back.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward-black.svg -O img/icons-svg/fa-audio-backward-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward-white.svg -O img/icons-svg/fa-audio-backward-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward.svg -O img/icons-svg/fa-audio-backward.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward-white.svg -O img/icons-svg/fa-audio-backward-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-back-white.svg -O img/icons-svg/fa-audio-back-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-eject-black.svg -O img/icons-svg/fa-audio-eject-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-eject-white.svg -O img/icons-svg/fa-audio-eject-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-eject.svg -O img/icons-svg/fa-audio-eject.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-eject-white.svg -O img/icons-svg/fa-audio-eject-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-forward-black.svg -O img/icons-svg/fa-audio-forward-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-forward-white.svg -O img/icons-svg/fa-audio-forward-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-forward.svg -O img/icons-svg/fa-audio-forward.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-forward-white.svg -O img/icons-svg/fa-audio-forward-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-pause-black.svg -O img/icons-svg/fa-audio-pause-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-pause-white.svg -O img/icons-svg/fa-audio-pause-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-pause.svg -O img/icons-svg/fa-audio-pause.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-pause-white.svg -O img/icons-svg/fa-audio-pause-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-play-black.svg -O img/icons-svg/fa-audio-play-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-play-white.svg -O img/icons-svg/fa-audio-play-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-play.svg -O img/icons-svg/fa-audio-play.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-play-white.svg -O img/icons-svg/fa-audio-play-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-record-black.svg -O img/icons-svg/fa-audio-record-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-record-white.svg -O img/icons-svg/fa-audio-record-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-record.svg -O img/icons-svg/fa-audio-record.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-record-white.svg -O img/icons-svg/fa-audio-record-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-stop-black.svg -O img/icons-svg/fa-audio-stop-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-stop-white.svg -O img/icons-svg/fa-audio-stop-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-stop.svg -O img/icons-svg/fa-audio-stop.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-stop-white.svg -O img/icons-svg/fa-audio-stop-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-barcode-black.svg -O img/icons-svg/fa-barcode-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-barcode-white.svg -O img/icons-svg/fa-barcode-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-barcode.svg -O img/icons-svg/fa-barcode.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-barcode-white.svg -O img/icons-svg/fa-barcode-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-book-black.svg -O img/icons-svg/fa-book-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-book-white.svg -O img/icons-svg/fa-book-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-book.svg -O img/icons-svg/fa-book.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-book-white.svg -O img/icons-svg/fa-book-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-camera-black.svg -O img/icons-svg/fa-camera-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-camera-white.svg -O img/icons-svg/fa-camera-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-camera.svg -O img/icons-svg/fa-camera.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-camera-white.svg -O img/icons-svg/fa-camera-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel-black.svg -O img/icons-svg/fa-cancel-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel-red.svg -O img/icons-svg/fa-cancel-red.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel-white.svg -O img/icons-svg/fa-cancel-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel.svg -O img/icons-svg/fa-cancel.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel-white.svg -O img/icons-svg/fa-cancel-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-chart-pie-black.svg -O img/icons-svg/fa-chart-pie-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-chart-pie-white.svg -O img/icons-svg/fa-chart-pie-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-chart-pie.svg -O img/icons-svg/fa-chart-pie.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-chart-pie-white.svg -O img/icons-svg/fa-chart-pie-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-copy-black.svg -O img/icons-svg/fa-copy-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-copy-white.svg -O img/icons-svg/fa-copy-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-copy.svg -O img/icons-svg/fa-copy.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-copy-white.svg -O img/icons-svg/fa-copy-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-edit-black.svg -O img/icons-svg/fa-edit-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-edit-white.svg -O img/icons-svg/fa-edit-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-edit.svg -O img/icons-svg/fa-edit.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-edit-white.svg -O img/icons-svg/fa-edit-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-enumeration-black.svg -O img/icons-svg/fa-enumeration-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-enumeration-white.svg -O img/icons-svg/fa-enumeration-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-enumeration.svg -O img/icons-svg/fa-enumeration.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-enumeration-white.svg -O img/icons-svg/fa-enumeration-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-envelope-black.svg -O img/icons-svg/fa-envelope-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-envelope-white.svg -O img/icons-svg/fa-envelope-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-envelope.svg -O img/icons-svg/fa-envelope.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-envelope-white.svg -O img/icons-svg/fa-envelope-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-archive-black.svg -O img/icons-svg/fa-file-archive-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-archive-white.svg -O img/icons-svg/fa-file-archive-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-archive.svg -O img/icons-svg/fa-file-archive.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-archive-white.svg -O img/icons-svg/fa-file-archive-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-save-black.svg -O img/icons-svg/fa-file-save-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-save-white.svg -O img/icons-svg/fa-file-save-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-save.svg -O img/icons-svg/fa-file-save.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-file-save-white.svg -O img/icons-svg/fa-file-save-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-folder-open-black.svg -O img/icons-svg/fa-folder-open-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-folder-open-white.svg -O img/icons-svg/fa-folder-open-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-folder-open.svg -O img/icons-svg/fa-folder-open.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-folder-open-white.svg -O img/icons-svg/fa-folder-open-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-font-black.svg -O img/icons-svg/fa-font-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-font-white.svg -O img/icons-svg/fa-font-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-font.svg -O img/icons-svg/fa-font.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-font-white.svg -O img/icons-svg/fa-font-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-globe-black.svg -O img/icons-svg/fa-globe-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-globe-white.svg -O img/icons-svg/fa-globe-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-globe.svg -O img/icons-svg/fa-globe.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-globe-white.svg -O img/icons-svg/fa-globe-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-hamburger-icon-black.svg -O img/icons-svg/fa-hamburger-icon-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-hamburger-icon-white.svg -O img/icons-svg/fa-hamburger-icon-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-hamburger-icon.svg -O img/icons-svg/fa-hamburger-icon.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-hamburger-icon-white.svg -O img/icons-svg/fa-hamburger-icon-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-harddisk-black.svg -O img/icons-svg/fa-harddisk-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-harddisk-white.svg -O img/icons-svg/fa-harddisk-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-harddisk.svg -O img/icons-svg/fa-harddisk.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-harddisk-white.svg -O img/icons-svg/fa-harddisk-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-key-black.svg -O img/icons-svg/fa-key-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-key-white.svg -O img/icons-svg/fa-key-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-key.svg -O img/icons-svg/fa-key.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-key-white.svg -O img/icons-svg/fa-key-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-language-black.svg -O img/icons-svg/fa-language-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-language-white.svg -O img/icons-svg/fa-language-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-language.svg -O img/icons-svg/fa-language.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-language-white.svg -O img/icons-svg/fa-language-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-laptop-black.svg -O img/icons-svg/fa-laptop-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-laptop.svg -O img/icons-svg/fa-laptop.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-laptop-white.svg -O img/icons-svg/fa-laptop-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-line-chart-black.svg -O img/icons-svg/fa-line-chart-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-line-chart-white.svg -O img/icons-svg/fa-line-chart-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-line-chart.svg -O img/icons-svg/fa-line-chart.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-line-chart-white.svg -O img/icons-svg/fa-line-chart-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-list-black.svg -O img/icons-svg/fa-list-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-list-white.svg -O img/icons-svg/fa-list-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-list.svg -O img/icons-svg/fa-list.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-list-white.svg -O img/icons-svg/fa-list-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-minus-square-black.svg -O img/icons-svg/fa-minus-square-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-minus-square-white.svg -O img/icons-svg/fa-minus-square-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-minus-square.svg -O img/icons-svg/fa-minus-square.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-minus-square-white.svg -O img/icons-svg/fa-minus-square-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-paste-black.svg -O img/icons-svg/fa-paste-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-paste-white.svg -O img/icons-svg/fa-paste-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-paste.svg -O img/icons-svg/fa-paste.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-paste-white.svg -O img/icons-svg/fa-paste-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-picture-black.svg -O img/icons-svg/fa-picture-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-picture-white.svg -O img/icons-svg/fa-picture-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-picture.svg -O img/icons-svg/fa-picture.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-picture-white.svg -O img/icons-svg/fa-picture-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-plus-square-black.svg -O img/icons-svg/fa-plus-square-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-plus-square-white.svg -O img/icons-svg/fa-plus-square-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-plus-square.svg -O img/icons-svg/fa-plus-square.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-plus-square-white.svg -O img/icons-svg/fa-plus-square-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print-black.svg -O img/icons-svg/fa-print-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print-white.svg -O img/icons-svg/fa-print-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print.svg -O img/icons-svg/fa-print.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-print-white.svg -O img/icons-svg/fa-print-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-qrcode-black.svg -O img/icons-svg/fa-qrcode-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-qrcode-white.svg -O img/icons-svg/fa-qrcode-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-qrcode.svg -O img/icons-svg/fa-qrcode.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-qrcode-white.svg -O img/icons-svg/fa-qrcode-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings-black.svg -O img/icons-svg/fa-settings-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings-white.svg -O img/icons-svg/fa-settings-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings.svg -O img/icons-svg/fa-settings.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-settings-white.svg -O img/icons-svg/fa-settings-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signin-black.svg -O img/icons-svg/fa-signin-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signin-white.svg -O img/icons-svg/fa-signin-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signin.svg -O img/icons-svg/fa-signin.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signin-white.svg -O img/icons-svg/fa-signin-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signout-black.svg -O img/icons-svg/fa-signout-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signout-white.svg -O img/icons-svg/fa-signout-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signout.svg -O img/icons-svg/fa-signout.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-signout-white.svg -O img/icons-svg/fa-signout-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-sort-black.svg -O img/icons-svg/fa-sort-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-sort-white.svg -O img/icons-svg/fa-sort-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-sort.svg -O img/icons-svg/fa-sort.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-sort-white.svg -O img/icons-svg/fa-sort-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner-black.svg -O img/icons-svg/fa-spinner-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner-white.svg -O img/icons-svg/fa-spinner-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner.svg -O img/icons-svg/fa-spinner.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner-white.svg -O img/icons-svg/fa-spinner-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-tablet-black.svg -O img/icons-svg/fa-tablet-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-tablet-white.svg -O img/icons-svg/fa-tablet-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-tablet.svg -O img/icons-svg/fa-tablet.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-tablet-white.svg -O img/icons-svg/fa-tablet-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-trash-black.svg -O img/icons-svg/fa-trash-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-trash-white.svg -O img/icons-svg/fa-trash-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-trash.svg -O img/icons-svg/fa-trash.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-trash-white.svg -O img/icons-svg/fa-trash-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-truck-black.svg -O img/icons-svg/fa-truck-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-truck-white.svg -O img/icons-svg/fa-truck-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-truck.svg -O img/icons-svg/fa-truck.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-truck-white.svg -O img/icons-svg/fa-truck-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-undo-black.svg -O img/icons-svg/fa-undo-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-undo-white.svg -O img/icons-svg/fa-undo-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-undo.svg -O img/icons-svg/fa-undo.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-undo-white.svg -O img/icons-svg/fa-undo-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset-black.svg -O img/icons-svg/fa-vr-headset-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset-white.svg -O img/icons-svg/fa-vr-headset-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset.svg -O img/icons-svg/fa-vr-headset.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset-white.svg -O img/icons-svg/fa-vr-headset-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/forbidden-black.svg -O img/icons-svg/forbidden-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/forbidden-white.svg -O img/icons-svg/forbidden-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/forbidden.svg -O img/icons-svg/forbidden.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/forbidden-white.svg -O img/icons-svg/forbidden-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/forward-black.svg -O img/icons-svg/forward-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/forward-white.svg -O img/icons-svg/forward-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/forward.svg -O img/icons-svg/forward.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/forward-white.svg -O img/icons-svg/forward-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/gear-black.svg -O img/icons-svg/gear-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/gear-white.svg -O img/icons-svg/gear-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/gear.svg -O img/icons-svg/gear.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/gear-white.svg -O img/icons-svg/gear-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/grid-black.svg -O img/icons-svg/grid-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/grid-white.svg -O img/icons-svg/grid-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/grid.svg -O img/icons-svg/grid.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/grid-white.svg -O img/icons-svg/grid-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/heart-black.svg -O img/icons-svg/heart-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/heart-white.svg -O img/icons-svg/heart-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/heart.svg -O img/icons-svg/heart.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/heart-white.svg -O img/icons-svg/heart-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/home-black.svg -O img/icons-svg/home-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/home-white.svg -O img/icons-svg/home-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/home.svg -O img/icons-svg/home.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/home-white.svg -O img/icons-svg/home-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-avatar-a-black.svg -O img/icons-svg/i4m-avatar-a-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-avatar-a.svg -O img/icons-svg/i4m-avatar-a.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-avatar-a-white.svg -O img/icons-svg/i4m-avatar-a-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-dd-black.svg -O img/icons-svg/i4m-carat-dd-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-dd-white.svg -O img/icons-svg/i4m-carat-dd-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-dd.svg -O img/icons-svg/i4m-carat-dd.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-dd-white.svg -O img/icons-svg/i4m-carat-dd-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-ll-black.svg -O img/icons-svg/i4m-carat-ll-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-ll-white.svg -O img/icons-svg/i4m-carat-ll-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-ll.svg -O img/icons-svg/i4m-carat-ll.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-ll-white.svg -O img/icons-svg/i4m-carat-ll-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-rr-black.svg -O img/icons-svg/i4m-carat-rr-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-rr-white.svg -O img/icons-svg/i4m-carat-rr-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-rr.svg -O img/icons-svg/i4m-carat-rr.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-rr-white.svg -O img/icons-svg/i4m-carat-rr-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu-black.svg -O img/icons-svg/i4m-carat-uu-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu-white.svg -O img/icons-svg/i4m-carat-uu-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu.svg -O img/icons-svg/i4m-carat-uu.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu-white.svg -O img/icons-svg/i4m-carat-uu-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-header-black.svg -O img/icons-svg/i4m-header-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-header.svg -O img/icons-svg/i4m-header.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-header-white.svg -O img/icons-svg/i4m-header-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome-black.svg -O img/icons-svg/i4m-metronome-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome-white.svg -O img/icons-svg/i4m-metronome-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg -O img/icons-svg/i4m-metronome.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome-white.svg -O img/icons-svg/i4m-metronome-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-black.svg -O img/icons-svg/i4m-wiki2reveal-black.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame-black.svg -O img/icons-svg/i4m-wiki2reveal-frame-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame-white.svg -O img/icons-svg/i4m-wiki2reveal-frame-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg -O img/icons-svg/i4m-wiki2reveal-frame.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-white.svg -O img/icons-svg/i4m-wiki2reveal-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame-white.svg -O img/icons-svg/i4m-wiki2reveal-frame-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal.svg -O img/icons-svg/i4m-wiki2reveal.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-white.svg -O img/icons-svg/i4m-wiki2reveal-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/info-black.svg -O img/icons-svg/info-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/info-white.svg -O img/icons-svg/info-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/info.svg -O img/icons-svg/info.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/info-white.svg -O img/icons-svg/info-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/location-black.svg -O img/icons-svg/location-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/location-white.svg -O img/icons-svg/location-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/location.svg -O img/icons-svg/location.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/location-white.svg -O img/icons-svg/location-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/lock-black.svg -O img/icons-svg/lock-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/lock-white.svg -O img/icons-svg/lock-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/lock.svg -O img/icons-svg/lock.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/lock-white.svg -O img/icons-svg/lock-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/mail-black.svg -O img/icons-svg/mail-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/mail-white.svg -O img/icons-svg/mail-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/mail.svg -O img/icons-svg/mail.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/mail-white.svg -O img/icons-svg/mail-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/minus-black.svg -O img/icons-svg/minus-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/minus-white.svg -O img/icons-svg/minus-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/minus.svg -O img/icons-svg/minus.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/minus-white.svg -O img/icons-svg/minus-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/nav-back-black.svg -O img/icons-svg/nav-back-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/nav-back-white.svg -O img/icons-svg/nav-back-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/nav-back.svg -O img/icons-svg/nav-back.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/nav-back-white.svg -O img/icons-svg/nav-back-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/navigation-black.svg -O img/icons-svg/navigation-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/navigation-white.svg -O img/icons-svg/navigation-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/navigation.svg -O img/icons-svg/navigation.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/navigation-white.svg -O img/icons-svg/navigation-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/phone-black.svg -O img/icons-svg/phone-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/phone-white.svg -O img/icons-svg/phone-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/phone.svg -O img/icons-svg/phone.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/phone-white.svg -O img/icons-svg/phone-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/plus-black.svg -O img/icons-svg/plus-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/plus-white.svg -O img/icons-svg/plus-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/plus.svg -O img/icons-svg/plus.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/plus-white.svg -O img/icons-svg/plus-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/power-black.svg -O img/icons-svg/power-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/power-white.svg -O img/icons-svg/power-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/power.svg -O img/icons-svg/power.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/power-white.svg -O img/icons-svg/power-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/recycle-black.svg -O img/icons-svg/recycle-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/recycle-white.svg -O img/icons-svg/recycle-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/recycle.svg -O img/icons-svg/recycle.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/recycle-white.svg -O img/icons-svg/recycle-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/refresh-black.svg -O img/icons-svg/refresh-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/refresh-white.svg -O img/icons-svg/refresh-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/refresh.svg -O img/icons-svg/refresh.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/refresh-white.svg -O img/icons-svg/refresh-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/search-black.svg -O img/icons-svg/search-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/search-white.svg -O img/icons-svg/search-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/search.svg -O img/icons-svg/search.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/search-white.svg -O img/icons-svg/search-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/shop-black.svg -O img/icons-svg/shop-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/shop-white.svg -O img/icons-svg/shop-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/shop.svg -O img/icons-svg/shop.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/shop-white.svg -O img/icons-svg/shop-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/star4white-black.svg -O img/icons-svg/star4white-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/star4white-white.svg -O img/icons-svg/star4white-white.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/star4yellow-black.svg -O img/icons-svg/star4yellow-black.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/star4yellow-white.svg -O img/icons-svg/star4yellow-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/star-black.svg -O img/icons-svg/star-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/star-white.svg -O img/icons-svg/star-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/star.svg -O img/icons-svg/star.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/star-white.svg -O img/icons-svg/star-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/tag-black.svg -O img/icons-svg/tag-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/tag-white.svg -O img/icons-svg/tag-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/tag.svg -O img/icons-svg/tag.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/tag-white.svg -O img/icons-svg/tag-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/user-black.svg -O img/icons-svg/user-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/user-white.svg -O img/icons-svg/user-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/user.svg -O img/icons-svg/user.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/user-white.svg -O img/icons-svg/user-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram-black.svg -O img/icons-svg/vehicle-tram-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram-white.svg -O img/icons-svg/vehicle-tram-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram.svg -O img/icons-svg/vehicle-tram.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram-white.svg -O img/icons-svg/vehicle-tram-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/video-black.svg -O img/icons-svg/video-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/video-white.svg -O img/icons-svg/video-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/video.svg -O img/icons-svg/video.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/video-white.svg -O img/icons-svg/video-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone-black.svg -O img/icons-svg/wc_cc0_smartphone-black.svg
-    wget https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone-white.svg -O img/icons-svg/wc_cc0_smartphone-white.svg
     wget https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone.svg -O img/icons-svg/wc_cc0_smartphone.svg
+    wget https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone-white.svg -O img/icons-svg/wc_cc0_smartphone-white.svg
 fi

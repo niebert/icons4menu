@@ -7,8 +7,9 @@ Icons4Menu are generated for the Wikiversity Learning Resource about [AppLSAC](h
 * **`jsoneditor_app`** Icons in JSON Editor WebApp in buttons - see [jsoneditor_app](https://niebert.github.io/jsoneditor_app/)
 
 ## Download of Icons with a Script
-The script shows how to update a local set of icons with a script. Modifiy the `wget_icons.sh` script according to your needs, e.g. by modifying the `wget` command by replacing the `https://niebert.github.io/icons4menu Uas remote fetch for an icon by a local copy command of 
-The icons can be downloaded with a script:
+Downloading a single icon from the repository is not allowed anymore by GitHub and also the display of single icons via the SRC-tag is not allowed. So updating single icons with a script from this repository does not work.
+The script [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh) shows how to update a local set of icons with a script. Modifiy the `wget_icons.sh` according to your needs, e.g. by modifying the `wget` command by replacing the `https://niebert.github.io/icons4menu either to remote fetch of icons or to local copy command `cp` of icons from a repository storage on your file system or local server with the hosted icons of this repository.
+With the modified update script the icons can be downloaded from a source web server of your choice or from a centralized storage of your file system. This will reduce also the server traffic for this GitHub repository:
 * [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh) - which allows fetching all icons and the README and licencing information about the icons. In case you want to use the latest icons added to the repository you should update the [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh). If you do not have any of the available icons in the repository it is recommended to [download the `ZIP`-file of the repository](https://github.com/niebert/icons4menu/archive/refs/heads/master.zip) for your [HTML5-WebApp](https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu), because it will reduce the number of server requests for the GitHub-server infrastructure.
 * **(All Icons)** The download of icons for your WebApp (resp. [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC)) can be started from the shell command line with
 ```

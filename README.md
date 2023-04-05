@@ -7,6 +7,7 @@ Icons4Menu are generated for the Wikiversity Learning Resource about [AppLSAC](h
 * **`jsoneditor_app`** Icons in JSON Editor WebApp in buttons - see [jsoneditor_app](https://niebert.github.io/jsoneditor_app/)
 
 ## Download of Icons with a Script
+The script shows how to update a local set of icons with a script. Modifiy the `wget_icons.sh` script according to your needs, e.g. by modifying the `wget` command by replacing the `https://niebert.github.io/icons4menu Uas remote fetch for an icon by a local copy command of 
 The icons can be downloaded with a script:
 * [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh) - which allows fetching all icons and the README and licencing information about the icons. In case you want to use the latest icons added to the repository you should update the [wget_icons.sh](https://niebert.github.io/icons4menu/wget_icons.sh). If you do not have any of the available icons in the repository it is recommended to [download the `ZIP`-file of the repository](https://github.com/niebert/icons4menu/archive/refs/heads/master.zip) for your [HTML5-WebApp](https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu), because it will reduce the number of server requests for the GitHub-server infrastructure.
 * **(All Icons)** The download of icons for your WebApp (resp. [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC)) can be started from the shell command line with

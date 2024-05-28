@@ -1,6 +1,9 @@
 # Icons4Menu
 This repository is a SVG images resource based on SVG icons [JQuery Mobile 1.4.5](https://jquerymobile.com/download/) and extended with SVG icons from [Wiki Commons](https://commons.wikimedia.org/). The icons are primary collected for menus in webbased application or for icons in buttons.
 
+<h3><a href="https://niebert.github.io/icons4menu" target="_blank">Preview of Icons</a></h3> 
+URL: [https://niebert.github.io/icons4menu](https://niebert.github.io/icons4menu)
+
 ## Usage of Icons4Menu - WebApps
 Icons4Menu are generated for the Wikiversity Learning Resource about [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC).
 * **`hamburger_menu_app`** Icons in Hamburger Menus like [hamburger_menu_app](https://niebert.github.io/hamburger_menu_app/)

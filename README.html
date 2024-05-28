@@ -330,7 +330,7 @@ p {
 <h2 id="usage-of-icons4menu---webapps">Usage of Icons4Menu - WebApps</h2>
 <p>Icons4Menu are generated for the Wikiversity Learning Resource about <a href="https://en.wikiversity.org/wiki/AppLSAC">AppLSAC</a>. * <strong><code>hamburger_menu_app</code></strong> Icons in Hamburger Menus like <a href="https://niebert.github.io/hamburger_menu_app/">hamburger_menu_app</a> * <strong><code>jsoneditor_app</code></strong> Icons in JSON Editor WebApp in buttons - see <a href="https://niebert.github.io/jsoneditor_app/">jsoneditor_app</a></p>
 <h2 id="download-of-icons-with-a-script">Download of Icons with a Script</h2>
-<p>The icons can be downloaded with a script: * <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> - which allows fetching all icons and the README and licencing information about the icons. In case you want to use the latest icons added to the repository you should update the <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a>. If you do not have any of the available icons in the repository it is recommended to <a href="https://github.com/niebert/icons4menu/archive/refs/heads/master.zip">download the <code>ZIP</code>-file of the repository</a> for your <a href="https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu">HTML5-WebApp</a>, because it will reduce the number of server requests for the GitHub-server infrastructure. * <strong>(All Icons)</strong> The download of icons for your WebApp (resp. <a href="https://en.wikiversity.org/wiki/AppLSAC">AppLSAC</a>) can be started from the shell command line with</p>
+<p><strong>REMARK (2023/04/03):</strong> Downloading a single icon from the repository is not allowed anymore by GitHub and also the <a href="https://niebert.github.io/icons4menu">display of single icons</a> via the <code>IMG</code>-tag is not allowed. So updating single icons with a script from this repository does not work. The script <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> shows how to update a local set of icons with a script. Modifiy the <code>wget_icons.sh</code> according to your needs, e.g. by modifying the <code>wget</code> command by replacing the <code>https://niebert.github.io/icons4menu</code> either to remote fetch of icons from a server that allows the access to the icons or replace the GitHub-URL to local copy command <code>cp</code> of icons from a repository storage on your local file system. Starting a temporarily a localhost fileserver could combine local storage and server fetch with <code>wget</code> workflow with the self-hosted set of icons as a copy of this repository. With the modified update script the icons can be downloaded from a source web server of your choice or from a centralized storage of your file system. This will reduce also the server traffic for this GitHub repository. So fetch the ZIP file of this icons4menu-repository once and use the selected icons locally or on your webserver of choice: * For using the using it with a web server of your choice e.g. <code>https://www.example.com</code> replace in the script <code>https://niebert.github.io/icons4menu</code> by <code>https://www.example.com/icons4menu</code> assuming that the <code>icons4menu</code> repository can be accessed in the server root via <code>https://www.example.com/icons4menu</code> * If you want to copy icon sets locally from your local filesystem replace in the <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> script <code>wget https://niebert.github.io/icons4menu</code> by a copy command <code>cp /home/myuser/Documents/icons4menue/</code> and remove the <code>-O</code> option from the script assuming that you store the your local <code>icons4menu</code> copy of the repository at the directory <code>/home/myuser/Documents/icons4menue/</code> * <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> - which allows fetching all icons and the README and licencing information about the icons. In case you want to use the latest icons added to the repository you should update the <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a>. If you do not have any of the available icons in the repository it is recommended to <a href="https://github.com/niebert/icons4menu/archive/refs/heads/master.zip">download the <code>ZIP</code>-file of the repository</a> for your <a href="https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu">HTML5-WebApp</a>, because it will reduce the number of server requests for the GitHub-server infrastructure. * <strong>(All Icons)</strong> The download of icons for your WebApp (resp. <a href="https://en.wikiversity.org/wiki/AppLSAC">AppLSAC</a>) can be started from the shell command line with</p>
 <pre><code>   sh ./wget_icons.sh</code></pre>
 <ul>
 <li><strong>(All Icons of Format SVG)</strong> the script call of <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> downloads the SVG icons of this repository and it is equivalent to the script call:</li>
@@ -558,14 +558,6 @@ p {
 <td><code>other</code></td>
 </tr>
 <tr class="even">
-<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/calendar.svg" width="20"> </span></td>
-<td><a href="https://jquerymobile.com/download/"><code>calendar.svg</code></a></td>
-<td><code>img/icons-svg</code></td>
-<td><a href="https://jquerymobile.com/download/"><code>JQ-calendar.svg</code></a></td>
-<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
-<td><code>other</code></td>
-</tr>
-<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/check.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>check.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -573,7 +565,7 @@ p {
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clock.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>clock.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -581,7 +573,39 @@ p {
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>other</code></td>
 </tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clockwise-anti.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>clockwise-anti.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-clockwise-anti.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
 <tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clockwise-fast-anti.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>clockwise-fast-anti.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-clockwise-fast-anti.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clockwise-fast.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>clockwise-fast.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-clockwise-fast.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clockwise.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>clockwise.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-clockwise.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/cloud.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>cloud.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -589,7 +613,7 @@ p {
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/comment.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>comment.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -597,7 +621,7 @@ p {
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/delete.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>delete.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -605,7 +629,7 @@ p {
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/eye.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>eye.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -613,11 +637,19 @@ p {
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-barcode.svg" width="20"> </span></td>
 <td><a href="https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg"><code>fa-barcode.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
 <td><a href="https://commons.wikimedia.org/wiki/File:Barcode_font_awesome.svg"><code>Barcode_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-description.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg"><code>fa-description.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:List_font_awesome.svg"><code>List_font_awesome.svg</code></a></td>
 <td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
@@ -702,6 +734,30 @@ p {
 <td><code>other</code></td>
 </tr>
 <tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-squareroot-x.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-squareroot-x.svg"><code>i4m-squareroot-x.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-squareroot-x.svg"><code>Icon4Menu-squareroot-x.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-compose.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-compose.svg"><code>i4m-tree-compose.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-compose.svg"><code>Icon4Menu-tree-compose.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-decompose.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-decompose.svg"><code>i4m-tree-decompose.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-decompose.svg"><code>Icon4Menu-tree-decompose.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg" width="20"> </span></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg"><code>i4m-wiki2reveal-frame.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -709,7 +765,7 @@ p {
 <td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal.svg" width="20"> </span></td>
 <td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal.svg"><code>i4m-wiki2reveal.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -717,7 +773,7 @@ p {
 <td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/lock.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>lock.svg</code></a></td>
 <td><code>img/icons-svg</code></td>
@@ -725,7 +781,7 @@ p {
 <td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
 <td><code>other</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/recycle.svg" width="20"> </span></td>
 <td><a href="https://jquerymobile.com/download/"><code>recycle.svg</code></a></td>
 <td><code>img/icons-svg</code></td>

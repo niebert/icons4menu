@@ -1,1772 +1,1633 @@
-<HTML>
-	<HEAD>
-		<TITLE>Icons4Menu</TITLE>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="date" content=''>
+    <title></title>
+    <style>
+		/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 30px;
+  background-color: #C0C0C0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+mark {
+  color: #000;
+  background: #ff0;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -.5em;
+}
+sub {
+  bottom: -.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
 
-<STYLE>
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  .navbar {
+    display: none;
+  }
+}
+html {
+  font-size: 10px;
 
- body { font-family: Helvetica, Arial, Geneva, sans-serif; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.img-circle {
+  border-radius: 50%;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small {
+  font-size: 65%;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+  font-size: 75%;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+p {
+  margin: 0 0 10px;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
 
-</STYLE>
-
-	<BODY>
-<H2>Scan SVG Files for Navigation Menu</H2>
-<H3>Last Update: 2023/01/02</H3>
-This <a href="https://niebert.github.io/icons4menu/wget_icons.sh" target="_blank">shell script <code>wget_icons.sh</code></a> of the <a href="https://github.com/niebert/icons4menu" target="_blank">repository Icons4Menu</a> collects all SVG icons files and generates an index.html for all scanned files.
-The Icons can be downloaded with a <a href="https://niebert.github.io/icons4menu/wget_icons.sh" target="_blank">wget shell script for Linux and MacOSX</a>.
-The <a href="https://niebert.github.io/icons4menu/wget_icons.sh" target="_blank">script</a> can be downloaded and modified to select just a specific subset of the icons.
-The licenses for the different listed icons can view on the <a href="https://www.github.com/niebert/icons4menu" target="_blank">README.md of the repository <kbd>icons4menue</kbd></a>.
-<HR>
-  <H3>Icons in Path: icons-png</H3>
-  <quote>
-  <table border='2' style='background-color:#CACACA;margin-left:40px'>
-    <tr>
-       <td>
-         <b>Icon</b>
-       </td>
-       <td>
-         <b>File</b>
-       </td>
-       <td>
-         <b>Folder</b>
-       </td>
-    </tr>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/action-black.png"></TD>
-    <TD><a href="icons-png/action-black.png">action-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/action-white.png"></TD>
-    <TD><a href="icons-png/action-white.png">action-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/alert-black.png"></TD>
-    <TD><a href="icons-png/alert-black.png">alert-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/alert-white.png"></TD>
-    <TD><a href="icons-png/alert-white.png">alert-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-d-black.png"></TD>
-    <TD><a href="icons-png/arrow-d-black.png">arrow-d-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-d-l-black.png"></TD>
-    <TD><a href="icons-png/arrow-d-l-black.png">arrow-d-l-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-d-l-white.png"></TD>
-    <TD><a href="icons-png/arrow-d-l-white.png">arrow-d-l-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-d-r-black.png"></TD>
-    <TD><a href="icons-png/arrow-d-r-black.png">arrow-d-r-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-d-r-white.png"></TD>
-    <TD><a href="icons-png/arrow-d-r-white.png">arrow-d-r-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-d-white.png"></TD>
-    <TD><a href="icons-png/arrow-d-white.png">arrow-d-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-l-black.png"></TD>
-    <TD><a href="icons-png/arrow-l-black.png">arrow-l-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-l-white.png"></TD>
-    <TD><a href="icons-png/arrow-l-white.png">arrow-l-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-r-black.png"></TD>
-    <TD><a href="icons-png/arrow-r-black.png">arrow-r-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-r-white.png"></TD>
-    <TD><a href="icons-png/arrow-r-white.png">arrow-r-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-u-black.png"></TD>
-    <TD><a href="icons-png/arrow-u-black.png">arrow-u-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-u-l-black.png"></TD>
-    <TD><a href="icons-png/arrow-u-l-black.png">arrow-u-l-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-u-l-white.png"></TD>
-    <TD><a href="icons-png/arrow-u-l-white.png">arrow-u-l-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-u-r-black.png"></TD>
-    <TD><a href="icons-png/arrow-u-r-black.png">arrow-u-r-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-u-r-white.png"></TD>
-    <TD><a href="icons-png/arrow-u-r-white.png">arrow-u-r-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/arrow-u-white.png"></TD>
-    <TD><a href="icons-png/arrow-u-white.png">arrow-u-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/audio-black.png"></TD>
-    <TD><a href="icons-png/audio-black.png">audio-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/audio-white.png"></TD>
-    <TD><a href="icons-png/audio-white.png">audio-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/bars-black.png"></TD>
-    <TD><a href="icons-png/bars-black.png">bars-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/bars-white.png"></TD>
-    <TD><a href="icons-png/bars-white.png">bars-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/bullets-black.png"></TD>
-    <TD><a href="icons-png/bullets-black.png">bullets-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/bullets-white.png"></TD>
-    <TD><a href="icons-png/bullets-white.png">bullets-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/calendar-black.png"></TD>
-    <TD><a href="icons-png/calendar-black.png">calendar-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/calendar-white.png"></TD>
-    <TD><a href="icons-png/calendar-white.png">calendar-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/camera-black.png"></TD>
-    <TD><a href="icons-png/camera-black.png">camera-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/camera-white.png"></TD>
-    <TD><a href="icons-png/camera-white.png">camera-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/carat-d-black.png"></TD>
-    <TD><a href="icons-png/carat-d-black.png">carat-d-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/carat-d-white.png"></TD>
-    <TD><a href="icons-png/carat-d-white.png">carat-d-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/carat-l-black.png"></TD>
-    <TD><a href="icons-png/carat-l-black.png">carat-l-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/carat-l-white.png"></TD>
-    <TD><a href="icons-png/carat-l-white.png">carat-l-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/carat-r-black.png"></TD>
-    <TD><a href="icons-png/carat-r-black.png">carat-r-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/carat-r-white.png"></TD>
-    <TD><a href="icons-png/carat-r-white.png">carat-r-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/carat-u-black.png"></TD>
-    <TD><a href="icons-png/carat-u-black.png">carat-u-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/carat-u-white.png"></TD>
-    <TD><a href="icons-png/carat-u-white.png">carat-u-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/check-black.png"></TD>
-    <TD><a href="icons-png/check-black.png">check-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/check-white.png"></TD>
-    <TD><a href="icons-png/check-white.png">check-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/clock-black.png"></TD>
-    <TD><a href="icons-png/clock-black.png">clock-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/clock-white.png"></TD>
-    <TD><a href="icons-png/clock-white.png">clock-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/cloud-black.png"></TD>
-    <TD><a href="icons-png/cloud-black.png">cloud-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/cloud-white.png"></TD>
-    <TD><a href="icons-png/cloud-white.png">cloud-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/comment-black.png"></TD>
-    <TD><a href="icons-png/comment-black.png">comment-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/comment-white.png"></TD>
-    <TD><a href="icons-png/comment-white.png">comment-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/delete-black.png"></TD>
-    <TD><a href="icons-png/delete-black.png">delete-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/delete-white.png"></TD>
-    <TD><a href="icons-png/delete-white.png">delete-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/edit-black.png"></TD>
-    <TD><a href="icons-png/edit-black.png">edit-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/edit-white.png"></TD>
-    <TD><a href="icons-png/edit-white.png">edit-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/eye-black.png"></TD>
-    <TD><a href="icons-png/eye-black.png">eye-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/eye-white.png"></TD>
-    <TD><a href="icons-png/eye-white.png">eye-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/forbidden-black.png"></TD>
-    <TD><a href="icons-png/forbidden-black.png">forbidden-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/forbidden-white.png"></TD>
-    <TD><a href="icons-png/forbidden-white.png">forbidden-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/forward-black.png"></TD>
-    <TD><a href="icons-png/forward-black.png">forward-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/forward-white.png"></TD>
-    <TD><a href="icons-png/forward-white.png">forward-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/gear-black.png"></TD>
-    <TD><a href="icons-png/gear-black.png">gear-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/gear-white.png"></TD>
-    <TD><a href="icons-png/gear-white.png">gear-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/grid-black.png"></TD>
-    <TD><a href="icons-png/grid-black.png">grid-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/grid-white.png"></TD>
-    <TD><a href="icons-png/grid-white.png">grid-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/heart-black.png"></TD>
-    <TD><a href="icons-png/heart-black.png">heart-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/heart-white.png"></TD>
-    <TD><a href="icons-png/heart-white.png">heart-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/home-black.png"></TD>
-    <TD><a href="icons-png/home-black.png">home-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/home-white.png"></TD>
-    <TD><a href="icons-png/home-white.png">home-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/info-black.png"></TD>
-    <TD><a href="icons-png/info-black.png">info-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/info-white.png"></TD>
-    <TD><a href="icons-png/info-white.png">info-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/location-black.png"></TD>
-    <TD><a href="icons-png/location-black.png">location-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/location-white.png"></TD>
-    <TD><a href="icons-png/location-white.png">location-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/lock-black.png"></TD>
-    <TD><a href="icons-png/lock-black.png">lock-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/lock-white.png"></TD>
-    <TD><a href="icons-png/lock-white.png">lock-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/mail-black.png"></TD>
-    <TD><a href="icons-png/mail-black.png">mail-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/mail-white.png"></TD>
-    <TD><a href="icons-png/mail-white.png">mail-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/minus-black.png"></TD>
-    <TD><a href="icons-png/minus-black.png">minus-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/minus-white.png"></TD>
-    <TD><a href="icons-png/minus-white.png">minus-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/nav-back-black.png"></TD>
-    <TD><a href="icons-png/nav-back-black.png">nav-back-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/nav-back-white.png"></TD>
-    <TD><a href="icons-png/nav-back-white.png">nav-back-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/navigation-black.png"></TD>
-    <TD><a href="icons-png/navigation-black.png">navigation-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/navigation-white.png"></TD>
-    <TD><a href="icons-png/navigation-white.png">navigation-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/phone-black.png"></TD>
-    <TD><a href="icons-png/phone-black.png">phone-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/phone-white.png"></TD>
-    <TD><a href="icons-png/phone-white.png">phone-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/plus-black.png"></TD>
-    <TD><a href="icons-png/plus-black.png">plus-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/plus-white.png"></TD>
-    <TD><a href="icons-png/plus-white.png">plus-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/power-black.png"></TD>
-    <TD><a href="icons-png/power-black.png">power-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/power-white.png"></TD>
-    <TD><a href="icons-png/power-white.png">power-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/recycle-black.png"></TD>
-    <TD><a href="icons-png/recycle-black.png">recycle-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/recycle-white.png"></TD>
-    <TD><a href="icons-png/recycle-white.png">recycle-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/refresh-black.png"></TD>
-    <TD><a href="icons-png/refresh-black.png">refresh-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/refresh-white.png"></TD>
-    <TD><a href="icons-png/refresh-white.png">refresh-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/search-black.png"></TD>
-    <TD><a href="icons-png/search-black.png">search-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/search-white.png"></TD>
-    <TD><a href="icons-png/search-white.png">search-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/shop-black.png"></TD>
-    <TD><a href="icons-png/shop-black.png">shop-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/shop-white.png"></TD>
-    <TD><a href="icons-png/shop-white.png">shop-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/star-black.png"></TD>
-    <TD><a href="icons-png/star-black.png">star-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/star-white.png"></TD>
-    <TD><a href="icons-png/star-white.png">star-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/tag-black.png"></TD>
-    <TD><a href="icons-png/tag-black.png">tag-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/tag-white.png"></TD>
-    <TD><a href="icons-png/tag-white.png">tag-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/user-black.png"></TD>
-    <TD><a href="icons-png/user-black.png">user-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/user-white.png"></TD>
-    <TD><a href="icons-png/user-white.png">user-white.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/video-black.png"></TD>
-    <TD><a href="icons-png/video-black.png">video-black.png</a></TD>
-    <TD>icons-png</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-png/video-white.png"></TD>
-    <TD><a href="icons-png/video-white.png">video-white.png</a></TD>
-    <TD>icons-png</TD>
-  </TABLE>
-  <HR>
-  <H3>Icons in Path: icons-svg</H3>
-  <quote>
-  <table border='2' style='background-color:#CACACA;margin-left:40px'>
-    <tr>
-       <td>
-         <b>Icon</b>
-       </td>
-       <td>
-         <b>File</b>
-       </td>
-       <td>
-         <b>Folder</b>
-       </td>
-    </tr>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/action-black.svg"></TD>
-    <TD><a href="icons-svg/action-black.svg">action-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/action.svg"></TD>
-    <TD><a href="icons-svg/action.svg">action.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/action-white.svg"></TD>
-    <TD><a href="icons-svg/action-white.svg">action-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/alert-black.svg"></TD>
-    <TD><a href="icons-svg/alert-black.svg">alert-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/alert.svg"></TD>
-    <TD><a href="icons-svg/alert.svg">alert.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/alert-white.svg"></TD>
-    <TD><a href="icons-svg/alert-white.svg">alert-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-d-black.svg"></TD>
-    <TD><a href="icons-svg/arrow-d-black.svg">arrow-d-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-d-l-black.svg"></TD>
-    <TD><a href="icons-svg/arrow-d-l-black.svg">arrow-d-l-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-d-l-white.svg"></TD>
-    <TD><a href="icons-svg/arrow-d-l-white.svg">arrow-d-l-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-d-r-black.svg"></TD>
-    <TD><a href="icons-svg/arrow-d-r-black.svg">arrow-d-r-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-d-r-white.svg"></TD>
-    <TD><a href="icons-svg/arrow-d-r-white.svg">arrow-d-r-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-d.svg"></TD>
-    <TD><a href="icons-svg/arrow-d.svg">arrow-d.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-d-white.svg"></TD>
-    <TD><a href="icons-svg/arrow-d-white.svg">arrow-d-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-l-black.svg"></TD>
-    <TD><a href="icons-svg/arrow-l-black.svg">arrow-l-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-l.svg"></TD>
-    <TD><a href="icons-svg/arrow-l.svg">arrow-l.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-l-white.svg"></TD>
-    <TD><a href="icons-svg/arrow-l-white.svg">arrow-l-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-r-black.svg"></TD>
-    <TD><a href="icons-svg/arrow-r-black.svg">arrow-r-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-r.svg"></TD>
-    <TD><a href="icons-svg/arrow-r.svg">arrow-r.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-r-white.svg"></TD>
-    <TD><a href="icons-svg/arrow-r-white.svg">arrow-r-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-u-black.svg"></TD>
-    <TD><a href="icons-svg/arrow-u-black.svg">arrow-u-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-u-l-black.svg"></TD>
-    <TD><a href="icons-svg/arrow-u-l-black.svg">arrow-u-l-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-u-l.svg"></TD>
-    <TD><a href="icons-svg/arrow-u-l.svg">arrow-u-l.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-u-l-white.svg"></TD>
-    <TD><a href="icons-svg/arrow-u-l-white.svg">arrow-u-l-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-u-r-black.svg"></TD>
-    <TD><a href="icons-svg/arrow-u-r-black.svg">arrow-u-r-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-u-r.svg"></TD>
-    <TD><a href="icons-svg/arrow-u-r.svg">arrow-u-r.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-u-r-white.svg"></TD>
-    <TD><a href="icons-svg/arrow-u-r-white.svg">arrow-u-r-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-u.svg"></TD>
-    <TD><a href="icons-svg/arrow-u.svg">arrow-u.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/arrow-u-white.svg"></TD>
-    <TD><a href="icons-svg/arrow-u-white.svg">arrow-u-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/audio-black.svg"></TD>
-    <TD><a href="icons-svg/audio-black.svg">audio-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/audio.svg"></TD>
-    <TD><a href="icons-svg/audio.svg">audio.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/audio-white.svg"></TD>
-    <TD><a href="icons-svg/audio-white.svg">audio-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/background-color-black.svg"></TD>
-    <TD><a href="icons-svg/background-color-black.svg">background-color-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/background-color.svg"></TD>
-    <TD><a href="icons-svg/background-color.svg">background-color.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/background-color-white.svg"></TD>
-    <TD><a href="icons-svg/background-color-white.svg">background-color-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/bars-black.svg"></TD>
-    <TD><a href="icons-svg/bars-black.svg">bars-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/bars.svg"></TD>
-    <TD><a href="icons-svg/bars.svg">bars.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/bars-white.svg"></TD>
-    <TD><a href="icons-svg/bars-white.svg">bars-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/brush-paint-black.svg"></TD>
-    <TD><a href="icons-svg/brush-paint-black.svg">brush-paint-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/brush-paint.svg"></TD>
-    <TD><a href="icons-svg/brush-paint.svg">brush-paint.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/brush-paint-white.svg"></TD>
-    <TD><a href="icons-svg/brush-paint-white.svg">brush-paint-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/bullets-black.svg"></TD>
-    <TD><a href="icons-svg/bullets-black.svg">bullets-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/bullets.svg"></TD>
-    <TD><a href="icons-svg/bullets.svg">bullets.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/bullets-white.svg"></TD>
-    <TD><a href="icons-svg/bullets-white.svg">bullets-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/calendar-black.svg"></TD>
-    <TD><a href="icons-svg/calendar-black.svg">calendar-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/calendar.svg"></TD>
-    <TD><a href="icons-svg/calendar.svg">calendar.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/calendar-white.svg"></TD>
-    <TD><a href="icons-svg/calendar-white.svg">calendar-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/camera-black.svg"></TD>
-    <TD><a href="icons-svg/camera-black.svg">camera-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/camera.svg"></TD>
-    <TD><a href="icons-svg/camera.svg">camera.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/camera-white.svg"></TD>
-    <TD><a href="icons-svg/camera-white.svg">camera-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-d-black.svg"></TD>
-    <TD><a href="icons-svg/carat-d-black.svg">carat-d-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-d.svg"></TD>
-    <TD><a href="icons-svg/carat-d.svg">carat-d.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-d-white.svg"></TD>
-    <TD><a href="icons-svg/carat-d-white.svg">carat-d-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-l-black.svg"></TD>
-    <TD><a href="icons-svg/carat-l-black.svg">carat-l-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-l.svg"></TD>
-    <TD><a href="icons-svg/carat-l.svg">carat-l.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-l-white.svg"></TD>
-    <TD><a href="icons-svg/carat-l-white.svg">carat-l-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-r-black.svg"></TD>
-    <TD><a href="icons-svg/carat-r-black.svg">carat-r-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-r.svg"></TD>
-    <TD><a href="icons-svg/carat-r.svg">carat-r.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-r-white.svg"></TD>
-    <TD><a href="icons-svg/carat-r-white.svg">carat-r-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-u-black.svg"></TD>
-    <TD><a href="icons-svg/carat-u-black.svg">carat-u-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-u.svg"></TD>
-    <TD><a href="icons-svg/carat-u.svg">carat-u.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/carat-u-white.svg"></TD>
-    <TD><a href="icons-svg/carat-u-white.svg">carat-u-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/cargo-truck-black.svg"></TD>
-    <TD><a href="icons-svg/cargo-truck-black.svg">cargo-truck-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/cargo-truck.svg"></TD>
-    <TD><a href="icons-svg/cargo-truck.svg">cargo-truck.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/cargo-truck-white.svg"></TD>
-    <TD><a href="icons-svg/cargo-truck-white.svg">cargo-truck-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/check-black.svg"></TD>
-    <TD><a href="icons-svg/check-black.svg">check-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/check.svg"></TD>
-    <TD><a href="icons-svg/check.svg">check.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/check-white.svg"></TD>
-    <TD><a href="icons-svg/check-white.svg">check-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/clock-black.svg"></TD>
-    <TD><a href="icons-svg/clock-black.svg">clock-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/clock.svg"></TD>
-    <TD><a href="icons-svg/clock.svg">clock.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/clock-white.svg"></TD>
-    <TD><a href="icons-svg/clock-white.svg">clock-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/cloud-black.svg"></TD>
-    <TD><a href="icons-svg/cloud-black.svg">cloud-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/cloud.svg"></TD>
-    <TD><a href="icons-svg/cloud.svg">cloud.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/cloud-white.svg"></TD>
-    <TD><a href="icons-svg/cloud-white.svg">cloud-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/comment-black.svg"></TD>
-    <TD><a href="icons-svg/comment-black.svg">comment-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/comment.svg"></TD>
-    <TD><a href="icons-svg/comment.svg">comment.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/comment-white.svg"></TD>
-    <TD><a href="icons-svg/comment-white.svg">comment-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/delete-black.svg"></TD>
-    <TD><a href="icons-svg/delete-black.svg">delete-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/delete.svg"></TD>
-    <TD><a href="icons-svg/delete.svg">delete.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/delete-white.svg"></TD>
-    <TD><a href="icons-svg/delete-white.svg">delete-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/edit-black.svg"></TD>
-    <TD><a href="icons-svg/edit-black.svg">edit-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/edit.svg"></TD>
-    <TD><a href="icons-svg/edit.svg">edit.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/edit-white.svg"></TD>
-    <TD><a href="icons-svg/edit-white.svg">edit-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/eye-black.svg"></TD>
-    <TD><a href="icons-svg/eye-black.svg">eye-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/eye.svg"></TD>
-    <TD><a href="icons-svg/eye.svg">eye.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/eye-white.svg"></TD>
-    <TD><a href="icons-svg/eye-white.svg">eye-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-back-black.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-back-black.svg">fa-audio-back-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-back.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-back.svg">fa-audio-back.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-backward-black.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-backward-black.svg">fa-audio-backward-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-backward.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-backward.svg">fa-audio-backward.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-backward-white.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-backward-white.svg">fa-audio-backward-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-back-white.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-back-white.svg">fa-audio-back-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-eject-black.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-eject-black.svg">fa-audio-eject-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-eject.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-eject.svg">fa-audio-eject.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-eject-white.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-eject-white.svg">fa-audio-eject-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-forward-black.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-forward-black.svg">fa-audio-forward-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-forward.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-forward.svg">fa-audio-forward.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-forward-white.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-forward-white.svg">fa-audio-forward-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-pause-black.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-pause-black.svg">fa-audio-pause-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-pause.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-pause.svg">fa-audio-pause.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-pause-white.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-pause-white.svg">fa-audio-pause-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-play-black.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-play-black.svg">fa-audio-play-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-play.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-play.svg">fa-audio-play.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-play-white.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-play-white.svg">fa-audio-play-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-record-black.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-record-black.svg">fa-audio-record-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-record.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-record.svg">fa-audio-record.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-record-white.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-record-white.svg">fa-audio-record-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-stop-black.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-stop-black.svg">fa-audio-stop-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-stop.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-stop.svg">fa-audio-stop.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-audio-stop-white.svg"></TD>
-    <TD><a href="icons-svg/fa-audio-stop-white.svg">fa-audio-stop-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-barcode-black.svg"></TD>
-    <TD><a href="icons-svg/fa-barcode-black.svg">fa-barcode-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-barcode.svg"></TD>
-    <TD><a href="icons-svg/fa-barcode.svg">fa-barcode.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-barcode-white.svg"></TD>
-    <TD><a href="icons-svg/fa-barcode-white.svg">fa-barcode-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-book-black.svg"></TD>
-    <TD><a href="icons-svg/fa-book-black.svg">fa-book-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-book.svg"></TD>
-    <TD><a href="icons-svg/fa-book.svg">fa-book.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-book-white.svg"></TD>
-    <TD><a href="icons-svg/fa-book-white.svg">fa-book-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-camera-black.svg"></TD>
-    <TD><a href="icons-svg/fa-camera-black.svg">fa-camera-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-camera.svg"></TD>
-    <TD><a href="icons-svg/fa-camera.svg">fa-camera.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-camera-white.svg"></TD>
-    <TD><a href="icons-svg/fa-camera-white.svg">fa-camera-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-cancel-black.svg"></TD>
-    <TD><a href="icons-svg/fa-cancel-black.svg">fa-cancel-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-cancel-red.svg"></TD>
-    <TD><a href="icons-svg/fa-cancel-red.svg">fa-cancel-red.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-cancel.svg"></TD>
-    <TD><a href="icons-svg/fa-cancel.svg">fa-cancel.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-cancel-white.svg"></TD>
-    <TD><a href="icons-svg/fa-cancel-white.svg">fa-cancel-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-chart-pie-black.svg"></TD>
-    <TD><a href="icons-svg/fa-chart-pie-black.svg">fa-chart-pie-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-chart-pie.svg"></TD>
-    <TD><a href="icons-svg/fa-chart-pie.svg">fa-chart-pie.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-chart-pie-white.svg"></TD>
-    <TD><a href="icons-svg/fa-chart-pie-white.svg">fa-chart-pie-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-copy-black.svg"></TD>
-    <TD><a href="icons-svg/fa-copy-black.svg">fa-copy-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-copy.svg"></TD>
-    <TD><a href="icons-svg/fa-copy.svg">fa-copy.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-copy-white.svg"></TD>
-    <TD><a href="icons-svg/fa-copy-white.svg">fa-copy-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-edit-black.svg"></TD>
-    <TD><a href="icons-svg/fa-edit-black.svg">fa-edit-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-edit.svg"></TD>
-    <TD><a href="icons-svg/fa-edit.svg">fa-edit.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-edit-white.svg"></TD>
-    <TD><a href="icons-svg/fa-edit-white.svg">fa-edit-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-enumeration-black.svg"></TD>
-    <TD><a href="icons-svg/fa-enumeration-black.svg">fa-enumeration-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-enumeration.svg"></TD>
-    <TD><a href="icons-svg/fa-enumeration.svg">fa-enumeration.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-enumeration-white.svg"></TD>
-    <TD><a href="icons-svg/fa-enumeration-white.svg">fa-enumeration-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-envelope-black.svg"></TD>
-    <TD><a href="icons-svg/fa-envelope-black.svg">fa-envelope-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-envelope.svg"></TD>
-    <TD><a href="icons-svg/fa-envelope.svg">fa-envelope.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-envelope-white.svg"></TD>
-    <TD><a href="icons-svg/fa-envelope-white.svg">fa-envelope-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-file-archive-black.svg"></TD>
-    <TD><a href="icons-svg/fa-file-archive-black.svg">fa-file-archive-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-file-archive.svg"></TD>
-    <TD><a href="icons-svg/fa-file-archive.svg">fa-file-archive.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-file-archive-white.svg"></TD>
-    <TD><a href="icons-svg/fa-file-archive-white.svg">fa-file-archive-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-file-save-black.svg"></TD>
-    <TD><a href="icons-svg/fa-file-save-black.svg">fa-file-save-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-file-save.svg"></TD>
-    <TD><a href="icons-svg/fa-file-save.svg">fa-file-save.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-file-save-white.svg"></TD>
-    <TD><a href="icons-svg/fa-file-save-white.svg">fa-file-save-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-folder-open-black.svg"></TD>
-    <TD><a href="icons-svg/fa-folder-open-black.svg">fa-folder-open-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-folder-open.svg"></TD>
-    <TD><a href="icons-svg/fa-folder-open.svg">fa-folder-open.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-folder-open-white.svg"></TD>
-    <TD><a href="icons-svg/fa-folder-open-white.svg">fa-folder-open-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-font-black.svg"></TD>
-    <TD><a href="icons-svg/fa-font-black.svg">fa-font-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-font.svg"></TD>
-    <TD><a href="icons-svg/fa-font.svg">fa-font.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-font-white.svg"></TD>
-    <TD><a href="icons-svg/fa-font-white.svg">fa-font-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-globe-black.svg"></TD>
-    <TD><a href="icons-svg/fa-globe-black.svg">fa-globe-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-globe.svg"></TD>
-    <TD><a href="icons-svg/fa-globe.svg">fa-globe.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-globe-white.svg"></TD>
-    <TD><a href="icons-svg/fa-globe-white.svg">fa-globe-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-hamburger-icon-black.svg"></TD>
-    <TD><a href="icons-svg/fa-hamburger-icon-black.svg">fa-hamburger-icon-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-hamburger-icon.svg"></TD>
-    <TD><a href="icons-svg/fa-hamburger-icon.svg">fa-hamburger-icon.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-hamburger-icon-white.svg"></TD>
-    <TD><a href="icons-svg/fa-hamburger-icon-white.svg">fa-hamburger-icon-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-harddisk-black.svg"></TD>
-    <TD><a href="icons-svg/fa-harddisk-black.svg">fa-harddisk-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-harddisk.svg"></TD>
-    <TD><a href="icons-svg/fa-harddisk.svg">fa-harddisk.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-harddisk-white.svg"></TD>
-    <TD><a href="icons-svg/fa-harddisk-white.svg">fa-harddisk-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-key-black.svg"></TD>
-    <TD><a href="icons-svg/fa-key-black.svg">fa-key-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-key.svg"></TD>
-    <TD><a href="icons-svg/fa-key.svg">fa-key.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-key-white.svg"></TD>
-    <TD><a href="icons-svg/fa-key-white.svg">fa-key-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-language-black.svg"></TD>
-    <TD><a href="icons-svg/fa-language-black.svg">fa-language-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-language.svg"></TD>
-    <TD><a href="icons-svg/fa-language.svg">fa-language.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-language-white.svg"></TD>
-    <TD><a href="icons-svg/fa-language-white.svg">fa-language-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-laptop-black.svg"></TD>
-    <TD><a href="icons-svg/fa-laptop-black.svg">fa-laptop-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-laptop.svg"></TD>
-    <TD><a href="icons-svg/fa-laptop.svg">fa-laptop.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-laptop-white.svg"></TD>
-    <TD><a href="icons-svg/fa-laptop-white.svg">fa-laptop-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-line-chart-black.svg"></TD>
-    <TD><a href="icons-svg/fa-line-chart-black.svg">fa-line-chart-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-line-chart.svg"></TD>
-    <TD><a href="icons-svg/fa-line-chart.svg">fa-line-chart.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-line-chart-white.svg"></TD>
-    <TD><a href="icons-svg/fa-line-chart-white.svg">fa-line-chart-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-list-black.svg"></TD>
-    <TD><a href="icons-svg/fa-list-black.svg">fa-list-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-list.svg"></TD>
-    <TD><a href="icons-svg/fa-list.svg">fa-list.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-list-white.svg"></TD>
-    <TD><a href="icons-svg/fa-list-white.svg">fa-list-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-minus-square-black.svg"></TD>
-    <TD><a href="icons-svg/fa-minus-square-black.svg">fa-minus-square-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-minus-square.svg"></TD>
-    <TD><a href="icons-svg/fa-minus-square.svg">fa-minus-square.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-minus-square-white.svg"></TD>
-    <TD><a href="icons-svg/fa-minus-square-white.svg">fa-minus-square-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-paste-black.svg"></TD>
-    <TD><a href="icons-svg/fa-paste-black.svg">fa-paste-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-paste.svg"></TD>
-    <TD><a href="icons-svg/fa-paste.svg">fa-paste.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-paste-white.svg"></TD>
-    <TD><a href="icons-svg/fa-paste-white.svg">fa-paste-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-picture-black.svg"></TD>
-    <TD><a href="icons-svg/fa-picture-black.svg">fa-picture-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-picture.svg"></TD>
-    <TD><a href="icons-svg/fa-picture.svg">fa-picture.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-picture-white.svg"></TD>
-    <TD><a href="icons-svg/fa-picture-white.svg">fa-picture-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-plus-square-black.svg"></TD>
-    <TD><a href="icons-svg/fa-plus-square-black.svg">fa-plus-square-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-plus-square.svg"></TD>
-    <TD><a href="icons-svg/fa-plus-square.svg">fa-plus-square.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-plus-square-white.svg"></TD>
-    <TD><a href="icons-svg/fa-plus-square-white.svg">fa-plus-square-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-print-black.svg"></TD>
-    <TD><a href="icons-svg/fa-print-black.svg">fa-print-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-print.svg"></TD>
-    <TD><a href="icons-svg/fa-print.svg">fa-print.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-print-white.svg"></TD>
-    <TD><a href="icons-svg/fa-print-white.svg">fa-print-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-qrcode-black.svg"></TD>
-    <TD><a href="icons-svg/fa-qrcode-black.svg">fa-qrcode-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-qrcode.svg"></TD>
-    <TD><a href="icons-svg/fa-qrcode.svg">fa-qrcode.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-qrcode-white.svg"></TD>
-    <TD><a href="icons-svg/fa-qrcode-white.svg">fa-qrcode-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-settings-black.svg"></TD>
-    <TD><a href="icons-svg/fa-settings-black.svg">fa-settings-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-settings.svg"></TD>
-    <TD><a href="icons-svg/fa-settings.svg">fa-settings.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-settings-white.svg"></TD>
-    <TD><a href="icons-svg/fa-settings-white.svg">fa-settings-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-signin-black.svg"></TD>
-    <TD><a href="icons-svg/fa-signin-black.svg">fa-signin-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-signin.svg"></TD>
-    <TD><a href="icons-svg/fa-signin.svg">fa-signin.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-signin-white.svg"></TD>
-    <TD><a href="icons-svg/fa-signin-white.svg">fa-signin-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-signout-black.svg"></TD>
-    <TD><a href="icons-svg/fa-signout-black.svg">fa-signout-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-signout.svg"></TD>
-    <TD><a href="icons-svg/fa-signout.svg">fa-signout.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-signout-white.svg"></TD>
-    <TD><a href="icons-svg/fa-signout-white.svg">fa-signout-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-sort-black.svg"></TD>
-    <TD><a href="icons-svg/fa-sort-black.svg">fa-sort-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-sort.svg"></TD>
-    <TD><a href="icons-svg/fa-sort.svg">fa-sort.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-sort-white.svg"></TD>
-    <TD><a href="icons-svg/fa-sort-white.svg">fa-sort-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-spinner-black.svg"></TD>
-    <TD><a href="icons-svg/fa-spinner-black.svg">fa-spinner-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-spinner.svg"></TD>
-    <TD><a href="icons-svg/fa-spinner.svg">fa-spinner.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-spinner-white.svg"></TD>
-    <TD><a href="icons-svg/fa-spinner-white.svg">fa-spinner-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-tablet-black.svg"></TD>
-    <TD><a href="icons-svg/fa-tablet-black.svg">fa-tablet-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-tablet.svg"></TD>
-    <TD><a href="icons-svg/fa-tablet.svg">fa-tablet.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-tablet-white.svg"></TD>
-    <TD><a href="icons-svg/fa-tablet-white.svg">fa-tablet-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-trash-black.svg"></TD>
-    <TD><a href="icons-svg/fa-trash-black.svg">fa-trash-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-trash.svg"></TD>
-    <TD><a href="icons-svg/fa-trash.svg">fa-trash.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-trash-white.svg"></TD>
-    <TD><a href="icons-svg/fa-trash-white.svg">fa-trash-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-truck-black.svg"></TD>
-    <TD><a href="icons-svg/fa-truck-black.svg">fa-truck-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-truck.svg"></TD>
-    <TD><a href="icons-svg/fa-truck.svg">fa-truck.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-truck-white.svg"></TD>
-    <TD><a href="icons-svg/fa-truck-white.svg">fa-truck-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-undo-black.svg"></TD>
-    <TD><a href="icons-svg/fa-undo-black.svg">fa-undo-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-undo.svg"></TD>
-    <TD><a href="icons-svg/fa-undo.svg">fa-undo.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-undo-white.svg"></TD>
-    <TD><a href="icons-svg/fa-undo-white.svg">fa-undo-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-vr-headset-black.svg"></TD>
-    <TD><a href="icons-svg/fa-vr-headset-black.svg">fa-vr-headset-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-vr-headset.svg"></TD>
-    <TD><a href="icons-svg/fa-vr-headset.svg">fa-vr-headset.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/fa-vr-headset-white.svg"></TD>
-    <TD><a href="icons-svg/fa-vr-headset-white.svg">fa-vr-headset-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/forbidden-black.svg"></TD>
-    <TD><a href="icons-svg/forbidden-black.svg">forbidden-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/forbidden.svg"></TD>
-    <TD><a href="icons-svg/forbidden.svg">forbidden.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/forbidden-white.svg"></TD>
-    <TD><a href="icons-svg/forbidden-white.svg">forbidden-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/forward-black.svg"></TD>
-    <TD><a href="icons-svg/forward-black.svg">forward-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/forward.svg"></TD>
-    <TD><a href="icons-svg/forward.svg">forward.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/forward-white.svg"></TD>
-    <TD><a href="icons-svg/forward-white.svg">forward-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/gear-black.svg"></TD>
-    <TD><a href="icons-svg/gear-black.svg">gear-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/gear.svg"></TD>
-    <TD><a href="icons-svg/gear.svg">gear.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/gear-white.svg"></TD>
-    <TD><a href="icons-svg/gear-white.svg">gear-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/grid-black.svg"></TD>
-    <TD><a href="icons-svg/grid-black.svg">grid-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/grid.svg"></TD>
-    <TD><a href="icons-svg/grid.svg">grid.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/grid-white.svg"></TD>
-    <TD><a href="icons-svg/grid-white.svg">grid-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/heart-black.svg"></TD>
-    <TD><a href="icons-svg/heart-black.svg">heart-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/heart.svg"></TD>
-    <TD><a href="icons-svg/heart.svg">heart.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/heart-white.svg"></TD>
-    <TD><a href="icons-svg/heart-white.svg">heart-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/home-black.svg"></TD>
-    <TD><a href="icons-svg/home-black.svg">home-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/home.svg"></TD>
-    <TD><a href="icons-svg/home.svg">home.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/home-white.svg"></TD>
-    <TD><a href="icons-svg/home-white.svg">home-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-avatar-a-black.svg"></TD>
-    <TD><a href="icons-svg/i4m-avatar-a-black.svg">i4m-avatar-a-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-avatar-a.svg"></TD>
-    <TD><a href="icons-svg/i4m-avatar-a.svg">i4m-avatar-a.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-avatar-a-white.svg"></TD>
-    <TD><a href="icons-svg/i4m-avatar-a-white.svg">i4m-avatar-a-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-dd-black.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-dd-black.svg">i4m-carat-dd-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-dd.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-dd.svg">i4m-carat-dd.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-dd-white.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-dd-white.svg">i4m-carat-dd-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-ll-black.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-ll-black.svg">i4m-carat-ll-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-ll.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-ll.svg">i4m-carat-ll.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-ll-white.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-ll-white.svg">i4m-carat-ll-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-rr-black.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-rr-black.svg">i4m-carat-rr-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-rr.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-rr.svg">i4m-carat-rr.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-rr-white.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-rr-white.svg">i4m-carat-rr-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-uu-black.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-uu-black.svg">i4m-carat-uu-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-uu.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-uu.svg">i4m-carat-uu.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-carat-uu-white.svg"></TD>
-    <TD><a href="icons-svg/i4m-carat-uu-white.svg">i4m-carat-uu-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-header-black.svg"></TD>
-    <TD><a href="icons-svg/i4m-header-black.svg">i4m-header-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-header.svg"></TD>
-    <TD><a href="icons-svg/i4m-header.svg">i4m-header.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-header-white.svg"></TD>
-    <TD><a href="icons-svg/i4m-header-white.svg">i4m-header-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-metronome-black.svg"></TD>
-    <TD><a href="icons-svg/i4m-metronome-black.svg">i4m-metronome-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-metronome.svg"></TD>
-    <TD><a href="icons-svg/i4m-metronome.svg">i4m-metronome.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-metronome-white.svg"></TD>
-    <TD><a href="icons-svg/i4m-metronome-white.svg">i4m-metronome-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-wiki2reveal-black.svg"></TD>
-    <TD><a href="icons-svg/i4m-wiki2reveal-black.svg">i4m-wiki2reveal-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-wiki2reveal-frame-black.svg"></TD>
-    <TD><a href="icons-svg/i4m-wiki2reveal-frame-black.svg">i4m-wiki2reveal-frame-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-wiki2reveal-frame.svg"></TD>
-    <TD><a href="icons-svg/i4m-wiki2reveal-frame.svg">i4m-wiki2reveal-frame.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-wiki2reveal-frame-white.svg"></TD>
-    <TD><a href="icons-svg/i4m-wiki2reveal-frame-white.svg">i4m-wiki2reveal-frame-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-wiki2reveal.svg"></TD>
-    <TD><a href="icons-svg/i4m-wiki2reveal.svg">i4m-wiki2reveal.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/i4m-wiki2reveal-white.svg"></TD>
-    <TD><a href="icons-svg/i4m-wiki2reveal-white.svg">i4m-wiki2reveal-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/info-black.svg"></TD>
-    <TD><a href="icons-svg/info-black.svg">info-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/info.svg"></TD>
-    <TD><a href="icons-svg/info.svg">info.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/info-white.svg"></TD>
-    <TD><a href="icons-svg/info-white.svg">info-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/location-black.svg"></TD>
-    <TD><a href="icons-svg/location-black.svg">location-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/location.svg"></TD>
-    <TD><a href="icons-svg/location.svg">location.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/location-white.svg"></TD>
-    <TD><a href="icons-svg/location-white.svg">location-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/lock-black.svg"></TD>
-    <TD><a href="icons-svg/lock-black.svg">lock-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/lock.svg"></TD>
-    <TD><a href="icons-svg/lock.svg">lock.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/lock-white.svg"></TD>
-    <TD><a href="icons-svg/lock-white.svg">lock-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/mail-black.svg"></TD>
-    <TD><a href="icons-svg/mail-black.svg">mail-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/mail.svg"></TD>
-    <TD><a href="icons-svg/mail.svg">mail.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/mail-white.svg"></TD>
-    <TD><a href="icons-svg/mail-white.svg">mail-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/minus-black.svg"></TD>
-    <TD><a href="icons-svg/minus-black.svg">minus-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/minus.svg"></TD>
-    <TD><a href="icons-svg/minus.svg">minus.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/minus-white.svg"></TD>
-    <TD><a href="icons-svg/minus-white.svg">minus-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/nav-back-black.svg"></TD>
-    <TD><a href="icons-svg/nav-back-black.svg">nav-back-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/nav-back.svg"></TD>
-    <TD><a href="icons-svg/nav-back.svg">nav-back.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/nav-back-white.svg"></TD>
-    <TD><a href="icons-svg/nav-back-white.svg">nav-back-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/navigation-black.svg"></TD>
-    <TD><a href="icons-svg/navigation-black.svg">navigation-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/navigation.svg"></TD>
-    <TD><a href="icons-svg/navigation.svg">navigation.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/navigation-white.svg"></TD>
-    <TD><a href="icons-svg/navigation-white.svg">navigation-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/phone-black.svg"></TD>
-    <TD><a href="icons-svg/phone-black.svg">phone-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/phone.svg"></TD>
-    <TD><a href="icons-svg/phone.svg">phone.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/phone-white.svg"></TD>
-    <TD><a href="icons-svg/phone-white.svg">phone-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/plus-black.svg"></TD>
-    <TD><a href="icons-svg/plus-black.svg">plus-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/plus.svg"></TD>
-    <TD><a href="icons-svg/plus.svg">plus.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/plus-white.svg"></TD>
-    <TD><a href="icons-svg/plus-white.svg">plus-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/power-black.svg"></TD>
-    <TD><a href="icons-svg/power-black.svg">power-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/power.svg"></TD>
-    <TD><a href="icons-svg/power.svg">power.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/power-white.svg"></TD>
-    <TD><a href="icons-svg/power-white.svg">power-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/recycle-black.svg"></TD>
-    <TD><a href="icons-svg/recycle-black.svg">recycle-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/recycle.svg"></TD>
-    <TD><a href="icons-svg/recycle.svg">recycle.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/recycle-white.svg"></TD>
-    <TD><a href="icons-svg/recycle-white.svg">recycle-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/refresh-black.svg"></TD>
-    <TD><a href="icons-svg/refresh-black.svg">refresh-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/refresh.svg"></TD>
-    <TD><a href="icons-svg/refresh.svg">refresh.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/refresh-white.svg"></TD>
-    <TD><a href="icons-svg/refresh-white.svg">refresh-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/search-black.svg"></TD>
-    <TD><a href="icons-svg/search-black.svg">search-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/search.svg"></TD>
-    <TD><a href="icons-svg/search.svg">search.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/search-white.svg"></TD>
-    <TD><a href="icons-svg/search-white.svg">search-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/shop-black.svg"></TD>
-    <TD><a href="icons-svg/shop-black.svg">shop-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/shop.svg"></TD>
-    <TD><a href="icons-svg/shop.svg">shop.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/shop-white.svg"></TD>
-    <TD><a href="icons-svg/shop-white.svg">shop-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/star4white-black.svg"></TD>
-    <TD><a href="icons-svg/star4white-black.svg">star4white-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/star4white-white.svg"></TD>
-    <TD><a href="icons-svg/star4white-white.svg">star4white-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/star4yellow-black.svg"></TD>
-    <TD><a href="icons-svg/star4yellow-black.svg">star4yellow-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/star4yellow-white.svg"></TD>
-    <TD><a href="icons-svg/star4yellow-white.svg">star4yellow-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/star-black.svg"></TD>
-    <TD><a href="icons-svg/star-black.svg">star-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/star.svg"></TD>
-    <TD><a href="icons-svg/star.svg">star.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/star-white.svg"></TD>
-    <TD><a href="icons-svg/star-white.svg">star-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/tag-black.svg"></TD>
-    <TD><a href="icons-svg/tag-black.svg">tag-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/tag.svg"></TD>
-    <TD><a href="icons-svg/tag.svg">tag.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/tag-white.svg"></TD>
-    <TD><a href="icons-svg/tag-white.svg">tag-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/user-black.svg"></TD>
-    <TD><a href="icons-svg/user-black.svg">user-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/user.svg"></TD>
-    <TD><a href="icons-svg/user.svg">user.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/user-white.svg"></TD>
-    <TD><a href="icons-svg/user-white.svg">user-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/vehicle-tram-black.svg"></TD>
-    <TD><a href="icons-svg/vehicle-tram-black.svg">vehicle-tram-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/vehicle-tram.svg"></TD>
-    <TD><a href="icons-svg/vehicle-tram.svg">vehicle-tram.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/vehicle-tram-white.svg"></TD>
-    <TD><a href="icons-svg/vehicle-tram-white.svg">vehicle-tram-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/video-black.svg"></TD>
-    <TD><a href="icons-svg/video-black.svg">video-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/video.svg"></TD>
-    <TD><a href="icons-svg/video.svg">video.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/video-white.svg"></TD>
-    <TD><a href="icons-svg/video-white.svg">video-white.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/wc_cc0_smartphone-black.svg"></TD>
-    <TD><a href="icons-svg/wc_cc0_smartphone-black.svg">wc_cc0_smartphone-black.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/wc_cc0_smartphone.svg"></TD>
-    <TD><a href="icons-svg/wc_cc0_smartphone.svg">wc_cc0_smartphone.svg</a></TD>
-    <TD>icons-svg</TD>
-    <tr>
-    <TD bgcolor="#888888"><img src="icons-svg/wc_cc0_smartphone-white.svg"></TD>
-    <TD><a href="icons-svg/wc_cc0_smartphone-white.svg">wc_cc0_smartphone-white.svg</a></TD>
-    <TD>icons-svg</TD>
-  </TABLE>
-  <HR>
-</BODY>
-</HTML>
+    </style>
+  </head>
+  <body>
+<h1 id="icons4menu">Icons4Menu</h1>
+<p>This repository is a SVG images resource based on SVG icons <a href="https://jquerymobile.com/download/">JQuery Mobile 1.4.5</a> and extended with SVG icons from <a href="https://commons.wikimedia.org/">Wiki Commons</a>. The icons are primary collected for menus in webbased application or for icons in buttons.</p>
+<h2 id="usage-of-icons4menu---webapps">Usage of Icons4Menu - WebApps</h2>
+<p>Icons4Menu are generated for the Wikiversity Learning Resource about <a href="https://en.wikiversity.org/wiki/AppLSAC">AppLSAC</a>. * <strong><code>hamburger_menu_app</code></strong> Icons in Hamburger Menus like <a href="https://niebert.github.io/hamburger_menu_app/">hamburger_menu_app</a> * <strong><code>jsoneditor_app</code></strong> Icons in JSON Editor WebApp in buttons - see <a href="https://niebert.github.io/jsoneditor_app/">jsoneditor_app</a></p>
+<h2 id="download-of-icons-with-a-script">Download of Icons with a Script</h2>
+<p><strong>REMARK (2023/04/03):</strong> Downloading a single icon from the repository is not allowed anymore by GitHub and also the <a href="https://niebert.github.io/icons4menu">display of single icons</a> via the <code>IMG</code>-tag is not allowed. So updating single icons with a script from this repository does not work. The script <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> shows how to update a local set of icons with a script. Modifiy the <code>wget_icons.sh</code> according to your needs, e.g. by modifying the <code>wget</code> command by replacing the <code>https://niebert.github.io/icons4menu</code> either to remote fetch of icons from a server that allows the access to the icons or replace the GitHub-URL to local copy command <code>cp</code> of icons from a repository storage on your local file system. Starting a temporarily a localhost fileserver could combine local storage and server fetch with <code>wget</code> workflow with the self-hosted set of icons as a copy of this repository. With the modified update script the icons can be downloaded from a source web server of your choice or from a centralized storage of your file system. This will reduce also the server traffic for this GitHub repository. So fetch the ZIP file of this icons4menu-repository once and use the selected icons locally or on your webserver of choice: * For using the using it with a web server of your choice e.g. <code>https://www.example.com</code> replace in the script <code>https://niebert.github.io/icons4menu</code> by <code>https://www.example.com/icons4menu</code> assuming that the <code>icons4menu</code> repository can be accessed in the server root via <code>https://www.example.com/icons4menu</code> * If you want to copy icon sets locally from your local filesystem replace in the <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> script <code>wget https://niebert.github.io/icons4menu</code> by a copy command <code>cp /home/myuser/Documents/icons4menue/</code> and remove the <code>-O</code> option from the script assuming that you store the your local <code>icons4menu</code> copy of the repository at the directory <code>/home/myuser/Documents/icons4menue/</code> * <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> - which allows fetching all icons and the README and licencing information about the icons. In case you want to use the latest icons added to the repository you should update the <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a>. If you do not have any of the available icons in the repository it is recommended to <a href="https://github.com/niebert/icons4menu/archive/refs/heads/master.zip">download the <code>ZIP</code>-file of the repository</a> for your <a href="https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu">HTML5-WebApp</a>, because it will reduce the number of server requests for the GitHub-server infrastructure. * <strong>(All Icons)</strong> The download of icons for your WebApp (resp. <a href="https://en.wikiversity.org/wiki/AppLSAC">AppLSAC</a>) can be started from the shell command line with</p>
+<pre><code>   sh ./wget_icons.sh</code></pre>
+<ul>
+<li><strong>(All Icons of Format SVG)</strong> the script call of <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> downloads the SVG icons of this repository and it is equivalent to the script call:</li>
+</ul>
+<pre><code>   sh ./wget_icons.sh svg</code></pre>
+<ul>
+<li><strong>(All Icons of Format PNG)</strong> the script call of <a href="https://niebert.github.io/icons4menu/wget_icons.sh">wget_icons.sh</a> downloads the SVG icons of this repository and it is equivalent to the script call:</li>
+</ul>
+<pre><code>   sh ./wget_icons.sh png</code></pre>
+<ul>
+<li><strong>(Single Icons of Format SVG)</strong> if you want to download a single PNG icon (e.g. <code>video.svg</code> or <code>video-white.svg</code>) you can call the script with the format parameter <code>svg</code> and:</li>
+</ul>
+<pre><code>   sh ./wget_icons.sh svg video.svg
+   sh ./wget_icons.sh svg video-white.svg</code></pre>
+<ul>
+<li><strong>(Single Icons of Format PNG)</strong> if you want to download a single PNG icon (e.g. <code>video.png</code> or <code>video-white.png</code>) you can call the script with the format parameter <code>png</code> and:</li>
+</ul>
+<pre><code>   sh ./wget_icons.sh png video.png
+   sh ./wget_icons.sh png video-white.png</code></pre>
+<h2 id="update-icons-with-the-zip-file">Update Icons with the <code>ZIP</code> File</h2>
+<p>A <code>wget_icons.sh</code> script command should be used for single icon updates from the repository and that creates a server request only for single additional icon you need, that you might not have currently. For a complete repository you can <a href="https://github.com/niebert/icons4menu/archive/refs/heads/master.zip">download the <code>ZIP</code>-file of the repository</a> for your <a href="https://en.wikiversity.org/wiki/AppLSAC/Icons_for_Menu">HTML5-WebApp</a>, this is just a single server request for all icons (with this you can help to reduce the traffic on network infrastructure and the number of server requests - thank you)</p>
+<h2 id="update-the-wget_icons.sh-script">Update the <code>wget_icons.sh</code> Script</h2>
+<p>Any time new icons are added to the repository <code>icons4menu</code> the script <code>wget_icons.sh</code> is updated as well, because the new icons are added to the list of <code>wget</code> download commands in the script. There is an option to update the <code>wget_icons.sh</code> script to the latest version by downloading the script <a href="https://niebert.github.io/icons4menu/update_wget_icons.sh"><code>update_wget_icons.sh</code></a>. If you want to use the update script, navigate to the folder in which you want to have the <code>icons4menu</code> folder <code>img/</code> and then download the script with:</p>
+<pre><code>  wget https://niebert.github.io/icons4menu/update_wget_icons.sh</code></pre>
+<p>Please check the content of the script before executing, so that you are sure that the script does what you expect the script to (i.e. updating the script <code>wget_icons.sh</code>). Then check the content of <code>wget_icons.sh</code>. Performs the script the expected down or do you want to reduce the number of downloaded icons before executing the script <code>wget_icons.sh</code>. If you are sure that the script download all the icons you need, perform the download operation by calling:</p>
+<pre><code>  sh ./wget_icons.sh</code></pre>
+<h2 id="json-file-json4icons.json-and-json4icons.js">JSON file <code>json4icons.json</code> and <code>json4icons.js</code></h2>
+<p>The JSON file <code>json4icons.json</code> contains a list of all icons with * <code>name</code>: filename, * <code>path</code>: the path to the icon, * <code>license</code>: the license information for the icon, * <code>raw</code>: available only for SVG (Scalable Vector Graphics) images. <code>raw</code> contains the raw string content was added to the JSON. This was added for transparent encoding of the SVG and those developers that prefer to use the raw string format in XML for the image can use that. In a browser you can convert<br />
+* <code>src</code>: is the base64 encoded data of the image as Data URL that can used in images in the DOM. The source us either the <code>XML</code> source text of the <code>SVG</code> image or the binary data as base64 encoded data of the image.</p>
+<p>The file <code>json4icons.js</code> is a library that populates a hash object <code>vDataJSON</code> defined with <code>var vDataJSON = {};</code> in the main HTML file that embeds the <code>icons4menu</code>. * <code>used</code> is boolean that can be set by an application to reduce the number of icons in the JSON data to the used icons. Set all used icons to <code>true</code> and remove all the unused icons from the JSON to reduce the size of the JSON especially for WebApps (see also <a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache">AppLSAC on Wikiversity</a> ).</p>
+<h3 id="example-icon-record-in-json4icons.js">Example Icon Record in <code>json4icons.js</code></h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true"></a><span class="fu">{</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true"></a>    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;arrow-r-black.svg&quot;</span><span class="fu">,</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true"></a>    <span class="dt">&quot;path&quot;</span><span class="fu">:</span> <span class="st">&quot;img/icons-svg&quot;</span><span class="fu">,</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true"></a>    <span class="dt">&quot;used&quot;</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true"></a>    <span class="dt">&quot;src&quot;</span><span class="fu">:</span> <span class="st">&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0....&quot;</span><span class="fu">,</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true"></a>    <span class="dt">&quot;license&quot;</span><span class="fu">:</span> <span class="st">&quot;CC0&quot;</span><span class="fu">,</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true"></a>    <span class="dt">&quot;group&quot;</span><span class="fu">:</span> <span class="st">&quot;arrow&quot;</span><span class="fu">,</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true"></a>    <span class="dt">&quot;raw&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;?xml version=</span><span class="ch">\&quot;</span><span class="st">1.0</span><span class="ch">\&quot;</span><span class="st">...&quot;</span><span class="fu">,</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true"></a>    <span class="dt">&quot;wikicommons&quot;</span><span class="fu">:</span> <span class="st">&quot;https://jquerymobile.com/download/&quot;</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true"></a><span class="fu">}</span></span></code></pre></div>
+<p>The content in <code>src</code> and <code>raw</code> are shortend so that the record fits into this README page.</p>
+<h2 id="json-file-icons4menu">JSON File Icons4Menu</h2>
+<p>The repository contains also a <a href="https://niebert.github.io/icons4menu/json4icons.json">JSON file</a> with all icons of the repository. The JSON file <a href="https://niebert.github.io/icons4menu/json4icons.json"><code>json4icons.json</code></a> can be used to identify the used icons with NodeJS and delete the unused icons from your <code>img/</code> folder of your WebApp to save disk space and reduce the size of your WebApp.</p>
+<p>Even if you remove icons from your WebApp in the folder <code>img/</code> you should keep the license file <code>LICENSE_Jquery_Mobile.txt</code>, <code>README.md</code> and <code>README_Icons4Menu.html</code> in that repository for licensing information about the icons.</p>
+<h2 id="preview-all-icons4menu">Preview All Icons4Menu</h2>
+<p>The listed icons below do not contain the <a href="https://jquerymobile.com/download/">JQuery Mobile 1.4.5 Icons</a>. To preview all icons for navigation menus see</p>
+<ul>
+<li><a href="https://niebert.github.io/icons4menu">Preview Icons4Menu</a></li>
+<li><a href="https://niebert.github.io/hamburger_menu_app">Usage in Hamburger Menu</a> - <a href="https://www.github.com/niebert/icons4menu">GitHub-Repo</a></li>
+<li><a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache/">Learn about AppLSAC</a> - This repository was developed for a Wikiversity learning resource. The</li>
+</ul>
+<h2 id="added-icons-from-wikicommons">Added Icons from WikiCommons</h2>
+<p>The following icons are selected from the following <a href="https://commons.wikimedia.org/w/index.php?title=Special:Search&amp;limit=500&amp;offset=0&amp;profile=default&amp;search=FontAwesome.com&amp;advancedSearch-current=%7B%7D&amp;ns0=1&amp;ns6=1&amp;ns12=1&amp;ns14=1&amp;ns100=1&amp;ns106=1">SVG-Icons in Wiki Commons</a>. For FontAwesome Icon survey see <a href="https://fontawesome.com/v4.7.0/icons/">FontAwesome 4.7.0</a> for finding the appropriate icon file name.</p>
+<h3 id="load-save-print-cancel-trash-settings">Load, Save, Print, Cancel, Trash, Settings</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/action.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>action.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-action.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/edit.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>edit.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-edit.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-file-save.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/2/20/Save_font_awesome.svg"><code>fa-file-save.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Save_font_awesome.svg"><code>Save_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-folder-open.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/3/3a/Folder_open_alt_font_awesome.svg"><code>fa-folder-open.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Folder_open_alt_font_awesome.svg"><code>Folder_open_alt_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-hamburger-icon.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/0/04/Reorder_font_awesome.svg"><code>fa-hamburger-icon.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Reorder_font_awesome.svg"><code>Reorder_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-print.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/e/e4/Print_font_awesome.svg"><code>fa-print.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Print_font_awesome.svg"><code>Print_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-settings.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/9/92/Cog_font_awesome.svg"><code>fa-settings.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Cog_font_awesome.svg"><code>Cog_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-trash.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/7/7d/Trash_font_awesome.svg"><code>fa-trash.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Trash_font_awesome.svg"><code>Trash_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/grid.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>grid.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-grid.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/home.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>home.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-home.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/info.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>info.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-info.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/mail.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>mail.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-mail.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>main</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/shop.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>shop.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-shop.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>main</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="miscellaneous-icons">Miscellaneous Icons</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/alert.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>alert.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-alert.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/bars.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>bars.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-bars.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/bullets.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>bullets.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-bullets.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/check.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>check.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-check.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clock.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>clock.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-clock.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clockwise-anti.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>clockwise-anti.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-clockwise-anti.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clockwise-fast-anti.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>clockwise-fast-anti.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-clockwise-fast-anti.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clockwise-fast.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>clockwise-fast.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-clockwise-fast.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/clockwise.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>clockwise.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-clockwise.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/cloud.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>cloud.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-cloud.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/comment.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>comment.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-comment.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/delete.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>delete.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-delete.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/eye.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>eye.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-eye.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-barcode.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/6/6b/Barcode_font_awesome.svg"><code>fa-barcode.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Barcode_font_awesome.svg"><code>Barcode_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-description.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg"><code>fa-description.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:List_font_awesome.svg"><code>List_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-edit.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/4/4c/Edit_font_awesome.svg"><code>fa-edit.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Edit_font_awesome.svg"><code>Edit_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-envelope.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/3/3d/Envelope_font_awesome.svg"><code>fa-envelope.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Envelope_font_awesome.svg"><code>Envelope_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-globe.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/8/8b/Globe_font_awesome.svg"><code>fa-globe.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Globe_font_awesome.svg"><code>Globe_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-harddisk.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/f/ff/Font_Awesome_5_solid_hdd.svg"><code>fa-harddisk.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_hdd.svg"><code>Font_Awesome_5_solid_hdd.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-language.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/3/32/Language_font_awesome_v5.svg"><code>fa-language.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Language_font_awesome_v5.svg"><code>Language_font_awesome_v5.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-qrcode.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/b/bb/Qrcode_font_awesome.svg"><code>fa-qrcode.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Qrcode_font_awesome.svg"><code>Qrcode_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-sort.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/0/07/Sort_font_awesome.svg"><code>fa-sort.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Sort_font_awesome.svg"><code>Sort_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/forward.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>forward.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-forward.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/gear.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>gear.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-gear.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-avatar-a.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-avatar-a.svg"><code>i4m-avatar-a.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-avatar-a.svg"><code>Icon4Menu-avatar-a.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-squareroot-x.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-squareroot-x.svg"><code>i4m-squareroot-x.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-squareroot-x.svg"><code>Icon4Menu-squareroot-x.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-compose.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-compose.svg"><code>i4m-tree-compose.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-compose.svg"><code>Icon4Menu-tree-compose.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-decompose.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-decompose.svg"><code>i4m-tree-decompose.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-tree-decompose.svg"><code>Icon4Menu-tree-decompose.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg"><code>i4m-wiki2reveal-frame.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal-frame.svg"><code>Icon4Menu-wiki2reveal-frame.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal.svg"><code>i4m-wiki2reveal.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-wiki2reveal.svg"><code>Icon4Menu-wiki2reveal.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/lock.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>lock.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-lock.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/recycle.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>recycle.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-recycle.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>other</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="arrow">Arrow</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/arrow-d.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>arrow-d.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-arrow-d.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>arrow</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/arrow-l.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>arrow-l.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-arrow-l.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>arrow</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/arrow-r.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>arrow-r.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-arrow-r.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>arrow</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-l.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>arrow-u-l.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-arrow-u-l.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>arrow</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/arrow-u-r.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>arrow-u-r.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-arrow-u-r.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>arrow</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/arrow-u.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>arrow-u.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-arrow-u.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>arrow</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="audio-player">Audio Player</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/audio.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>audio.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-audio.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>audio</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-back.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg"><code>fa-audio-back.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Play_font_awesome.svg"><code>Play_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>audio</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-backward.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/c/c8/Backward_font_awesome.svg"><code>fa-audio-backward.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Backward_font_awesome.svg"><code>Backward_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>audio</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-eject.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/1/14/Font_Awesome_5_solid_eject.svg"><code>fa-audio-eject.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_eject.svg"><code>Font_Awesome_5_solid_eject.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>audio</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-forward.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Forward_font_awesome.svg"><code>fa-audio-forward.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Forward_font_awesome.svg"><code>Forward_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>audio</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-pause.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/a/af/Pause_font_awesome.svg"><code>fa-audio-pause.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Pause_font_awesome.svg"><code>Pause_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>audio</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-play.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/d/d3/Play_font_awesome.svg"><code>fa-audio-play.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Play_font_awesome.svg"><code>Play_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>audio</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-record.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_font_awesome.svg"><code>fa-audio-record.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Circle_font_awesome.svg"><code>Circle_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>audio</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-audio-stop.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b9/Font_Awesome_5_solid_square.svg"><code>fa-audio-stop.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_square.svg"><code>Font_Awesome_5_solid_square.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>audio</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="editor">Editor</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/background-color.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1d/Paint_Can_-_The_Noun_Project.svg"><code>background-color.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1d/Paint_Can_-_The_Noun_Project.svg"><code>JQ-background-color.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/brush-paint.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/f/fd/Brush_-_The_Noun_Project.svg"><code>brush-paint.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/f/fd/Brush_-_The_Noun_Project.svg"><code>JQ-brush-paint.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-copy.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/0/04/Copy_font_awesome.svg"><code>fa-copy.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Copy_font_awesome.svg"><code>Copy_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-enumeration.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/3/31/Ol_font_awesome.svg"><code>fa-enumeration.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Ol_font_awesome.svg"><code>Ol_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-font.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/f/f1/Font_Awesome_5_solid_font.svg"><code>fa-font.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_font.svg"><code>Font_Awesome_5_solid_font.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-list.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/List_font_awesome.svg"><code>fa-list.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:List_font_awesome.svg"><code>List_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-minus-square.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/7/72/Font_Awesome_5_solid_minus-square.svg"><code>fa-minus-square.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_minus-square.svg"><code>Font_Awesome_5_solid_minus-square.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-paste.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/4/46/Paste_font_awesome.svg"><code>fa-paste.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Paste_font_awesome.svg"><code>Paste_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-plus-square.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/2/20/Font_Awesome_5_solid_plus-square.svg"><code>fa-plus-square.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_plus-square.svg"><code>Font_Awesome_5_solid_plus-square.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-header.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-header.svg"><code>i4m-header.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-header.svg"><code>Icon4Menu-header.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>editor</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/search.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>search.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-search.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>editor</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="media">Media</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/camera.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>camera.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-camera.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>media</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-chart-pie.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/5/56/Font_Awesome_5_solid_chart-pie.svg"><code>fa-chart-pie.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_chart-pie.svg"><code>Font_Awesome_5_solid_chart-pie.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>media</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-line-chart.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/e/ed/Font_Awesome_5_solid_chart-line.svg"><code>fa-line-chart.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_chart-line.svg"><code>Font_Awesome_5_solid_chart-line.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>media</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/video.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>video.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-video.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>media</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="navigation">Navigation</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/carat-d.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>carat-d.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-carat-d.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/carat-l.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>carat-l.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-carat-l.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/carat-r.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>carat-r.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-carat-r.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/carat-u.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>carat-u.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-carat-u.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-dd.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-dd.svg"><code>i4m-carat-dd.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-dd.svg"><code>Icon4Menu-carat-dd.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-ll.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-ll.svg"><code>i4m-carat-ll.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-ll.svg"><code>Icon4Menu-carat-ll.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-rr.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-rr.svg"><code>i4m-carat-rr.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-rr.svg"><code>Icon4Menu-carat-rr.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu.svg"><code>i4m-carat-uu.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-carat-uu.svg"><code>Icon4Menu-carat-uu.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/location.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>location.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-location.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/nav-back.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>nav-back.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-nav-back.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>navigation</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/navigation.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>navigation.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-navigation.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>navigation</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="vehicle">Vehicle</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/cargo-truck.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cargo_Truck.svg"><code>cargo-truck.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cargo_Truck.svg"><code>JQ-cargo-truck.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>vehicle</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-truck.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1c/Truck_font_awesome.svg"><code>fa-truck.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Truck_font_awesome.svg"><code>Truck_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>vehicle</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-vr-headset.svg" width="20"> </span></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_brands_simplybuilt.svg"><code>fa-vr-headset.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:File:Font_Awesome_5_brands_simplybuilt.svg"><code>File:Font_Awesome_5_brands_simplybuilt.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>vehicle</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/vehicle-tram.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/2/21/Tram_icon_black_and_transparent_background.svg"><code>vehicle-tram.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/2/21/Tram_icon_black_and_transparent_background.svg"><code>JQ-vehicle-tram.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CC4SA</a></td>
+<td><code>vehicle</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="products-and-objects">Products and Objects</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-book.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg"><code>fa-book.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Book_font_awesome.svg"><code>Book_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>product</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-key.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Font_Awesome_5_solid_key.svg"><code>fa-key.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_key.svg"><code>Font_Awesome_5_solid_key.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>product</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-picture.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/8/84/Picture_font_awesome.svg"><code>fa-picture.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Picture_font_awesome.svg"><code>Picture_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>product</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="device">Device</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-camera.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/d/d1/Camera_font_awesome.svg"><code>fa-camera.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Camera_font_awesome.svg"><code>Camera_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>device</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-laptop.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b9/Laptop_font_awesome.svg"><code>fa-laptop.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Laptop_font_awesome.svg"><code>Laptop_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>device</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-tablet.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/3/30/Tablet_font_awesome.svg"><code>fa-tablet.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Tablet_font_awesome.svg"><code>Tablet_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>device</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg" width="20"> </span></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg"><code>i4m-metronome.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://niebert.github.io/icons4menu/img/icons-svg/i4m-metronome.svg"><code>Icon4Menu-metronome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>device</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/phone.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>phone.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-phone.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>device</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/wc_cc0_smartphone.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Smart_phone_%28448965%29_-_The_Noun_Project.svg"><code>wc_cc0_smartphone.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Smart_phone_%28448965%29_-_The_Noun_Project.svg"><code>JQ-wc_cc0_smartphone.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>device</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="action-and-processes">Action and Processes</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-cancel.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/d/de/Remove_font_awesome.svg"><code>fa-cancel.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Remove_font_awesome.svg"><code>Remove_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>action</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-spinner.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/d/d4/Spinner_font_awesome.svg"><code>fa-spinner.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Spinner_font_awesome.svg"><code>Spinner_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>action</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-undo.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/0/0d/Undo_font_awesome.svg"><code>fa-undo.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Undo_font_awesome.svg"><code>Undo_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>action</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/forbidden.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>forbidden.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-forbidden.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>action</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/minus.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>minus.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-minus.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>action</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/plus.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>plus.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-plus.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>action</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/refresh.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>refresh.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-refresh.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>action</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/star.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>star.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-star.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>action</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/tag.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>tag.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-tag.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>action</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="filetype">Filetype</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-file-archive.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/5/5d/Font_Awesome_5_regular_file-archive.svg"><code>fa-file-archive.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Font_Awesome_5_regular_file-archive.svg"><code>Font_Awesome_5_regular_file-archive.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>filetype</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="login">Login</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-signin.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/c/c5/Signin_font_awesome.svg"><code>fa-signin.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Signin_font_awesome.svg"><code>Signin_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>login</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/fa-signout.svg" width="20"> </span></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/d/db/Signout_font_awesome.svg"><code>fa-signout.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://commons.wikimedia.org/wiki/File:Signout_font_awesome.svg"><code>Signout_font_awesome.svg</code></a></td>
+<td><a href='https://creativecommons.org/licenses' target='_blank'>CCBY3SA</a></td>
+<td><code>login</code></td>
+</tr>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/power.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>power.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-power.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>login</code></td>
+</tr>
+<tr class="even">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/user.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>user.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-user.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>login</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="medical">Medical</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>File</th>
+<th>Folder</th>
+<th>Source File</th>
+<th>Licence</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span style="bgcolor:#888888"><img src="https://niebert.github.io/icons4menu/img/icons-svg/heart.svg" width="20"> </span></td>
+<td><a href="https://jquerymobile.com/download/"><code>heart.svg</code></a></td>
+<td><code>img/icons-svg</code></td>
+<td><a href="https://jquerymobile.com/download/"><code>JQ-heart.svg</code></a></td>
+<td><a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>CC0</a></td>
+<td><code>medical</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="create-your-own-icons">Create your own Icons</h2>
+<p>If you want to create your own items you can use</p>
+<ul>
+<li><strong>(<a href="https://en.wikipedia.org/wiki/Inkscape">InkScape</a>)</strong> the <a href="https://en.wikipedia.org/wiki/Inkscape">open source software InkScape</a> - Download: <a href="https://inkscape.org/download">InkScape</a>.</li>
+<li><strong>(<a href="https://en.wikipedia.org/wiki/LibreOffice_Draw">LibreOffice Draw</a>)</strong> Alternatively you can also use <a href="https://en.wikipedia.org/wiki/LibreOffice_Draw">LibreOffice-Draw</a> and load the example icons <code>icons-odg/</code> or the icon templates <code>icons-odg/icon-empty.odg</code> or <code>icons-odg/icon-frame.odg</code>.</li>
+</ul>
+<p>If you want to export the new icon please use the SVG file format. The Scalable Vector Graphics (SVG) defines the image with the Extensible Markup Language as (XML)-based vector image for two-dimensional graphics. The format has the advantage, that increasing the size of the icon does not create pixel effects, because the icon is defined by geometric shapes and not a raster of pixels.</p>
+<p>Save the icon with 14x14 pixel for width and height, so that the icon has a standard size for a menu if not additional size attributes are used in CSS or the <code>img</code>-tag itself.</p>
+<h2 id="style-sheets-css-for-icons">Style Sheets CSS for Icons</h2>
+<p>The spinner icon is static. You might expect the spinner icon <code>fa-spinner.svg</code> to rotate. This can be accomplish with CSS class definition for a class <code>icon-spin</code>: * Add in your CSS file the following styles for the class <code>icon-spin</code>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true"></a><span class="fu">.icon-spin</span> {</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true"></a>    <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true"></a>    <span class="kw">top</span>: <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true"></a>    <span class="kw">left</span>: <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true"></a>    <span class="kw">width</span>: <span class="dv">120</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true"></a>    <span class="kw">height</span>: <span class="dv">120</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true"></a>    <span class="kw">margin</span>:<span class="dv">-60</span><span class="dt">px</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">-60</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true"></a>    <span class="kw">-webkit-animation</span>:spin <span class="dv">4</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true"></a>    <span class="kw">-moz-animation</span>:spin <span class="dv">4</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true"></a>    <span class="kw">animation</span>:spin <span class="dv">4</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true"></a>}</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true"></a><span class="im">@-moz-keyframes</span> spin { 100% { <span class="kw">-moz-transform</span>: <span class="fu">rotate(</span><span class="dv">360</span><span class="dt">deg</span><span class="fu">)</span><span class="op">;</span> } }</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true"></a><span class="im">@-webkit-keyframes</span> spin { 100% { <span class="kw">-webkit-transform</span>: <span class="fu">rotate(</span><span class="dv">360</span><span class="dt">deg</span><span class="fu">)</span><span class="op">;</span> } }</span></code></pre></div>
+<ul>
+<li>The you can make the icons rotate by adding the <code>icon-spin</code> classname to the icon:</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true"></a><span class="kw">&lt;img</span><span class="ot"> class=</span><span class="st">&quot;icon-spin&quot;</span><span class="ot"> src=</span><span class="st">&quot;img/icons-svg/fa-spinner.svg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;&quot;</span><span class="ot"> width=</span><span class="st">&quot;20&quot;</span><span class="ot"> height=</span><span class="st">&quot;20&quot;</span><span class="kw">&gt;</span></span></code></pre></div>
+<h2 id="scan-icons">Scan Icons</h2>
+<h3 id="scan-shell-script-for-images">Scan Shell Script for images</h3>
+<p>The shell script <code>scan_icons.sh</code> scans all icons in the subdirectory <code>img/</code> and creates and HTML file <code>img/index.html</code> and a <code>wget</code> download script, that can be modified for downloading a subset of the images.</p>
+<h3 id="shell-script-wget_icons.sh">Shell Script <code>wget_icons.sh</code></h3>
+<p>The shell script <code>wget_icons.sh</code> can be used to download a subset of images. In the provided default version it downloads all icons in this repository.</p>
+<ul>
+<li>This <code>README.md</code> will also be downloaded and stored in <code>img/README_Icons4Menu.html</code>. Please do not remove this file because it provides a reference to the origin of the files and the corresponding licenses.</li>
+<li>The JQuery Mobile License is stored in <code>img/LICENSE_Jquery_Mobile.txt</code>. For JQuery Mobile license see file <code>LICENSE_Jquery_Mobile.txt</code> in the repository <code>Icons4Menu</code>.</li>
+</ul>
+<h3 id="use-in-other-svg-images-in-other-repositories">Use in other SVG Images in other repositories</h3>
+<p>The script <code>update_wget_icons.sh</code> updates the script <code>wget_icons.sh</code> from the repository <a href="https://www.github.com/niebert/icons4menu">icons4menu</a> and replaces the script <code>wget_icons.sh</code>. The script <code>wget_icons.sh</code> can be used to download an updated version of the icons. Please modify the script according to your needs, to download just a subset for your <a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache">AppLSAC</a>.</p>
+<p>If the repository <a href="https://www.github.com/niebert/icons4menu">icons4menu</a> is expanded with more icons with a Creative Commons license, that it is recommended to update the download script <code>wget_icons.sh</code> with the following commands:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true"></a><span class="fu">sh</span> ./update_wget_icons.sh</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true"></a><span class="fu">sh</span> ./wget_icons.sh</span></code></pre></div>
+<p>The second command downloads the icons. You can help to minimize the GitHub server load by tailoring the script according to your needs.</p>
+<p>If you want to check out an <a href="">example repository on GitHub</a>, that uses the <a href="https://niebert.github.io/hamburger_menu_app">Icons4Menu icons</a> in an AppLSAC analyze the subdirectory <code>img/</code> in <a href="https://www.github.com/niebert/hamburger_menu_app"><code>hamburger_menu_app</code></a>.</p>
+<h2 id="add-license-info-file">Add License Info File</h2>
+<p>If you use the repository add this README.md file to the <a href="https://en.wikiversity.org/wiki/WebApps_with_LocalStorage_and_AppCache">WebApp</a>, so that users of web-based applications can identify the origin of the SVG and PNG icons. The repository incorporated SVG and PNG icons with two licenses:</p>
+<ul>
+<li><a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons <code>CC Zero</code></a> - <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">https://creativecommons.org/publicdomain/zero/1.0/deed.en</a></li>
+<li><a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons <code>CC BY-SA 3.0</code></a> - see <a href="https://creativecommons.org/licenses/by-sa/3.0/">https://creativecommons.org/licenses/by-sa/3.0/</a> with the <code>fa-</code> as file attribution prefix.</li>
+</ul>
+<h3 id="attribution-for-files---file-prefix">Attribution for Files - File Prefix</h3>
+<p>If we consider the <code>CC BY-SA 3.0</code> license provides the freedom to:</p>
+<ul>
+<li><strong>Share</strong> — copy and redistribute the material in any medium or format</li>
+<li><strong>Adapt</strong> — remix, transform, and build upon the material for any purpose, even commercially. These two freedoms are also provided for the license <code>CC Zero</code>. Furthermore for all <code>CC BY-SA 3.0</code> licensed icons an <code>attribution</code> and a <code>share alike</code> requirement is defined (see https://creativecommons.org/licenses/by-sa/3.0/)</li>
+<li><strong>Attribution</strong> — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>
+<li><strong>ShareAlike</strong> — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</li>
+</ul>
+<p>The JQuery Mobile 1.4.5 PNG and SVG icons in this repository (i.e. icons without <code>fa-</code> prefix) do not require the “attribution”, but it is recommended to provide attribution also to JQuery Mobile 1.4.5 with the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC Zero</a> license for icons without the <code>fa-</code> prefix. Especially for adding more icons in forks of the repository <code>icons4menu</code> the prefix <code>fa-</code> should also be used to distinguish <code>CC Zero</code> licensed icons without <code>fa-</code> prefix from <code>CC BY-SA 3.0</code> licensed icon that need a <code>file attribution</code> by adding the prefix <code>fa-</code> in the filename.</p>
+<h3 id="more-than-2-licenses-in-forks-of-icons4menu-with-license-prefix">More than 2 Licenses in Forks of <code>icons4menu</code> with license prefix</h3>
+<p>If you have more than 2 licenses in your fork of <code>icons4menu</code> you could add a license prefix for all icons, e.g.:</p>
+<ul>
+<li><code>cc0-recycle.svg</code> for <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en"><code>CC Zero</code></a> licensed icons from JQuery Mobile 1.4.5,</li>
+<li><code>cc3bysa-recycle.svg</code> for <a href="https://creativecommons.org/licenses/by-sa/3.0/"><code>CC BY-SA 3.0</code></a> licensed icons from <a href="https://commons.wikimedia.org/w/index.php?title=Special:Search&amp;limit=500&amp;offset=0&amp;profile=default&amp;search=FontAwesome.com&amp;advancedSearch-current=%7B%7D&amp;ns0=1&amp;ns6=1&amp;ns12=1&amp;ns14=1&amp;ns100=1&amp;ns106=1">Wiki Commons</a>,</li>
+<li><code>cc4by-recycle.svg</code> for <a href="https://creativecommons.org/licenses/by/4.0/"><code>CC BY 4.0</code></a> licensed icons e.g. from an additional source used in the fork of <code>icons4menu</code>.</li>
+</ul>
+<p>This allows users to identify the license of the file directly from the filename.</p>
+  </body>
+</html>
